@@ -173,6 +173,150 @@ const mockSubsidiaries = [
         pageNumber: 92
       }
     ]
+  },
+  {
+    id: 'marmon',
+    name: 'Marmon Holdings',
+    industry: 'Industrial Conglomerate',
+    acquisitionYear: 2008,
+    description: 'Diversified industrial organization with over 100 autonomous manufacturing and service businesses.',
+    mentions: [
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'Marmon continues to excel in its diverse industrial markets...',
+        context: 'Marmon\'s 11 business sectors generated combined revenues of $10.9 billion in 2023. The crane and foodservice equipment divisions showed particularly strong growth.',
+        pageNumber: 89
+      }
+    ]
+  },
+  {
+    id: 'mclane',
+    name: 'McLane Company',
+    industry: 'Wholesale Distribution',
+    acquisitionYear: 2003,
+    description: 'One of the largest supply chain services companies, providing grocery and foodservice distribution.',
+    mentions: [
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'McLane distributed over 50 billion units to convenience stores...',
+        context: 'McLane Company delivered products to over 110,000 locations nationwide, with revenues exceeding $53 billion. The company\'s efficiency improvements reduced delivery times by 15%.',
+        pageNumber: 94
+      }
+    ]
+  },
+  {
+    id: 'clayton-homes',
+    name: 'Clayton Homes',
+    industry: 'Manufactured Housing',
+    acquisitionYear: 2003,
+    description: 'America\'s largest builder of manufactured, modular, and site-built homes.',
+    mentions: [
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'Clayton Homes built 60,000 homes in 2023...',
+        context: 'Clayton Homes maintained its leadership in affordable housing, building 60,000 homes across its manufactured, modular, and site-built divisions. The company pioneered new energy-efficient designs.',
+        pageNumber: 97
+      }
+    ]
+  },
+  {
+    id: 'oriental-trading',
+    name: 'Oriental Trading Company',
+    industry: 'Direct Marketing',
+    acquisitionYear: 2012,
+    description: 'Direct retailer and wholesaler of party supplies, arts and crafts, toys, and novelties.',
+    mentions: [
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'Oriental Trading expanded its digital presence...',
+        context: 'Oriental Trading Company grew e-commerce sales by 30% through improved mobile experience and expanded product categories. The company now offers over 60,000 unique items.',
+        pageNumber: 109
+      }
+    ]
+  },
+  {
+    id: 'netjets',
+    name: 'NetJets',
+    industry: 'Private Aviation',
+    acquisitionYear: 1998,
+    description: 'World leader in private aviation with the largest and most diverse private jet fleet.',
+    mentions: [
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'NetJets flew over 500,000 flight hours safely...',
+        context: 'NetJets operated over 500,000 flight hours in 2023 with its fleet of 750+ aircraft. The company added 100 new aircraft to meet growing demand for private aviation services.',
+        pageNumber: 84
+      }
+    ]
+  },
+  {
+    id: 'acme-brick',
+    name: 'Acme Brick',
+    industry: 'Building Materials',
+    acquisitionYear: 2000,
+    description: 'Manufacturer of brick and masonry products, dating back to 1891.',
+    mentions: [
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'Acme Brick benefited from strong residential construction...',
+        context: 'Acme Brick Company sold over 1 billion bricks in 2023, benefiting from robust housing construction. The company\'s 100-year warranty remains unique in the industry.',
+        pageNumber: 100
+      }
+    ]
+  },
+  {
+    id: 'brooks-sports',
+    name: 'Brooks Sports',
+    industry: 'Athletic Footwear',
+    acquisitionYear: 2006,
+    description: 'Premium performance running footwear and apparel company.',
+    mentions: [
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'Brooks Running achieved record sales growth...',
+        context: 'Brooks Sports grew revenues by 25% to exceed $1 billion for the first time. The company maintained its #1 market share position in performance running footwear.',
+        pageNumber: 112
+      }
+    ]
+  },
+  {
+    id: 'johnsmanville',
+    name: 'Johns Manville',
+    industry: 'Building Materials',
+    acquisitionYear: 2001,
+    description: 'Manufacturer of insulation, roofing materials, and engineered products.',
+    mentions: [
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'Johns Manville expanded capacity for insulation products...',
+        context: 'Johns Manville invested $200 million in new manufacturing capacity to meet growing demand for energy-efficient building materials. The company\'s revenues reached $3.5 billion.',
+        pageNumber: 99
+      }
+    ]
+  },
+  {
+    id: 'pilot-flying-j',
+    name: 'Pilot Flying J',
+    industry: 'Travel Centers',
+    acquisitionYear: 2017,
+    description: 'Largest operator of travel centers in North America with 750+ locations.',
+    mentions: [
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'Pilot Flying J served 1.3 billion guests...',
+        context: 'Pilot Flying J welcomed 1.3 billion guests across its 750+ locations in 2023. The company invested heavily in electric vehicle charging infrastructure at its travel centers.',
+        pageNumber: 93
+      }
+    ]
   }
 ]
 

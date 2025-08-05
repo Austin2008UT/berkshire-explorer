@@ -16,7 +16,7 @@ const Header: React.FC = () => {
           </div>
           <div className="stat">
             <span className="stat-label">Annual Reports</span>
-            <span className="stat-value">47+</span>
+            <span className="stat-value">48</span>
           </div>
         </div>
       </div>
