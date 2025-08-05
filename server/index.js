@@ -7,6 +7,7 @@ import dotenv from 'dotenv'
 // Import routes
 import reportsRouter from './routes/reports.js'
 import subsidiariesRouter from './routes/subsidiaries.js'
+import secFilingsRouter from './routes/secFilings.js'
 
 // ES modules dirname workaround
 const __filename = fileURLToPath(import.meta.url)
@@ -28,6 +29,7 @@ app.use(express.json())
 // API Routes
 app.use('/api/reports', reportsRouter)
 app.use('/api/subsidiaries', subsidiariesRouter)
+app.use('/api/sec-filings', secFilingsRouter)
 
 // Serve static files in production
 if (process.env.NODE_ENV === 'production') {

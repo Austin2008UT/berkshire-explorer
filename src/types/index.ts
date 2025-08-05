@@ -33,3 +33,25 @@ export interface BookValueData {
   marketValue?: number
   percentChange?: number
 }
+
+export interface SECFiling {
+  id: string
+  formType: '10-K' | '10-Q' | '8-K' | 'DEF 14A' | 'Other'
+  filingDate: string
+  reportDate: string
+  description: string
+  accessionNumber: string
+  fileNumber: string
+  filmNumber: string
+  documents: SECDocument[]
+  size: string
+  isInlineXBRL: boolean
+}
+
+export interface SECDocument {
+  seq: number
+  description: string
+  documentUrl: string
+  type: string
+  size?: string
+}

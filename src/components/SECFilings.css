@@ -1,0 +1,396 @@
+.sec-filings {
+  width: 100%;
+}
+
+.filings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.filings-header h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.filings-stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat-badge {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filings-controls {
+  margin-bottom: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.filter-buttons button:hover {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.filter-buttons button.active {
+  background: var(--secondary-color);
+  color: white;
+  border-color: var(--secondary-color);
+}
+
+.filings-table-container {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.filings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.filings-table th {
+  background: #f8f9fa;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.filing-row {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.filing-row:hover {
+  background: #f8f9fa;
+}
+
+.filings-table td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.form-type {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+.form-10k {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.form-10q {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.form-8k {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.form-proxy {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.form-other {
+  background: #f5f5f5;
+  color: #616161;
+}
+
+.form-desc {
+  font-size: 0.8rem;
+  color: #666;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.date-cell {
+  font-weight: 500;
+  color: #444;
+}
+
+.description-cell {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.size-cell {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-btn, .download-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.view-btn {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.view-btn:hover {
+  background: var(--primary-color);
+}
+
+.download-btn {
+  background: #f0f0f0;
+  color: var(--primary-color);
+}
+
+.download-btn:hover {
+  background: #e0e0e0;
+}
+
+/* Filing Detail Modal */
+.filing-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background: white;
+  border-radius: var(--radius);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: #e0e0e0;
+}
+
+.modal-header {
+  padding: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal-header h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filing-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.meta-label {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.meta-value {
+  font-size: 1rem;
+  color: #333;
+}
+
+.documents-section {
+  padding: 2rem;
+}
+
+.documents-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: var(--radius-sm);
+  border: 1px solid #e0e0e0;
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.document-seq {
+  width: 30px;
+  height: 30px;
+  background: var(--secondary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.document-desc {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.document-type {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.document-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.document-link:hover {
+  color: var(--primary-color);
+}
+
+.filing-footer {
+  padding: 1.5rem 2rem;
+  background: #f8f9fa;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.sec-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sec-link:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .filings-table-container {
+    overflow-x: auto;
+  }
+  
+  .filings-table {
+    min-width: 700px;
+  }
+  
+  .filter-buttons {
+    justify-content: center;
+  }
+  
+  .filing-meta {
+    grid-template-columns: 1fr;
+  }
+}
