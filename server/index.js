@@ -18,6 +18,9 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 5000
 
+// Log the port for Railway
+console.log(`Configured to listen on port: ${PORT}`)
+
 // Middleware
 app.use(cors())
 app.use(express.json())
@@ -54,7 +57,9 @@ app.use((err, req, res, next) => {
   })
 })
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`)
+const HOST = '0.0.0.0' // Bind to all interfaces for Railway
+
+app.listen(PORT, HOST, () => {
+  console.log(`Server running on ${HOST}:${PORT}`)
   console.log(`Environment: ${process.env.NODE_ENV || 'development'}`)
 })
