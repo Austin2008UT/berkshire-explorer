@@ -1,6 +1,114 @@
 // Comprehensive SEC filings data for the last 10 years
 const mockSECFilings = [
+  // 2025 Filings
+  {
+    id: '0000950170-25-025210',
+    formType: '10-K',
+    filingDate: '2025-02-24',
+    reportDate: '2024-12-31',
+    description: 'Annual report for year ended December 31, 2024',
+    accessionNumber: '0000950170-25-025210',
+    fileNumber: '001-14905',
+    filmNumber: '25025210',
+    size: '15.5 MB',
+    isInlineXBRL: true,
+    documents: [
+      {
+        seq: 1,
+        description: 'Complete 10-K Report',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000095017025025210/brka-20241231.htm',
+        type: 'HTML'
+      },
+      {
+        seq: 2,
+        description: 'XBRL Instance Document',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000095017025025210/brka-20241231_htm.xml',
+        type: 'XML'
+      }
+    ]
+  },
+  
   // 2024 Filings
+  {
+    id: '0001067983-24-000072',
+    formType: '10-Q',
+    filingDate: '2024-11-04',
+    reportDate: '2024-09-30',
+    description: 'Quarterly report for quarter ended September 30, 2024',
+    accessionNumber: '0001067983-24-000072',
+    fileNumber: '001-14905',
+    filmNumber: '241425318',
+    size: '8.7 MB',
+    isInlineXBRL: true,
+    documents: [
+      {
+        seq: 1,
+        description: 'Complete 10-Q Report',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000072/brk-20240930.htm',
+        type: 'HTML'
+      }
+    ]
+  },
+  {
+    id: '0001067983-24-000055',
+    formType: '10-Q',
+    filingDate: '2024-08-03',
+    reportDate: '2024-06-30',
+    description: 'Quarterly report for quarter ended June 30, 2024',
+    accessionNumber: '0001067983-24-000055',
+    fileNumber: '001-14905',
+    filmNumber: '241142889',
+    size: '8.1 MB',
+    isInlineXBRL: true,
+    documents: [
+      {
+        seq: 1,
+        description: 'Complete 10-Q Report',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000055/brk-20240630.htm',
+        type: 'HTML'
+      }
+    ]
+  },
+  {
+    id: '0001067983-24-000040',
+    formType: '10-Q',
+    filingDate: '2024-05-04',
+    reportDate: '2024-03-31',
+    description: 'Quarterly report for quarter ended March 31, 2024',
+    accessionNumber: '0001067983-24-000040',
+    fileNumber: '001-14905',
+    filmNumber: '24913234',
+    size: '7.8 MB',
+    isInlineXBRL: true,
+    documents: [
+      {
+        seq: 1,
+        description: 'Complete 10-Q Report',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000040/brk-20240331.htm',
+        type: 'HTML'
+      }
+    ]
+  },
+  {
+    id: '0001067983-24-000025',
+    formType: 'DEF 14A',
+    filingDate: '2024-03-15',
+    reportDate: '2024-05-04',
+    description: 'Definitive proxy statement for 2024 Annual Meeting',
+    accessionNumber: '0001067983-24-000025',
+    fileNumber: '001-14905',
+    filmNumber: '24749521',
+    size: '3.3 MB',
+    isInlineXBRL: false,
+    documents: [
+      {
+        seq: 1,
+        description: 'Proxy Statement',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000025/brk2024proxystatement.htm',
+        type: 'HTML'
+      }
+    ]
+  },
   {
     id: '0001067983-24-000013',
     formType: '10-K',
@@ -24,86 +132,6 @@ const mockSECFilings = [
         description: 'XBRL Instance Document',
         documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000013/brk-20231231_htm.xml',
         type: 'XML'
-      }
-    ]
-  },
-  {
-    id: '0001067983-24-000045',
-    formType: '10-Q',
-    filingDate: '2024-11-04',
-    reportDate: '2024-09-30',
-    description: 'Quarterly report for quarter ended September 30, 2024',
-    accessionNumber: '0001067983-24-000045',
-    fileNumber: '001-14905',
-    filmNumber: '24987654',
-    size: '8.5 MB',
-    isInlineXBRL: true,
-    documents: [
-      {
-        seq: 1,
-        description: 'Complete 10-Q Report',
-        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000045/brk-20240930.htm',
-        type: 'HTML'
-      }
-    ]
-  },
-  {
-    id: '0001067983-24-000038',
-    formType: '10-Q',
-    filingDate: '2024-08-03',
-    reportDate: '2024-06-30',
-    description: 'Quarterly report for quarter ended June 30, 2024',
-    accessionNumber: '0001067983-24-000038',
-    fileNumber: '001-14905',
-    filmNumber: '24876543',
-    size: '7.9 MB',
-    isInlineXBRL: true,
-    documents: [
-      {
-        seq: 1,
-        description: 'Complete 10-Q Report',
-        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000038/brk-20240630.htm',
-        type: 'HTML'
-      }
-    ]
-  },
-  {
-    id: '0001067983-24-000027',
-    formType: '10-Q',
-    filingDate: '2024-05-04',
-    reportDate: '2024-03-31',
-    description: 'Quarterly report for quarter ended March 31, 2024',
-    accessionNumber: '0001067983-24-000027',
-    fileNumber: '001-14905',
-    filmNumber: '24765432',
-    size: '7.6 MB',
-    isInlineXBRL: true,
-    documents: [
-      {
-        seq: 1,
-        description: 'Complete 10-Q Report',
-        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000027/brk-20240331.htm',
-        type: 'HTML'
-      }
-    ]
-  },
-  {
-    id: '0001067983-24-000018',
-    formType: 'DEF 14A',
-    filingDate: '2024-03-15',
-    reportDate: '2024-05-04',
-    description: 'Definitive proxy statement for 2024 Annual Meeting',
-    accessionNumber: '0001067983-24-000018',
-    fileNumber: '001-14905',
-    filmNumber: '24712345',
-    size: '3.2 MB',
-    isInlineXBRL: false,
-    documents: [
-      {
-        seq: 1,
-        description: 'Proxy Statement',
-        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000018/brk2024proxystatement.htm',
-        type: 'HTML'
       }
     ]
   },
@@ -348,41 +376,81 @@ const mockSECFilings = [
 
   // Recent 8-K filings
   {
-    id: '0001067983-24-000041',
+    id: '0001067983-25-000002',
     formType: '8-K',
-    filingDate: '2024-08-05',
-    reportDate: '2024-08-03',
-    description: 'Current report - Quarterly earnings results',
-    accessionNumber: '0001067983-24-000041',
+    filingDate: '2025-02-03',
+    reportDate: '2025-02-01',
+    description: 'Current report - Q4 2024 earnings results',
+    accessionNumber: '0001067983-25-000002',
     fileNumber: '001-14905',
-    filmNumber: '24891234',
+    filmNumber: '25565421',
+    size: '0.6 MB',
+    isInlineXBRL: false,
+    documents: [
+      {
+        seq: 1,
+        description: 'Current Report',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798325000002/brk-8k20250201.htm',
+        type: 'HTML'
+      }
+    ]
+  },
+  {
+    id: '0001067983-24-000074',
+    formType: '8-K',
+    filingDate: '2024-11-04',
+    reportDate: '2024-11-02',
+    description: 'Current report - Q3 2024 earnings results',
+    accessionNumber: '0001067983-24-000074',
+    fileNumber: '001-14905',
+    filmNumber: '241426789',
     size: '0.5 MB',
     isInlineXBRL: false,
     documents: [
       {
         seq: 1,
         description: 'Current Report',
-        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000041/brk-8k20240803.htm',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000074/brk-8k20241102.htm',
         type: 'HTML'
       }
     ]
   },
   {
-    id: '0001067983-24-000029',
+    id: '0001067983-24-000057',
+    formType: '8-K',
+    filingDate: '2024-08-03',
+    reportDate: '2024-08-03',
+    description: 'Current report - Q2 2024 earnings results',
+    accessionNumber: '0001067983-24-000057',
+    fileNumber: '001-14905',
+    filmNumber: '241143567',
+    size: '0.5 MB',
+    isInlineXBRL: false,
+    documents: [
+      {
+        seq: 1,
+        description: 'Current Report',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000057/brk-8k20240803.htm',
+        type: 'HTML'
+      }
+    ]
+  },
+  {
+    id: '0001067983-24-000042',
     formType: '8-K',
     filingDate: '2024-05-06',
     reportDate: '2024-05-04',
     description: 'Current report - Annual meeting results',
-    accessionNumber: '0001067983-24-000029',
+    accessionNumber: '0001067983-24-000042',
     fileNumber: '001-14905',
-    filmNumber: '24812345',
+    filmNumber: '24915678',
     size: '0.3 MB',
     isInlineXBRL: false,
     documents: [
       {
         seq: 1,
         description: 'Current Report',
-        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000029/brk-8k20240504.htm',
+        documentUrl: 'https://www.sec.gov/Archives/edgar/data/1067983/000106798324000042/brk-8k20240504.htm',
         type: 'HTML'
       }
     ]
