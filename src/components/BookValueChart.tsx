@@ -296,12 +296,12 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
 
       // Draw hover tooltip if provided
       if (hoveredPoint) {
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.8)'
-        ctx.font = '12px -apple-system, sans-serif'
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.9)'
+        ctx.font = '13px -apple-system, sans-serif'
         const metrics = ctx.measureText(hoveredPoint.text)
-        const padding = 8
+        const padding = 10
         const boxWidth = metrics.width + padding * 2
-        const boxHeight = 20
+        const boxHeight = 24
         
         let tooltipX = hoveredPoint.x - boxWidth / 2
         let tooltipY = hoveredPoint.y - boxHeight - 10
@@ -311,11 +311,24 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
         if (tooltipX + boxWidth > rect.width) tooltipX = rect.width - boxWidth
         if (tooltipY < 0) tooltipY = hoveredPoint.y + 10
         
-        ctx.fillRect(tooltipX, tooltipY, boxWidth, boxHeight)
+        // Draw rounded rectangle
+        const radius = 4
+        ctx.beginPath()
+        ctx.moveTo(tooltipX + radius, tooltipY)
+        ctx.lineTo(tooltipX + boxWidth - radius, tooltipY)
+        ctx.quadraticCurveTo(tooltipX + boxWidth, tooltipY, tooltipX + boxWidth, tooltipY + radius)
+        ctx.lineTo(tooltipX + boxWidth, tooltipY + boxHeight - radius)
+        ctx.quadraticCurveTo(tooltipX + boxWidth, tooltipY + boxHeight, tooltipX + boxWidth - radius, tooltipY + boxHeight)
+        ctx.lineTo(tooltipX + radius, tooltipY + boxHeight)
+        ctx.quadraticCurveTo(tooltipX, tooltipY + boxHeight, tooltipX, tooltipY + boxHeight - radius)
+        ctx.lineTo(tooltipX, tooltipY + radius)
+        ctx.quadraticCurveTo(tooltipX, tooltipY, tooltipX + radius, tooltipY)
+        ctx.closePath()
+        ctx.fill()
         
         ctx.fillStyle = 'white'
         ctx.textAlign = 'left'
-        ctx.fillText(hoveredPoint.text, tooltipX + padding, tooltipY + 14)
+        ctx.fillText(hoveredPoint.text, tooltipX + padding, tooltipY + 16)
       }
 
       return { displayData, xScale, yScale }
@@ -348,7 +361,9 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
             hoveredPoint = {
               x: bvX,
               y: bvY,
-              text: `${point.year}: $${point.bookValue.toLocaleString()}`
+              text: point.stockPrice 
+                ? `${point.year}: Book Value: $${point.bookValue.toLocaleString()} | Stock: $${point.stockPrice.toLocaleString()}`
+                : `${point.year}: Book Value: $${point.bookValue.toLocaleString()}`
             }
             break
           }
@@ -363,7 +378,7 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
               hoveredPoint = {
                 x: spX,
                 y: spY,
-                text: `${point.year}: $${point.stockPrice.toLocaleString()} (Stock)`
+                text: `${point.year}: Book Value: $${point.bookValue.toLocaleString()} | Stock: $${point.stockPrice.toLocaleString()}`
               }
               break
             }

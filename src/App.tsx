@@ -56,7 +56,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Header onTitleClick={() => setActiveView('reports')} />
       
       <nav className="main-nav">
         <button 

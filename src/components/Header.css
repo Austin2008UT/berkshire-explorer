@@ -23,6 +23,10 @@
   font-weight: 700;
 }
 
+.logo:hover h1 {
+  opacity: 0.9;
+}
+
 .tagline {
   font-size: 0.9rem;
   opacity: 0.9;

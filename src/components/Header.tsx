@@ -1,7 +1,11 @@
 import React from 'react'
 import './Header.css'
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  onTitleClick: () => void
+}
+
+const Header: React.FC<HeaderProps> = ({ onTitleClick }) => {
   // Calculate next AGM date (Berkshire's AGM is typically first Saturday of May)
   const getNextAGMDate = () => {
     const today = new Date()
@@ -33,7 +37,7 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="logo">
+        <div className="logo" onClick={onTitleClick} style={{ cursor: 'pointer' }}>
           <h1>Berkshire Explorer</h1>
           <p className="tagline">Exploring decades of wisdom from Warren Buffett's letters</p>
         </div>
