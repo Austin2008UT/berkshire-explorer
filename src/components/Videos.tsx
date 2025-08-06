@@ -16,7 +16,7 @@ const videos: Video[] = [
     id: 'hbo-buffett',
     title: 'Warren Buffett - HBO Documentary Trailer',
     description: 'Becoming Warren Buffett - An intimate look at Buffett\'s life and philosophy',
-    youtubeId: 'Fvpl-OzJpYg',
+    youtubeId: 'E5cVKuOCgwU',
     speaker: 'Buffett',
     year: 2017,
     category: 'documentary'
@@ -34,7 +34,7 @@ const videos: Video[] = [
     id: 'buffett-2023-meeting',
     title: '2023 Berkshire Hathaway Annual Meeting Highlights',
     description: 'Key moments from the annual shareholders meeting',
-    youtubeId: 'Ygfuu_gOHZE',
+    youtubeId: '9H_oWXZ4YIs',
     speaker: 'Both',
     year: 2023,
     category: 'annual-meeting'
@@ -43,7 +43,7 @@ const videos: Video[] = [
     id: 'buffett-advice',
     title: 'Warren Buffett\'s Best Investment Advice',
     description: 'Essential investment principles from the Oracle of Omaha',
-    youtubeId: 'Ep35V7ejLGI',
+    youtubeId: 'f9Vp_qrVfCo',
     speaker: 'Buffett',
     year: 2022,
     category: 'interview'
@@ -52,7 +52,7 @@ const videos: Video[] = [
     id: 'munger-wisdom',
     title: 'Charlie Munger - Timeless Wisdom Compilation',
     description: 'Best of Charlie Munger\'s investment and life advice',
-    youtubeId: 'i0buHRSCiuA',
+    youtubeId: 'tvuZaGFG5Zs',
     speaker: 'Munger',
     year: 2021,
     category: 'interview'
@@ -61,7 +61,7 @@ const videos: Video[] = [
     id: 'buffett-value',
     title: 'Warren Buffett on Value Investing',
     description: 'Buffett explains his approach to finding undervalued companies',
-    youtubeId: 'GFj2SMa27fI',
+    youtubeId: 'BKCm7lv0eQY',
     speaker: 'Buffett',
     year: 2019,
     category: 'interview'
@@ -70,7 +70,7 @@ const videos: Video[] = [
     id: 'munger-interview',
     title: 'Charlie Munger on Investing and Decision Making',
     description: 'Munger discusses mental models and rational thinking',
-    youtubeId: 'DpLCvlB0ebw',
+    youtubeId: 'l4xORWjPbpE',
     speaker: 'Munger',
     year: 2019,
     category: 'interview'
@@ -79,7 +79,7 @@ const videos: Video[] = [
     id: 'buffett-florida',
     title: 'Warren Buffett MBA Talk - University of Florida',
     description: 'Classic Buffett speech on investing and business principles',
-    youtubeId: '2MHIcabnjrA',
+    youtubeId: '2a9Lx9J8uSs',
     speaker: 'Buffett',
     year: 1998,
     category: 'speech'
@@ -88,7 +88,7 @@ const videos: Video[] = [
     id: 'buffett-2022-meeting',
     title: '2022 Berkshire Hathaway Annual Meeting Highlights',
     description: 'Important moments from the 2022 shareholders meeting',
-    youtubeId: '9H0F4BS2dYE',
+    youtubeId: 'T8eJWfT7iQI',
     speaker: 'Both',
     year: 2022,
     category: 'annual-meeting'
@@ -97,7 +97,7 @@ const videos: Video[] = [
     id: 'munger-daily-journal',
     title: 'Charlie Munger at Daily Journal Annual Meeting',
     description: 'Munger\'s insights on investing and current events',
-    youtubeId: 'XkN8NlMQUEQ',
+    youtubeId: 'S5bjCJ5w36Q',
     speaker: 'Munger',
     year: 2020,
     category: 'annual-meeting'
@@ -106,7 +106,7 @@ const videos: Video[] = [
     id: 'buffett-principles',
     title: 'Warren Buffett\'s 10 Rules for Success',
     description: 'Key principles that guided Buffett\'s investment career',
-    youtubeId: 'iZTGvOmBJ0E',
+    youtubeId: 'KT6i7YIwAGc',
     speaker: 'Buffett',
     year: 2018,
     category: 'interview'
@@ -115,7 +115,7 @@ const videos: Video[] = [
     id: 'buffett-economy',
     title: 'Warren Buffett on the American Economy',
     description: 'Buffett\'s optimistic view on America\'s economic future',
-    youtubeId: 'OcmMsGGQ_eg',
+    youtubeId: 'rvxhfBYGwNM',
     speaker: 'Buffett',
     year: 2021,
     category: 'interview'

@@ -11,9 +11,9 @@ const mockSubsidiaries = [
       {
         reportYear: 2023,
         reportId: '2023',
-        text: 'GEICO continues to be a cornerstone of our insurance operations...',
-        context: 'GEICO added 1.2 million policies in 2023, maintaining its position as the second-largest auto insurer in the United States. The company\'s combined ratio improved to 96.5%, reflecting better underwriting discipline and reduced claims frequency.',
-        pageNumber: 7
+        text: 'wonderful experience with GEICO that began early in 1951 and will never end',
+        context: 'Warren Buffett references his long relationship with GEICO, calling it an "almost unbelievably wonderful experience" that helped build Berkshire\'s insurance operations.',
+        pageNumber: 15
       },
       {
         reportYear: 2022,
@@ -100,9 +100,16 @@ const mockSubsidiaries = [
       {
         reportYear: 2023,
         reportId: '2023',
-        text: 'BNSF carried record volumes of intermodal freight...',
-        context: 'BNSF Railway generated $25.2 billion in revenues in 2023, with strong performance in consumer products and agricultural products offsetting weakness in coal transport. The company invested $3.9 billion in capital improvements.',
-        pageNumber: 69
+        text: 'BNSF is the largest of six major rail systems that blanket North America...',
+        context: 'BNSF carries 23,759 miles of main track, 99 tunnels, 13,495 bridges, 7,521 locomotives. The railroad must spend more than its depreciation charge annually - $22 billion over 14 years since acquisition. Despite challenges, BNSF remains essential to America\'s economic future.',
+        pageNumber: 12
+      },
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'Last year BNSF\'s earnings declined more than I expected, as revenues fell...',
+        context: 'Though fuel costs fell, wage increases promulgated in Washington were far beyond inflation goals. BNSF\'s profit margins have slipped relative to other major railroads since acquisition, though Buffett believes the vast service territory is second to none.',
+        pageNumber: 13
       },
       {
         reportYear: 2022,
@@ -125,9 +132,16 @@ const mockSubsidiaries = [
       {
         reportYear: 2023,
         reportId: '2023',
-        text: 'Berkshire Hathaway Energy continues to lead in renewable energy development...',
-        context: 'BHE invested $8.2 billion in renewable energy projects in 2023, adding 2,500 MW of wind and solar capacity. The company now generates over 50% of its electricity from renewable sources.',
-        pageNumber: 77
+        text: 'Our second and even more severe earnings disappointment last year occurred at BHE...',
+        context: 'Most of BHE\'s large electric-utility businesses and gas pipelines performed as expected, but regulatory climate in a few states has raised the specter of zero profitability or bankruptcy. Climate change and forest fires have created significant losses.',
+        pageNumber: 13
+      },
+      {
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'BHE\'s extensive multi-state transmission project in the West was initiated in 2006...',
+        context: 'The project remains years from completion but will eventually serve 10 states comprising 30% of continental U.S. acreage. The regulatory environment has changed, breaking the traditional fixed-return model.',
+        pageNumber: 13
       }
     ]
   },
