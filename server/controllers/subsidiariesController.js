@@ -38,7 +38,43 @@ const mockSubsidiaries = [
     industry: 'Reinsurance',
     acquisitionYear: 1998,
     description: 'One of the world\'s leading reinsurance companies, providing property and casualty and life and health coverages.',
-    mentions: []
+    mentions: [
+      {
+        reportYear: 1998,
+        reportId: '1998',
+        text: 'We merged with General Re Corporation',
+        context: 'In December 1998, we completed our largest acquisition ever, merging with General Re, one of the world\'s leading reinsurers.',
+        pageNumber: 3
+      },
+      {
+        reportYear: 2001,
+        reportId: '2001',
+        text: 'General Re\'s underwriting results were unsatisfactory',
+        context: 'Following September 11th, General Re faced significant losses, but we remain confident in its long-term prospects and exceptional management.',
+        pageNumber: 7
+      },
+      {
+        reportYear: 2008,
+        reportId: '2008',
+        text: 'General Re had an outstanding underwriting year',
+        context: 'Under Joe Brandon\'s leadership, General Re\'s underwriting discipline has been restored. The company earned an underwriting profit of $342 million.',
+        pageNumber: 10
+      },
+      {
+        reportYear: 2013,
+        reportId: '2013',
+        text: 'General Re\'s float totaled $20 billion',
+        context: 'General Re continues to be conservatively run under Tad Montross. The company\'s float of $20 billion costs us nothing.',
+        pageNumber: 11
+      },
+      {
+        reportYear: 2016,
+        reportId: '2016',
+        text: 'General Re produced $5.6 billion in premiums',
+        context: 'General Re wrote $5.6 billion of business in 2016 while maintaining excellent underwriting standards. Tad Montross has done a superb job.',
+        pageNumber: 8
+      }
+    ]
   },
   {
     id: 'berkshire-primary',
@@ -54,7 +90,43 @@ const mockSubsidiaries = [
     industry: 'Insurance',
     acquisitionYear: 1967,
     description: 'Berkshire\'s first insurance acquisition, specializing in commercial auto and general liability.',
-    mentions: []
+    mentions: [
+      {
+        reportYear: 2017,
+        reportId: '2017',
+        text: 'National Indemnity celebrated its 50th anniversary with Berkshire',
+        context: 'In 2017, we celebrated the 50th anniversary of our purchase of National Indemnity, the acquisition that set us on the road to building the Berkshire of today.',
+        pageNumber: 5
+      },
+      {
+        reportYear: 2007,
+        reportId: '2007',
+        text: 'National Indemnity\'s float has grown from $17 million to $11 billion',
+        context: 'When we purchased National Indemnity in 1967, it held $17 million of float. Today National Indemnity holds $11 billion of float.',
+        pageNumber: 10
+      },
+      {
+        reportYear: 1998,
+        reportId: '1998',
+        text: 'National Indemnity wrote $366 million in premiums',
+        context: 'National Indemnity, our largest primary insurer, wrote $366 million of business, down from previous years as we maintained pricing discipline.',
+        pageNumber: 9
+      },
+      {
+        reportYear: 1985,
+        reportId: '1985',
+        text: 'National Indemnity\'s traditional business had excellent results',
+        context: 'National Indemnity Company, our oldest insurance subsidiary, had an excellent year in its traditional lines.',
+        pageNumber: 3
+      },
+      {
+        reportYear: 1977,
+        reportId: '1977',
+        text: 'National Indemnity Company had a satisfactory underwriting year',
+        context: 'Our insurance subsidiaries, led by National Indemnity Company, had satisfactory underwriting results despite a competitive environment.',
+        pageNumber: 2
+      }
+    ]
   },
   {
     id: 'guard-insurance',
@@ -362,6 +434,62 @@ const mockSubsidiaries = [
         text: 'See\'s Candies delivered another year of steady profits...',
         context: 'See\'s Candies generated pre-tax earnings of $170 million on revenues of $520 million. The company continues to benefit from strong brand loyalty and pricing power, with same-store sales growing 5% year-over-year.',
         pageNumber: 95
+      },
+      {
+        reportYear: 2019,
+        reportId: '2019',
+        text: 'See\'s produced a record $2.2 billion of revenues since our purchase',
+        context: 'The $25 million we paid for See\'s in 1972 has now delivered aggregate pre-tax earnings of $2.2 billion, and it continues to earn exceptional returns on tangible assets.',
+        pageNumber: 123
+      },
+      {
+        reportYear: 2011,
+        reportId: '2011',
+        text: 'Last year See\'s had same-store sales gains of 16%',
+        context: 'Despite a tough economy, See\'s Candies achieved remarkable same-store sales growth, demonstrating the strength of the brand and customer loyalty.',
+        pageNumber: 7
+      },
+      {
+        reportYear: 2007,
+        reportId: '2007',
+        text: 'See\'s earned $82 million pre-tax',
+        context: 'See\'s had another outstanding year with pre-tax earnings of $82 million. The company we purchased for $25 million continues to be a jewel.',
+        pageNumber: 76
+      },
+      {
+        reportYear: 2005,
+        reportId: '2005',
+        text: 'See\'s sales grew to $383 million',
+        context: 'Chuck Huggins continues to do an outstanding job at See\'s. Sales were $383 million and pre-tax profits were $62 million.',
+        pageNumber: 9
+      },
+      {
+        reportYear: 1999,
+        reportId: '1999',
+        text: 'See\'s earned $74 million pre-tax',
+        context: 'See\'s Candies again had record earnings. Pre-tax profits were $74 million on sales of $287 million.',
+        pageNumber: 58
+      },
+      {
+        reportYear: 1991,
+        reportId: '1991',
+        text: 'See\'s pre-tax earnings were $25.5 million',
+        context: 'See\'s Candies, purchased for $25 million in 1972, earned $25.5 million pre-tax in 1991, demonstrating the power of a great brand.',
+        pageNumber: 6
+      },
+      {
+        reportYear: 1984,
+        reportId: '1984',
+        text: 'See\'s earned $13 million after-tax',
+        context: 'See\'s Candies earned a record $13 million after taxes, representing a return of over 50% on beginning equity.',
+        pageNumber: 52
+      },
+      {
+        reportYear: 1972,
+        reportId: '1972',
+        text: 'Blue Chip Stamps purchased See\'s Candies',
+        context: 'Blue Chip Stamps (controlled by Berkshire) purchased See\'s Candies for $25 million. It had about $8 million in excess cash at the time.',
+        pageNumber: 97
       }
     ]
   },
@@ -378,6 +506,27 @@ const mockSubsidiaries = [
         text: 'Dairy Queen\'s global expansion continues...',
         context: 'Dairy Queen opened 200 new locations globally in 2023, with particularly strong growth in Asia. Same-store sales increased 7% driven by menu innovation and digital ordering capabilities.',
         pageNumber: 106
+      },
+      {
+        reportYear: 1998,
+        reportId: '1998',
+        text: 'We acquired International Dairy Queen',
+        context: 'Berkshire acquired International Dairy Queen, adding this well-known franchise system with over 5,700 locations to our collection of businesses.',
+        pageNumber: 11
+      },
+      {
+        reportYear: 2007,
+        reportId: '2007',
+        text: 'Dairy Queen opened its 500th store in China',
+        context: 'International expansion continues to be a growth driver for Dairy Queen, with China becoming an increasingly important market.',
+        pageNumber: 78
+      },
+      {
+        reportYear: 2014,
+        reportId: '2014',
+        text: 'Dairy Queen same-store sales grew 5.7% in the U.S.',
+        context: 'John Gainor continues to do an outstanding job at International Dairy Queen. U.S. same-store sales were up 5.7%.',
+        pageNumber: 26
       }
     ]
   },
@@ -516,6 +665,34 @@ const mockSubsidiaries = [
         text: 'NetJets flew over 500,000 flight hours safely...',
         context: 'NetJets operated over 500,000 flight hours in 2023 with its fleet of 750+ aircraft. The company added 100 new aircraft to meet growing demand for private aviation services.',
         pageNumber: 84
+      },
+      {
+        reportYear: 1998,
+        reportId: '1998',
+        text: 'We purchased Executive Jet, operator of the NetJets program',
+        context: 'Berkshire acquired Executive Jet Aviation, which operates the NetJets fractional ownership program, pioneering a new way for corporations and individuals to utilize private aircraft.',
+        pageNumber: 13
+      },
+      {
+        reportYear: 2014,
+        reportId: '2014',
+        text: 'NetJets ordered up to 425 new jets from Cessna and Bombardier',
+        context: 'NetJets placed the largest private jet order in history, demonstrating our confidence in the business and commitment to maintaining the youngest, safest fleet in private aviation.',
+        pageNumber: 10
+      },
+      {
+        reportYear: 2009,
+        reportId: '2009',
+        text: 'NetJets navigated through the worst year in aviation history',
+        context: 'Under Dave Sokol\'s leadership, NetJets cut costs dramatically while maintaining safety standards during the severe aviation downturn.',
+        pageNumber: 15
+      },
+      {
+        reportYear: 2019,
+        reportId: '2019',
+        text: 'NetJets operates a fleet of 750 aircraft',
+        context: 'NetJets, the world\'s leading private jet company, operates approximately 750 aircraft and flies to more than 170 countries.',
+        pageNumber: 11
       }
     ]
   },
@@ -533,7 +710,43 @@ const mockSubsidiaries = [
     industry: 'Retail - Furniture',
     acquisitionYear: 1983,
     description: 'Largest home furnishing store in North America, known for selection and value.',
-    mentions: []
+    mentions: [
+      {
+        reportYear: 2013,
+        reportId: '2013',
+        text: 'NFM opened its Texas store, the largest home furnishings store in America',
+        context: 'The new 1.8 million square foot Texas location represents the largest home furnishings store in America, demonstrating NFM\'s continued growth 30 years after we purchased it from Mrs. B.',
+        pageNumber: 19
+      },
+      {
+        reportYear: 1997,
+        reportId: '1997',
+        text: 'Mrs. B died at age 104',
+        context: 'Rose Blumkin, the remarkable founder of Nebraska Furniture Mart, passed away at 104, having built one of America\'s largest furniture stores from a $500 investment.',
+        pageNumber: 17
+      },
+      {
+        reportYear: 1983,
+        reportId: '1983',
+        text: 'We purchased 80% of Nebraska Furniture Mart',
+        context: 'We acquired 80% of Nebraska Furniture Mart from Rose Blumkin ("Mrs. B"), who started the business with $500 in 1937.',
+        pageNumber: 7
+      },
+      {
+        reportYear: 2003,
+        reportId: '2003',
+        text: 'NFM opened a 450,000 square foot store in Kansas City',
+        context: 'Nebraska Furniture Mart opened its second store outside Omaha, a 450,000 square foot facility in Kansas City.',
+        pageNumber: 18
+      },
+      {
+        reportYear: 1989,
+        reportId: '1989',
+        text: 'Mrs. B, at 96, opened a competing store',
+        context: 'After a disagreement, Mrs. B left NFM and started a competing store across the street. We later bought her new business and merged it back.',
+        pageNumber: 12
+      }
+    ]
   },
   {
     id: 'rc-willey',

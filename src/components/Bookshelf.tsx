@@ -184,7 +184,7 @@ const Bookshelf: React.FC = () => {
     <div className="bookshelf">
       <div className="bookshelf-header">
         <h2>The Berkshire Bookshelf</h2>
-        <p className="bookshelf-subtitle">Essential reading for understanding Warren Buffett, Charlie Munger, and Berkshire Hathaway</p>
+        <p className="bookshelf-subtitle">Essential reading on Buffett, Munger & Berkshire—plus books they cited or recommended, and a few editor's picks.</p>
       </div>
 
       <div className="category-filters">
