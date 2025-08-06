@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ onTitleClick }) => {
       <div className="header-content">
         <div className="logo" onClick={onTitleClick} style={{ cursor: 'pointer' }}>
           <h1>Berkshire Explorer</h1>
-          <p className="tagline">Exploring decades of wisdom from Warren Buffett's letters</p>
+          <p className="tagline">Indexing decades of Buffett & Munger wisdom</p>
         </div>
         <div className="agm-notice">
           Upcoming AGM: {getNextAGMDate()}
