@@ -16,7 +16,7 @@ const videos: Video[] = [
     id: 'hbo-buffett',
     title: 'Warren Buffett - HBO Documentary',
     description: 'Becoming Warren Buffett - An intimate look at Buffett\'s life, career, and philosophy',
-    youtubeId: 'PB5krSvFAPg',
+    youtubeId: '2a9Lx9J8uSs',
     speaker: 'Buffett',
     year: 2017,
     category: 'documentary'
@@ -34,7 +34,7 @@ const videos: Video[] = [
     id: 'buffett-2024-meeting',
     title: '2024 Berkshire Hathaway Annual Meeting',
     description: 'Full annual shareholders meeting with Q&A session',
-    youtubeId: '8wBHdmJYpZs',
+    youtubeId: 'xDcGLWPnDJQ',
     speaker: 'Both',
     year: 2024,
     category: 'annual-meeting'
@@ -43,7 +43,7 @@ const videos: Video[] = [
     id: 'buffett-cnbc-2023',
     title: 'Warren Buffett Interview - CNBC 2023',
     description: 'Discussing markets, investing philosophy, and the economy',
-    youtubeId: 'qRSeU7TfJGA',
+    youtubeId: 'ZJzu_xItNkY',
     speaker: 'Buffett',
     year: 2023,
     category: 'interview'
@@ -52,7 +52,7 @@ const videos: Video[] = [
     id: 'munger-2021-daily-journal',
     title: 'Charlie Munger - 2021 Daily Journal Meeting',
     description: 'Munger\'s insights on investing, life, and rational thinking',
-    youtubeId: 'MYDDwBGfJzg',
+    youtubeId: 'LMfr6SdlIQs',
     speaker: 'Munger',
     year: 2021,
     category: 'annual-meeting'
@@ -61,7 +61,7 @@ const videos: Video[] = [
     id: 'buffett-gates-columbia',
     title: 'Warren Buffett & Bill Gates at Columbia Business School',
     description: 'Discussion on business, philanthropy, and life lessons',
-    youtubeId: 'CfiKLnt7cRk',
+    youtubeId: 'K9m6IQXB5tU',
     speaker: 'Buffett',
     year: 2009,
     category: 'speech'
@@ -70,7 +70,7 @@ const videos: Video[] = [
     id: 'munger-usc-speech',
     title: 'Charlie Munger USC Law School Commencement Speech',
     description: 'Munger\'s prescription for guaranteed misery and how to avoid it',
-    youtubeId: '0xuqtzglcBs',
+    youtubeId: '5U0TE4oqj24',
     speaker: 'Munger',
     year: 2007,
     category: 'speech'
@@ -88,7 +88,7 @@ const videos: Video[] = [
     id: 'buffett-2009-crisis',
     title: 'Warren Buffett on the 2008 Financial Crisis',
     description: 'Reflections on the crisis and lessons learned',
-    youtubeId: 'EKG_cXp4XNI',
+    youtubeId: 'ymm4h-Pl3cI',
     speaker: 'Buffett',
     year: 2009,
     category: 'interview'
@@ -97,7 +97,7 @@ const videos: Video[] = [
     id: 'munger-lattice',
     title: 'Charlie Munger - Latticework of Mental Models',
     description: 'Explaining the importance of multidisciplinary thinking',
-    youtubeId: 'T8hbO8cp-sM',
+    youtubeId: 'nBh3unOGjRg',
     speaker: 'Munger',
     year: 2019,
     category: 'interview'
@@ -106,7 +106,7 @@ const videos: Video[] = [
     id: 'buffett-2019-meeting',
     title: '2019 Berkshire Hathaway Annual Meeting - Full Q&A',
     description: 'Six hours of wisdom from Buffett and Munger',
-    youtubeId: 'xp-WESg5MgI',
+    youtubeId: 'Ky-nacho5h0',
     speaker: 'Both',
     year: 2019,
     category: 'annual-meeting'
@@ -115,7 +115,7 @@ const videos: Video[] = [
     id: 'buffett-quick-wit',
     title: 'Warren Buffett - Best Moments of Wit & Wisdom',
     description: 'Compilation of Buffett\'s most memorable quotes and jokes',
-    youtubeId: '1E5JMk-HMXY',
+    youtubeId: '7W0PfaLFMZE',
     speaker: 'Buffett',
     year: 2020,
     category: 'interview'

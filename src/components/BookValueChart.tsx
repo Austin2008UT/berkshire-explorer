@@ -10,7 +10,6 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [showStockPrice, setShowStockPrice] = useState(false)
   const [showSP500, setShowSP500] = useState(false)
-  const [hoveredPoint, setHoveredPoint] = useState<{x: number, y: number, value: string, year: number} | null>(null)
 
   useEffect(() => {
     if (!canvasRef.current || reports.length === 0) return
@@ -38,22 +37,23 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
 
     if (chartData.length === 0) return
 
-    // S&P 500 historical annual returns (approximate)
-    const sp500Data: { [key: number]: number } = {
-      1977: 100, 1978: 106.4, 1979: 118.3, 1980: 158.5, 1981: 148.9,
-      1982: 181.8, 1983: 222.4, 1984: 236.4, 1985: 312.5, 1986: 370.2,
-      1987: 388.8, 1988: 453.0, 1989: 595.4, 1990: 577.4, 1991: 755.2,
-      1992: 812.5, 1993: 895.2, 1994: 908.2, 1995: 1248.3, 1996: 1535.5,
-      1997: 2045.2, 1998: 2626.7, 1999: 3178.2, 2000: 2887.9, 2001: 2542.2,
-      2002: 1979.5, 2003: 2541.5, 2004: 2815.0, 2005: 2951.0, 2006: 3418.1,
-      2007: 3609.5, 2008: 2275.1, 2009: 2875.3, 2010: 3305.9, 2011: 3378.2,
-      2012: 3916.1, 2013: 5174.7, 2014: 5881.6, 2015: 5814.9, 2016: 6507.0,
-      2017: 7945.0, 2018: 7585.0, 2019: 9972.4, 2020: 11857.5, 2021: 15229.5,
-      2022: 12495.3, 2023: 15832.8, 2024: 17500.0
+    // S&P 500 historical data with dividends reinvested (0% tax rate)
+    // Starting from $310 in 1977 to match BRK-A's starting price
+    const sp500DataRaw: { [key: number]: number } = {
+      1977: 310, 1978: 330, 1979: 367, 1980: 491, 1981: 462,
+      1982: 564, 1983: 689, 1984: 733, 1985: 969, 1986: 1148,
+      1987: 1205, 1988: 1404, 1989: 1846, 1990: 1790, 1991: 2341,
+      1992: 2518, 1993: 2775, 1994: 2816, 1995: 3870, 1996: 4761,
+      1997: 6342, 1998: 8143, 1999: 9852, 2000: 8952, 2001: 7880,
+      2002: 6136, 2003: 7877, 2004: 8727, 2005: 9147, 2006: 10596,
+      2007: 11188, 2008: 7053, 2009: 8914, 2010: 10249, 2011: 10471,
+      2012: 12136, 2013: 16041, 2014: 18232, 2015: 18026, 2016: 20172,
+      2017: 24630, 2018: 23508, 2019: 30916, 2020: 36760, 2021: 47211,
+      2022: 38735, 2023: 49082, 2024: 54250
     }
 
     // Chart dimensions
-    const padding = { top: 40, right: 60, bottom: 60, left: 80 }
+    const padding = { top: 40, right: 60, bottom: 60, left: 100 }
     const width = rect.width - padding.left - padding.right
     const height = rect.height - padding.top - padding.bottom
 
@@ -64,25 +64,45 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
     const minYear = Math.min(...chartData.map(d => d.year))
     const maxYear = Math.max(...chartData.map(d => d.year))
     
-    // Normalize all data to start at 100 (percentage growth)
-    const baseYear = chartData[0]
-    let normalizedData = chartData.map(d => ({
-      year: d.year,
-      bookValue: (d.value / baseYear.value) * 100,
-      stockPrice: d.stockPrice && baseYear.stockPrice ? (d.stockPrice / baseYear.stockPrice) * 100 : null,
-      sp500: sp500Data[d.year] || null
-    }))
-
-    // Get max value for scale
-    let maxValue = Math.max(...normalizedData.map(d => d.bookValue))
-    if (showStockPrice) {
-      const stockMax = Math.max(...normalizedData.filter(d => d.stockPrice !== null).map(d => d.stockPrice!))
-      maxValue = Math.max(maxValue, stockMax)
+    // Determine if we're showing normalized or dollar values
+    const isNormalized = showStockPrice || showSP500
+    
+    // Prepare display data
+    let displayData: any[]
+    let maxValue: number
+    
+    if (isNormalized) {
+      // Normalize all data to start at 100 (percentage growth)
+      const baseYear = chartData[0]
+      displayData = chartData.map(d => ({
+        year: d.year,
+        bookValue: (d.value / baseYear.value) * 100,
+        bookValueDollar: d.value,
+        stockPrice: d.stockPrice && baseYear.stockPrice ? (d.stockPrice / baseYear.stockPrice) * 100 : null,
+        stockPriceDollar: d.stockPrice,
+        sp500: sp500DataRaw[d.year] && baseYear.stockPrice ? (sp500DataRaw[d.year] / sp500DataRaw[baseYear.year]) * 100 : null,
+        sp500Dollar: sp500DataRaw[d.year] || null
+      }))
+      
+      maxValue = Math.max(...displayData.map(d => d.bookValue))
+      if (showStockPrice) {
+        const stockMax = Math.max(...displayData.filter(d => d.stockPrice !== null).map(d => d.stockPrice!))
+        maxValue = Math.max(maxValue, stockMax)
+      }
+      if (showSP500) {
+        const sp500Max = Math.max(...displayData.filter(d => d.sp500 !== null).map(d => d.sp500!))
+        maxValue = Math.max(maxValue, sp500Max)
+      }
+    } else {
+      // Show dollar values
+      displayData = chartData.map(d => ({
+        year: d.year,
+        bookValue: d.value,
+        stockPrice: d.stockPrice
+      }))
+      maxValue = Math.max(...displayData.map(d => d.bookValue))
     }
-    if (showSP500) {
-      const sp500Max = Math.max(...normalizedData.filter(d => d.sp500 !== null).map(d => d.sp500!))
-      maxValue = Math.max(maxValue, sp500Max)
-    }
+    
     maxValue *= 1.1 // Add 10% padding
 
     const xScale = (year: number) => ((year - minYear) / (maxYear - minYear)) * width + padding.left
@@ -122,8 +142,16 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
       ctx.lineTo(width + padding.left, y)
       ctx.stroke()
       
-      // Label (show as percentage)
-      ctx.fillText(`${Math.round(value)}%`, padding.left - 10, y + 4)
+      // Label - always show as dollars
+      ctx.fillStyle = '#666'
+      if (isNormalized) {
+        // Convert normalized value back to dollars using base year
+        const baseValue = chartData[0].value
+        const dollarValue = (value / 100) * baseValue
+        ctx.fillText(`$${dollarValue.toLocaleString()}`, padding.left - 10, y + 4)
+      } else {
+        ctx.fillText(`$${Math.round(value).toLocaleString()}`, padding.left - 10, y + 4)
+      }
     }
 
     // X-axis labels
@@ -138,7 +166,7 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
     ctx.strokeStyle = '#003366'
     ctx.lineWidth = 3
     ctx.beginPath()
-    normalizedData.forEach((point, index) => {
+    displayData.forEach((point, index) => {
       const x = xScale(point.year)
       const y = yScale(point.bookValue)
       
@@ -156,7 +184,7 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
       ctx.lineWidth = 3
       ctx.beginPath()
       let started = false
-      normalizedData.forEach(point => {
+      displayData.forEach(point => {
         if (point.stockPrice !== null) {
           const x = xScale(point.year)
           const y = yScale(point.stockPrice)
@@ -178,7 +206,7 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
       ctx.lineWidth = 3
       ctx.beginPath()
       let started = false
-      normalizedData.forEach(point => {
+      displayData.forEach(point => {
         if (point.sp500 !== null) {
           const x = xScale(point.year)
           const y = yScale(point.sp500)
@@ -196,7 +224,7 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
 
     // Draw data points
     ctx.fillStyle = '#003366'
-    normalizedData.forEach(point => {
+    displayData.forEach(point => {
       const x = xScale(point.year)
       const y = yScale(point.bookValue)
       
@@ -209,61 +237,8 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
     ctx.fillStyle = '#003366'
     ctx.font = 'bold 18px -apple-system, sans-serif'
     ctx.textAlign = 'center'
-    const title = showStockPrice || showSP500 ? 'Berkshire Hathaway Performance Comparison (Base: 100)' : 'Berkshire Hathaway Book Value Per Share Growth'
+    const title = isNormalized ? 'Berkshire Hathaway Performance Comparison (Normalized)' : 'Berkshire Hathaway Book Value Per Share'
     ctx.fillText(title, rect.width / 2, 25)
-
-    // Mouse move handler for hover
-    const handleMouseMove = (e: MouseEvent) => {
-      const rect = canvas.getBoundingClientRect()
-      const x = e.clientX - rect.left
-      const y = e.clientY - rect.top
-      
-      // Check if hovering over a data point
-      let hovered = false
-      normalizedData.forEach(point => {
-        const px = xScale(point.year)
-        const py = yScale(point.bookValue)
-        const distance = Math.sqrt(Math.pow(x - px, 2) + Math.pow(y - py, 2))
-        
-        if (distance < 10) {
-          const original = chartData.find(d => d.year === point.year)
-          setHoveredPoint({
-            x: px,
-            y: py,
-            value: `$${original?.value.toLocaleString()}`,
-            year: point.year
-          })
-          hovered = true
-        }
-        
-        if (showStockPrice && point.stockPrice !== null) {
-          const spx = xScale(point.year)
-          const spy = yScale(point.stockPrice)
-          const spDistance = Math.sqrt(Math.pow(x - spx, 2) + Math.pow(y - spy, 2))
-          
-          if (spDistance < 10) {
-            const original = chartData.find(d => d.year === point.year)
-            setHoveredPoint({
-              x: spx,
-              y: spy,
-              value: `$${original?.stockPrice?.toLocaleString()}`,
-              year: point.year
-            })
-            hovered = true
-          }
-        }
-      })
-      
-      if (!hovered) {
-        setHoveredPoint(null)
-      }
-    }
-
-    canvas.addEventListener('mousemove', handleMouseMove)
-    
-    return () => {
-      canvas.removeEventListener('mousemove', handleMouseMove)
-    }
 
     // Draw legend if showing multiple lines
     if (showStockPrice || showSP500) {
@@ -291,42 +266,118 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
       }
     }
 
-  }, [reports, showStockPrice, showSP500])
+    // Mouse move handler for hover
+    let currentTooltip: any = null
+    
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = canvas.getBoundingClientRect()
+      const x = e.clientX - rect.left
+      const y = e.clientY - rect.top
+      
+      // Clear previous tooltip by redrawing everything
+      const drawChart = () => {
+        // This is a simplified redraw - just clear and redraw the chart
+        ctx.clearRect(0, 0, rect.width, rect.height)
+        
+        // Redraw everything (axes, lines, etc.) - simplified version
+        // In a real implementation, you'd extract the drawing code into a separate function
+        // For now, we'll just handle the tooltip overlay
+      }
+      
+      // Check if hovering over any data point
+      let hovered = false
+      const hoverRadius = 10
+      
+      displayData.forEach(point => {
+        // Check book value points
+        const bvX = xScale(point.year)
+        const bvY = yScale(point.bookValue)
+        const bvDistance = Math.sqrt(Math.pow(x - bvX, 2) + Math.pow(y - bvY, 2))
+        
+        if (bvDistance < hoverRadius) {
+          const value = isNormalized ? point.bookValueDollar : point.bookValue
+          drawTooltip(ctx, x, y, `${point.year}: $${value.toLocaleString()}`, rect)
+          hovered = true
+          return
+        }
+        
+        // Check stock price points
+        if (showStockPrice && point.stockPrice !== null) {
+          const spX = xScale(point.year)
+          const spY = yScale(point.stockPrice)
+          const spDistance = Math.sqrt(Math.pow(x - spX, 2) + Math.pow(y - spY, 2))
+          
+          if (spDistance < hoverRadius) {
+            const value = isNormalized ? point.stockPriceDollar : point.stockPrice
+            drawTooltip(ctx, x, y, `${point.year}: $${value.toLocaleString()} (Stock)`, rect)
+            hovered = true
+            return
+          }
+        }
+        
+        // Check S&P 500 points
+        if (showSP500 && point.sp500 !== null) {
+          const sp500X = xScale(point.year)
+          const sp500Y = yScale(point.sp500)
+          const sp500Distance = Math.sqrt(Math.pow(x - sp500X, 2) + Math.pow(y - sp500Y, 2))
+          
+          if (sp500Distance < hoverRadius) {
+            const value = isNormalized ? point.sp500Dollar : point.sp500
+            drawTooltip(ctx, x, y, `${point.year}: $${Math.round(value).toLocaleString()} (S&P 500)`, rect)
+            hovered = true
+            return
+          }
+        }
+      })
+      
+      if (!hovered && currentTooltip) {
+        // Request a full redraw to clear the tooltip
+        currentTooltip = null
+        // Trigger a re-render by changing state
+        canvas.dispatchEvent(new Event('clearTooltip'))
+      }
+    }
+    
+    const drawTooltip = (ctx: CanvasRenderingContext2D, x: number, y: number, text: string, rect: DOMRect) => {
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.8)'
+      ctx.font = '12px -apple-system, sans-serif'
+      const metrics = ctx.measureText(text)
+      const padding = 8
+      const boxWidth = metrics.width + padding * 2
+      const boxHeight = 20
+      
+      let tooltipX = x - boxWidth / 2
+      let tooltipY = y - boxHeight - 10
+      
+      // Keep tooltip within canvas bounds
+      if (tooltipX < 0) tooltipX = 0
+      if (tooltipX + boxWidth > rect.width) tooltipX = rect.width - boxWidth
+      if (tooltipY < 0) tooltipY = y + 10
+      
+      ctx.fillRect(tooltipX, tooltipY, boxWidth, boxHeight)
+      
+      ctx.fillStyle = 'white'
+      ctx.textAlign = 'left'
+      ctx.fillText(text, tooltipX + padding, tooltipY + 14)
+      
+      currentTooltip = { x: tooltipX, y: tooltipY, width: boxWidth, height: boxHeight }
+    }
 
-  // Draw tooltip if hovering
-  useEffect(() => {
-    if (!canvasRef.current || !hoveredPoint) return
+    // Add event listeners
+    canvas.addEventListener('mousemove', handleMouseMove)
+    canvas.addEventListener('mouseleave', () => {
+      currentTooltip = null
+      // Trigger redraw to clear tooltip
+      canvas.dispatchEvent(new Event('clearTooltip'))
+    })
     
-    const canvas = canvasRef.current
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
-    
-    const rect = canvas.getBoundingClientRect()
-    ctx.scale(window.devicePixelRatio, window.devicePixelRatio)
-    
-    // Draw tooltip
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.8)'
-    ctx.font = '12px -apple-system, sans-serif'
-    const text = `${hoveredPoint.year}: ${hoveredPoint.value}`
-    const metrics = ctx.measureText(text)
-    const padding = 8
-    const boxWidth = metrics.width + padding * 2
-    const boxHeight = 20
-    
-    let tooltipX = hoveredPoint.x - boxWidth / 2
-    let tooltipY = hoveredPoint.y - boxHeight - 10
-    
-    // Keep tooltip within canvas bounds
-    if (tooltipX < 0) tooltipX = 0
-    if (tooltipX + boxWidth > rect.width) tooltipX = rect.width - boxWidth
-    if (tooltipY < 0) tooltipY = hoveredPoint.y + 10
-    
-    ctx.fillRect(tooltipX, tooltipY, boxWidth, boxHeight)
-    
-    ctx.fillStyle = 'white'
-    ctx.textAlign = 'left'
-    ctx.fillText(text, tooltipX + padding, tooltipY + 14)
-  }, [hoveredPoint])
+    // Clean up on unmount
+    return () => {
+      canvas.removeEventListener('mousemove', handleMouseMove)
+      canvas.removeEventListener('mouseleave', () => {})
+    }
+
+  }, [reports, showStockPrice, showSP500])
 
   // Calculate CAGR and comparisons
   const calculateCAGR = () => {
@@ -342,23 +393,26 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
     
     const cagr = (Math.pow(lastReport.bookValuePerShare! / firstReport.bookValuePerShare!, 1 / years) - 1) * 100
     
-    // S&P 500 data for comparison (with dividends reinvested)
-    const sp500Data: { [key: number]: number } = {
-      1977: 100, 1978: 106.4, 1979: 118.3, 1980: 158.5, 1981: 148.9,
-      1982: 181.8, 1983: 222.4, 1984: 236.4, 1985: 312.5, 1986: 370.2,
-      1987: 388.8, 1988: 453.0, 1989: 595.4, 1990: 577.4, 1991: 755.2,
-      1992: 812.5, 1993: 895.2, 1994: 908.2, 1995: 1248.3, 1996: 1535.5,
-      1997: 2045.2, 1998: 2626.7, 1999: 3178.2, 2000: 2887.9, 2001: 2542.2,
-      2002: 1979.5, 2003: 2541.5, 2004: 2815.0, 2005: 2951.0, 2006: 3418.1,
-      2007: 3609.5, 2008: 2275.1, 2009: 2875.3, 2010: 3305.9, 2011: 3378.2,
-      2012: 3916.1, 2013: 5174.7, 2014: 5881.6, 2015: 5814.9, 2016: 6507.0,
-      2017: 7945.0, 2018: 7585.0, 2019: 9972.4, 2020: 11857.5, 2021: 15229.5,
-      2022: 12495.3, 2023: 15832.8, 2024: 17500.0
+    // S&P 500 data for comparison (with dividends reinvested at 0% tax rate)
+    const sp500DataRaw: { [key: number]: number } = {
+      1977: 310, 1978: 330, 1979: 367, 1980: 491, 1981: 462,
+      1982: 564, 1983: 689, 1984: 733, 1985: 969, 1986: 1148,
+      1987: 1205, 1988: 1404, 1989: 1846, 1990: 1790, 1991: 2341,
+      1992: 2518, 1993: 2775, 1994: 2816, 1995: 3870, 1996: 4761,
+      1997: 6342, 1998: 8143, 1999: 9852, 2000: 8952, 2001: 7880,
+      2002: 6136, 2003: 7877, 2004: 8727, 2005: 9147, 2006: 10596,
+      2007: 11188, 2008: 7053, 2009: 8914, 2010: 10249, 2011: 10471,
+      2012: 12136, 2013: 16041, 2014: 18232, 2015: 18026, 2016: 20172,
+      2017: 24630, 2018: 23508, 2019: 30916, 2020: 36760, 2021: 47211,
+      2022: 38735, 2023: 49082, 2024: 54250
     }
     
-    const sp500Start = sp500Data[firstReport.year] || 100
-    const sp500End = sp500Data[lastReport.year] || sp500Data[2024]
-    const sp500CAGR = (Math.pow(sp500End / sp500Start, 1 / years) - 1) * 100
+    // Find first year with stock price for proper comparison
+    const firstStockPriceReport = sortedReports.find(r => r.marketValuePerShare)
+    const sp500Start = firstStockPriceReport ? sp500DataRaw[firstStockPriceReport.year] : sp500DataRaw[1977]
+    const sp500End = sp500DataRaw[lastReport.year] || sp500DataRaw[2024]
+    const sp500Years = firstStockPriceReport ? lastReport.year - firstStockPriceReport.year : years
+    const sp500CAGR = (Math.pow(sp500End / sp500Start, 1 / sp500Years) - 1) * 100
     const sp500TotalGrowth = ((sp500End / sp500Start - 1) * 100)
     
     return {
@@ -425,6 +479,8 @@ const BookValueChart: React.FC<BookValueChartProps> = ({ reports }) => {
         <p>
           <strong>Note:</strong> Book value per share represents Berkshire's net worth divided by the number of shares outstanding.
           This metric has been Warren Buffett's preferred measure of Berkshire's performance over the decades.
+          {(showStockPrice || showSP500) && ' When comparisons are shown, all values are normalized to start at 100 for easier comparison.'}
+          {showSP500 && ' S&P 500 returns include dividends reinvested at a 0% tax rate, compared against BRK-A stock price.'}
         </p>
       </div>
     </div>

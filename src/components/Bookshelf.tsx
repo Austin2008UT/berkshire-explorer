@@ -20,7 +20,7 @@ const books: Book[] = [
     year: 2008,
     description: 'The most comprehensive biography of Warren Buffett, written with his cooperation.',
     amazonUrl: 'https://www.amazon.com/Snowball-Warren-Buffett-Business-Life/dp/0553384611',
-    coverImage: 'https://m.media-amazon.com/images/I/81eI3jNr8LL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/snowball.jpg',
     category: 'biography'
   },
   {
@@ -30,7 +30,7 @@ const books: Book[] = [
     year: 2012,
     description: 'A collection of Fortune articles about Warren Buffett spanning over 40 years.',
     amazonUrl: 'https://www.amazon.com/Tap-Dancing-Work-Warren-Practically/dp/1591845734',
-    coverImage: 'https://m.media-amazon.com/images/I/71OXbNm4Z9L._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/tap-dancing.jpg',
     category: 'biography'
   },
   {
@@ -40,7 +40,7 @@ const books: Book[] = [
     year: 2005,
     description: 'A collection of Charlie Munger\'s speeches and writings on life, business, and investing.',
     amazonUrl: 'https://www.amazon.com/Poor-Charlies-Almanack-Charles-Expanded/dp/1578645018',
-    coverImage: 'https://m.media-amazon.com/images/I/91uwI2QlPjL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/poor-charlie.jpg',
     category: 'investing'
   },
   {
@@ -50,7 +50,7 @@ const books: Book[] = [
     year: 1997,
     description: 'Selected letters to shareholders organized by topic, providing insight into Buffett\'s investment philosophy.',
     amazonUrl: 'https://www.amazon.com/Essays-Warren-Buffett-Lessons-Corporate/dp/1611637589',
-    coverImage: 'https://m.media-amazon.com/images/I/71dKQ3p3KjL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/buffett-essays.jpg',
     category: 'letters'
   },
   {
@@ -60,7 +60,7 @@ const books: Book[] = [
     year: 1949,
     description: 'The definitive book on value investing by Warren Buffett\'s mentor.',
     amazonUrl: 'https://www.amazon.com/Intelligent-Investor-Definitive-Investing-Essentials/dp/0060555661',
-    coverImage: 'https://m.media-amazon.com/images/I/91+t0Di07FL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/intelligent-investor.jpg',
     category: 'investing'
   },
   {
@@ -70,7 +70,7 @@ const books: Book[] = [
     year: 1934,
     description: 'The timeless classic that founded the profession of security analysis.',
     amazonUrl: 'https://www.amazon.com/Security-Analysis-Foreword-Buffett-Editions/dp/0071592539',
-    coverImage: 'https://m.media-amazon.com/images/I/81PRFEtJNkL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/security-analysis.jpg',
     category: 'investing'
   },
   {
@@ -80,7 +80,7 @@ const books: Book[] = [
     year: 1994,
     description: 'An in-depth look at Warren Buffett\'s investment strategies and philosophy.',
     amazonUrl: 'https://www.amazon.com/Warren-Buffett-Way-Robert-Hagstrom/dp/1118503252',
-    coverImage: 'https://m.media-amazon.com/images/I/71qH4JscINL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/buffett-way.jpg',
     category: 'investing'
   },
   {
@@ -90,7 +90,7 @@ const books: Book[] = [
     year: 2014,
     description: 'Explores how Berkshire Hathaway\'s culture will endure beyond Warren Buffett.',
     amazonUrl: 'https://www.amazon.com/Berkshire-Beyond-Buffett-Enduring-Values/dp/0231170041',
-    coverImage: 'https://m.media-amazon.com/images/I/71z6H5LHQHL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/berkshire-beyond.jpg',
     category: 'history'
   },
   {
@@ -100,7 +100,7 @@ const books: Book[] = [
     year: 2008,
     description: 'Learn how to read financial statements the Warren Buffett way.',
     amazonUrl: 'https://www.amazon.com/Warren-Buffett-Interpretation-Financial-Statements/dp/1849833192',
-    coverImage: 'https://m.media-amazon.com/images/I/71YShkr9SQL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/warren-buffett-ceo.jpg',
     category: 'investing'
   },
   {
@@ -110,7 +110,7 @@ const books: Book[] = [
     year: 2000,
     description: 'The definitive biography of Charlie Munger, Warren Buffett\'s partner.',
     amazonUrl: 'https://www.amazon.com/Damn-Right-Berkshire-Hathaway-Billionaire/dp/0471446912',
-    coverImage: 'https://m.media-amazon.com/images/I/71kxgD37O2L._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/damn-right.jpg',
     category: 'biography'
   },
   {
@@ -120,7 +120,7 @@ const books: Book[] = [
     year: 2017,
     description: 'A compilation of quotes from Charlie Munger on life and business.',
     amazonUrl: 'https://www.amazon.com/Tao-Charlie-Munger-Compilation-Statements/dp/1501153331',
-    coverImage: 'https://m.media-amazon.com/images/I/61mUYg0SKHL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/tao-munger.jpg',
     category: 'biography'
   },
   {
@@ -130,7 +130,7 @@ const books: Book[] = [
     year: 2017,
     description: '30 years of lessons learned from Warren Buffett & Charlie Munger at the annual shareholders meeting.',
     amazonUrl: 'https://www.amazon.com/University-Berkshire-Hathaway-Lessons-Shareholders/dp/0998406279',
-    coverImage: 'https://m.media-amazon.com/images/I/71K5gqZ6XbL._AC_UF1000,1000_QL80_.jpg',
+    coverImage: '/book-covers/university-berkshire.jpg',
     category: 'history'
   }
 ]
@@ -172,8 +172,15 @@ const Bookshelf: React.FC = () => {
       <div className="books-grid">
         {filteredBooks.map(book => (
           <div key={book.id} className="book-card">
-            <div className="book-cover">
-              <img src={book.coverImage} alt={book.title} loading="lazy" />
+            <div className="book-cover" data-title={book.title}>
+              <img 
+                src={book.coverImage} 
+                alt={book.title} 
+                loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none'
+                }}
+              />
             </div>
             <div className="book-info">
               <h3 className="book-title">{book.title}</h3>
