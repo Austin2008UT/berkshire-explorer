@@ -20,7 +20,7 @@ const books: Book[] = [
     year: 2008,
     description: 'The most comprehensive biography of Warren Buffett, written with his cooperation.',
     amazonUrl: 'https://www.amazon.com/Snowball-Warren-Buffett-Business-Life/dp/0553384611',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/0553384611-L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/9780553384611-L.jpg',
     category: 'biography'
   },
   {
@@ -120,7 +120,7 @@ const books: Book[] = [
     year: 2017,
     description: 'A compilation of quotes from Charlie Munger on life and business.',
     amazonUrl: 'https://www.amazon.com/Tao-Charlie-Munger-Compilation-Statements/dp/1501153331',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/1501153331-L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/9781501153334-L.jpg',
     category: 'biography'
   },
   {
@@ -130,7 +130,7 @@ const books: Book[] = [
     year: 2017,
     description: '30 years of lessons learned from Warren Buffett & Charlie Munger at the annual shareholders meeting.',
     amazonUrl: 'https://www.amazon.com/University-Berkshire-Hathaway-Lessons-Shareholders/dp/0998406279',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/0998406279-L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/9780998406275-L.jpg',
     category: 'history'
   }
 ]
