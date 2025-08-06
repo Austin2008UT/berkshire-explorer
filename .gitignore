@@ -43,3 +43,8 @@ Thumbs.db
 *.sqlite
 *.sqlite3
 *.db
+
+# Development logs
+dev-server.log
+dev.log
+test.html
