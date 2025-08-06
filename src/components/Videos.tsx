@@ -14,9 +14,9 @@ interface Video {
 const videos: Video[] = [
   {
     id: 'hbo-buffett',
-    title: 'Warren Buffett - HBO Documentary',
-    description: 'Becoming Warren Buffett - An intimate look at Buffett\'s life and philosophy',
-    youtubeId: 'PB5krSvFAPY',
+    title: 'Becoming Warren Buffett - HBO Documentary',
+    description: 'An intimate look at Buffett\'s life, career, and philosophy',
+    youtubeId: 'Lr_fvdHMPaM',
     speaker: 'Buffett',
     year: 2017,
     category: 'documentary'
@@ -31,93 +31,93 @@ const videos: Video[] = [
     category: 'speech'
   },
   {
-    id: 'buffett-2023-meeting',
-    title: '2023 Berkshire Hathaway Annual Meeting',
-    description: 'Full recording of the annual shareholders meeting',
-    youtubeId: 'lE8lbHvPiAM',
-    speaker: 'Both',
-    year: 2023,
+    id: 'buffett-2024-meeting',
+    title: '2024 Berkshire Hathaway Annual Meeting',
+    description: 'Full recording of the most recent shareholders meeting',
+    youtubeId: 'Aj89vGUqVLo',
+    speaker: 'Buffett',
+    year: 2024,
     category: 'annual-meeting'
   },
   {
-    id: 'buffett-advice',
-    title: 'Warren Buffett\'s Investment Advice',
-    description: 'Essential investment principles from the Oracle of Omaha',
-    youtubeId: 'eCxb9wbZSlY',
+    id: 'buffett-cnbc-interview',
+    title: 'Warren Buffett Interview with Becky Quick',
+    description: 'Wide-ranging interview on markets, investing, and life',
+    youtubeId: 'fE1O8xgsKlU',
     speaker: 'Buffett',
-    year: 2022,
+    year: 2023,
     category: 'interview'
   },
   {
-    id: 'munger-wisdom',
-    title: 'Charlie Munger - The Complete Investor',
-    description: 'Charlie Munger talks at USC Business School',
-    youtubeId: 'Uw7fqGRqjms',
+    id: 'munger-usc',
+    title: 'Charlie Munger USC Business School Speech',
+    description: 'Munger on the art of stock picking and worldly wisdom',
+    youtubeId: '8OgxDW9Tn7E',
     speaker: 'Munger',
     year: 1994,
     category: 'speech'
   },
   {
-    id: 'buffett-value',
-    title: 'Warren Buffett Explains Value Investing',
-    description: 'Buffett explains his approach to finding undervalued companies',
-    youtubeId: 'n7LH8pDmvlQ',
+    id: 'buffett-investing-basics',
+    title: 'Warren Buffett on Value Investing',
+    description: 'Buffett explains his investment philosophy and approach',
+    youtubeId: 'VpX6XwwmIVg',
     speaker: 'Buffett',
-    year: 2019,
+    year: 2020,
     category: 'interview'
   },
   {
-    id: 'munger-interview',
-    title: 'Charlie Munger Interview - Acquired Podcast',
-    description: 'Munger discusses investing philosophy and life lessons',
-    youtubeId: '53vXIbsJqBo',
+    id: 'munger-djco-2023',
+    title: 'Charlie Munger - Daily Journal Annual Meeting 2023',
+    description: 'Munger\'s final Daily Journal meeting with Q&A',
+    youtubeId: 'qMwDuzGhRbk',
     speaker: 'Munger',
     year: 2023,
-    category: 'interview'
+    category: 'annual-meeting'
   },
   {
     id: 'buffett-florida',
     title: 'Warren Buffett MBA Talk - University of Florida',
     description: 'Classic Buffett speech on investing and business principles',
-    youtubeId: '2MHIcabnjrA',
+    youtubeId: '2a9Lx9J8uSs',
     speaker: 'Buffett',
     year: 1998,
     category: 'speech'
   },
   {
-    id: 'buffett-2022-meeting',
-    title: '2022 Berkshire Hathaway Annual Meeting',
-    description: 'Full recording of the 2022 shareholders meeting',
-    youtubeId: '9Z-wvDvM1SI',
+    id: 'buffett-2023-meeting',
+    title: '2023 Berkshire Hathaway Annual Meeting',
+    description: 'Full recording of the 2023 shareholders meeting',
+    youtubeId: 'qvEcWJaE-6g',
     speaker: 'Both',
-    year: 2022,
+    year: 2023,
     category: 'annual-meeting'
   },
   {
-    id: 'munger-daily-journal',
-    title: 'Charlie Munger at Daily Journal Meeting 2022',
-    description: 'Munger\'s insights on investing and current events',
-    youtubeId: 'L3XJRS3M9nk',
+    id: 'munger-caltech',
+    title: 'Charlie Munger - Caltech Distinguished Lecture',
+    description: 'Munger on mental models and decision making',
+    youtubeId: '7dO6XuCJdNM',
     speaker: 'Munger',
-    year: 2022,
-    category: 'annual-meeting'
+    year: 2008,
+    category: 'speech'
   },
   {
-    id: 'buffett-principles',
-    title: 'Warren Buffett - Advice for Entrepreneurs',
-    description: 'Key principles that guided Buffett\'s investment career',
-    youtubeId: 'z_vHJzTqXGQ',
+    id: 'buffett-advice-young',
+    title: 'Warren Buffett\'s Advice to Young People',
+    description: 'Life and career advice for the next generation',
+    youtubeId: 'S8A0w_Ol4oU',
     speaker: 'Buffett',
-    year: 2018,
+    year: 2019,
     category: 'interview'
   },
   {
-    id: 'buffett-economy',
-    title: 'Warren Buffett Interview - CNBC',
-    description: 'Buffett discusses investing, economy and life lessons',
-    youtubeId: 'DYgJBpDRlIw',
+    id: 'buffett-gates',
+    title: 'Warren Buffett and Bill Gates - Columbia Business School',
+    description: 'Two billionaires discuss business, philanthropy, and friendship',
+    youtubeId: 'WaKBqAZbCxw',
     speaker: 'Buffett',
-    year: 2021,
+    year: 2017,
     category: 'interview'
   }
 ]
