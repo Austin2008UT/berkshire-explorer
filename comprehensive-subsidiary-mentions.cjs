@@ -1379,4 +1379,4 @@ const comprehensiveSubsidiaryMentions = {
   ]
 };
 
-export default comprehensiveSubsidiaryMentions;
+module.exports = { default: comprehensiveSubsidiaryMentions };
