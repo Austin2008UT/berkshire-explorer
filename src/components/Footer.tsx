@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css'
 
 const Footer: React.FC = () => {
-  const version = 'v1.0.0'
+  const version = 'v0.04'
   // Use import.meta.env for Vite instead of process.env
   const commitHash = import.meta.env.VITE_GIT_SHA || 'main'
   const shortHash = commitHash.substring(0, 7)
