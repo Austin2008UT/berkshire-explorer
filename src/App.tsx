@@ -8,11 +8,12 @@ import SECFilings from './components/SECFilings'
 import Bookshelf from './components/Bookshelf'
 import Videos from './components/Videos'
 import Quotes from './components/Quotes'
+import About from './components/About'
 import Footer from './components/Footer'
 import { Report, Subsidiary } from './types'
 
 function App() {
-  const [activeView, setActiveView] = useState<'reports' | 'chart' | 'subsidiaries' | 'sec' | 'bookshelf' | 'videos' | 'quotes'>('reports')
+  const [activeView, setActiveView] = useState<'reports' | 'chart' | 'subsidiaries' | 'sec' | 'bookshelf' | 'videos' | 'quotes' | 'about'>('reports')
   const [reports, setReports] = useState<Report[]>([])
   const [subsidiaries, setSubsidiaries] = useState<Subsidiary[]>([])
   const [loading, setLoading] = useState(true)
@@ -100,6 +101,12 @@ function App() {
         >
           Quotes
         </button>
+        <button 
+          className={activeView === 'about' ? 'active' : ''}
+          onClick={() => setActiveView('about')}
+        >
+          About
+        </button>
       </nav>
 
       <main className="main-content">
@@ -120,6 +127,7 @@ function App() {
             {activeView === 'bookshelf' && <Bookshelf />}
             {activeView === 'videos' && <Videos />}
             {activeView === 'quotes' && <Quotes />}
+            {activeView === 'about' && <About />}
           </>
         )}
       </main>

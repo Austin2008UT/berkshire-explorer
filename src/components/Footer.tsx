@@ -20,15 +20,9 @@ const Footer: React.FC = () => {
           <a href="mailto:william@trifecta.vc">william@trifecta.vc</a>
         </p>
         <div className="footer-version">
-          <a 
-            href={`https://github.com/Austin2008UT/berkshire-explorer/commit/${commitHash}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="version-link"
-            title="View source on GitHub"
-          >
-            {version}+{shortHash}
-          </a>
+          <span className="version-link">
+            {version}
+          </span>
           <span className="version-separator">•</span>
           <span className="build-info">
             Built with ☕ and compound interest

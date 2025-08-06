@@ -5,8 +5,8 @@ const mockReports = [
     year: 2024,
     title: 'Berkshire Hathaway Inc. 2024 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2024.pdf', // 2024 letter not yet available
-    bookValuePerShare: 415000, // Estimated
-    marketValuePerShare: 585000, // Estimated
+    bookValuePerShare: 420000, // Estimated
+    marketValuePerShare: 625000, // Estimated
     datePublished: '2025-02-22'
   },
   {
@@ -14,7 +14,7 @@ const mockReports = [
     year: 2023,
     title: 'Berkshire Hathaway Inc. 2023 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2023.pdf',
-    bookValuePerShare: 378030,
+    bookValuePerShare: 378094,
     marketValuePerShare: 546869,
     datePublished: '2024-02-24'
   },
@@ -23,7 +23,7 @@ const mockReports = [
     year: 2022,
     title: 'Berkshire Hathaway Inc. 2022 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2022.pdf',
-    bookValuePerShare: 353465,
+    bookValuePerShare: 328849,
     marketValuePerShare: 468626,
     datePublished: '2023-02-25'
   },
@@ -32,7 +32,7 @@ const mockReports = [
     year: 2021,
     title: 'Berkshire Hathaway Inc. 2021 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2021.pdf',
-    bookValuePerShare: 326967,
+    bookValuePerShare: 308669,
     marketValuePerShare: 455830,
     datePublished: '2022-02-26'
   },
@@ -41,7 +41,7 @@ const mockReports = [
     year: 2020,
     title: 'Berkshire Hathaway Inc. 2020 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2020.pdf',
-    bookValuePerShare: 287111,
+    bookValuePerShare: 251001,
     marketValuePerShare: 347815,
     datePublished: '2021-02-27'
   },
@@ -50,7 +50,7 @@ const mockReports = [
     year: 2019,
     title: 'Berkshire Hathaway Inc. 2019 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2019.pdf',
-    bookValuePerShare: 261417,
+    bookValuePerShare: 228712,
     marketValuePerShare: 339590,
     datePublished: '2020-02-22'
   },
@@ -59,7 +59,7 @@ const mockReports = [
     year: 2018,
     title: 'Berkshire Hathaway Inc. 2018 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2018.pdf',
-    bookValuePerShare: 212503,
+    bookValuePerShare: 172108,
     marketValuePerShare: 306000,
     datePublished: '2019-02-23'
   },
@@ -68,8 +68,8 @@ const mockReports = [
     year: 2017,
     title: 'Berkshire Hathaway Inc. 2017 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2017.pdf',
-    bookValuePerShare: 211750,
-    marketValuePerShare: 304180,
+    bookValuePerShare: 172484,
+    marketValuePerShare: 296000,
     datePublished: '2018-02-24'
   },
   {
@@ -77,7 +77,7 @@ const mockReports = [
     year: 2016,
     title: 'Berkshire Hathaway Inc. 2016 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2016.pdf',
-    bookValuePerShare: 172108,
+    bookValuePerShare: 163783,
     marketValuePerShare: 244121,
     datePublished: '2017-02-25'
   },
@@ -86,7 +86,7 @@ const mockReports = [
     year: 2015,
     title: 'Berkshire Hathaway Inc. 2015 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2015.pdf',
-    bookValuePerShare: 155501,
+    bookValuePerShare: 146186,
     marketValuePerShare: 197800,
     datePublished: '2016-02-27'
   },
@@ -95,7 +95,7 @@ const mockReports = [
     year: 2014,
     title: 'Berkshire Hathaway Inc. 2014 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2014.pdf',
-    bookValuePerShare: 146186,
+    bookValuePerShare: 134973,
     marketValuePerShare: 226000,
     datePublished: '2015-02-28'
   },
@@ -104,7 +104,7 @@ const mockReports = [
     year: 2013,
     title: 'Berkshire Hathaway Inc. 2013 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2013.pdf',
-    bookValuePerShare: 134973,
+    bookValuePerShare: 114214,
     marketValuePerShare: 177900,
     datePublished: '2014-03-01'
   },
@@ -113,7 +113,7 @@ const mockReports = [
     year: 2012,
     title: 'Berkshire Hathaway Inc. 2012 Annual Report',
     fileUrl: '/pdfs/annual-reports/berkshire-2012.pdf',
-    bookValuePerShare: 114214,
+    bookValuePerShare: 99860,
     marketValuePerShare: 134060,
     datePublished: '2013-03-01'
   },
@@ -229,7 +229,7 @@ const mockReports = [
     id: '1999',
     year: 1999,
     title: 'Berkshire Hathaway Inc. 1999 Annual Report',
-    fileUrl: 'https://www.berkshirehathaway.com/letters/1999.html',
+    fileUrl: '/pdfs/annual-reports/berkshire-1999.pdf',
     bookValuePerShare: 37987,
     marketValuePerShare: 56100,
     datePublished: '2000-03-01'

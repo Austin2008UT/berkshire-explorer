@@ -204,7 +204,7 @@ const Quotes: React.FC = () => {
     { id: 'investing', label: 'Investing' },
     { id: 'business', label: 'Business' },
     { id: 'life', label: 'Life' },
-    { id: 'wisdom', label: 'Wisdom' }
+    { id: 'wisdom', label: 'Worldly Wisdom' }
   ]
 
   const authors = [
@@ -267,7 +267,7 @@ const Quotes: React.FC = () => {
               </div>
             </div>
             <div className={`category-tag ${quote.category}`}>
-              {quote.category}
+              {quote.category === 'wisdom' ? 'Worldly Wisdom' : quote.category}
             </div>
           </div>
         ))}

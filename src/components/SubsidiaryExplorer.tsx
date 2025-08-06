@@ -27,7 +27,7 @@ const SubsidiaryExplorer: React.FC<SubsidiaryExplorerProps> = ({ subsidiaries })
       <div className="explorer-header">
         <h2>Berkshire Hathaway Subsidiaries</h2>
         <p className="subtitle">
-          Explore the diverse portfolio of companies that make up Berkshire Hathaway
+          Explore the diverse portfolio of {subsidiaries.length} companies that make up Berkshire Hathaway
         </p>
       </div>
 
@@ -50,6 +50,12 @@ const SubsidiaryExplorer: React.FC<SubsidiaryExplorerProps> = ({ subsidiaries })
           ))}
         </select>
       </div>
+
+      {searchTerm || industryFilter !== 'all' ? (
+        <div className="filter-results">
+          Showing {filteredSubsidiaries.length} of {subsidiaries.length} subsidiaries
+        </div>
+      ) : null}
 
       <div className="subsidiaries-grid">
         {sortedSubsidiaries.map(subsidiary => (
