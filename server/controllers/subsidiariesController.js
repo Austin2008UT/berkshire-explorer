@@ -411,6 +411,34 @@ const mockSubsidiaries = [
     description: 'America\'s largest builder of manufactured, modular, and site-built homes.',
     mentions: [
       {
+        reportYear: 2003,
+        reportId: '2003',
+        text: 'We acquired Clayton Homes',
+        context: 'We purchased Clayton Homes, America\'s largest producer of manufactured homes. Kevin Clayton will continue to run the business.',
+        pageNumber: 5
+      },
+      {
+        reportYear: 2009,
+        reportId: '2009',
+        text: 'Clayton was the only major home builder to remain profitable',
+        context: 'While competitors struggled or failed during the housing crisis, Clayton Homes remained profitable every quarter, a testament to Kevin Clayton\'s conservative management.',
+        pageNumber: 17
+      },
+      {
+        reportYear: 2015,
+        reportId: '2015',
+        text: 'Clayton built 34,397 homes',
+        context: 'Clayton Homes built 34,397 homes, about 45% of the manufactured homes sold in the U.S. The company also expanded into site-built homes.',
+        pageNumber: 25
+      },
+      {
+        reportYear: 2018,
+        reportId: '2018',
+        text: 'Clayton opened new manufacturing facilities',
+        context: 'Clayton Homes opened two new manufacturing facilities and expanded its site-built operations, now building homes in multiple price points.',
+        pageNumber: 53
+      },
+      {
         reportYear: 2023,
         reportId: '2023',
         text: 'Clayton Homes built 60,000 homes in 2023...',
@@ -778,7 +806,43 @@ const mockSubsidiaries = [
     industry: 'Retail - Jewelry',
     acquisitionYear: 1989,
     description: 'Fine jewelry and gift retailer based in Omaha, Nebraska.',
-    mentions: []
+    mentions: [
+      {
+        reportYear: 1989,
+        reportId: '1989',
+        text: 'We purchased 80% of Borsheims',
+        context: 'We acquired 80% of Borsheims, one of the country\'s largest jewelry stores, from the Friedman family.',
+        pageNumber: 17
+      },
+      {
+        reportYear: 1995,
+        reportId: '1995',
+        text: 'Borsheims had record sales',
+        context: 'Ike Friedman continues to run Borsheims brilliantly. Sales reached another record, and the store\'s reputation for value and service continues to spread.',
+        pageNumber: 13
+      },
+      {
+        reportYear: 2000,
+        reportId: '2000',
+        text: 'Borsheims sales exceeded $100 million',
+        context: 'Borsheims achieved sales of over $100 million for the first time, with particularly strong growth in engagement rings and watches.',
+        pageNumber: 67
+      },
+      {
+        reportYear: 2009,
+        reportId: '2009',
+        text: 'Borsheims navigated the recession well',
+        context: 'Despite the severe recession impacting luxury goods, Susan Jacques led Borsheims through the downturn while maintaining our reputation for exceptional value.',
+        pageNumber: 75
+      },
+      {
+        reportYear: 2019,
+        reportId: '2019',
+        text: 'Borsheims expanded its online presence',
+        context: 'Karen Goracke has modernized Borsheims\' operations, significantly expanding online sales while maintaining the personal service that distinguishes the store.',
+        pageNumber: 26
+      }
+    ]
   },
   {
     id: 'helzberg',
