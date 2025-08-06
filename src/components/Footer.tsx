@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
             className="license-link"
             title="Licensed under MIT"
           >
-            License: MIT (do {'{ what.you.want() }'} while (credit.given))
+            License: MIT
           </a>
         </div>
       </div>
