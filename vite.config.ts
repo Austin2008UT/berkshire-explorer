@@ -17,6 +17,6 @@ export default defineConfig({
     }
   },
   define: {
-    'process.env.REACT_APP_GIT_SHA': JSON.stringify(process.env.GIT_SHA || 'main')
+    'import.meta.env.VITE_GIT_SHA': JSON.stringify(process.env.GIT_SHA || 'main')
   }
 })

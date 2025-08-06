@@ -3,8 +3,8 @@ import './Footer.css'
 
 const Footer: React.FC = () => {
   const version = 'v1.0.0'
-  // @ts-ignore - Vite defines this at build time
-  const commitHash = typeof process !== 'undefined' && process.env?.REACT_APP_GIT_SHA || 'main'
+  // Use import.meta.env for Vite instead of process.env
+  const commitHash = import.meta.env.VITE_GIT_SHA || 'main'
   const shortHash = commitHash.substring(0, 7)
   
   return (
