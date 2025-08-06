@@ -31,6 +31,9 @@ app.use('/api/reports', reportsRouter)
 app.use('/api/subsidiaries', subsidiariesRouter)
 app.use('/api/sec-filings', secFilingsRouter)
 
+// Serve PDFs from public directory
+app.use('/pdfs', express.static(path.join(__dirname, '../public/pdfs')))
+
 // Serve static files in production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../dist')))
