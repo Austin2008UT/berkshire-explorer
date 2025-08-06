@@ -34,6 +34,8 @@
 
 .footer-contact a:hover {
   text-decoration: underline;
+  color: white;
+  opacity: 1;
 }
 
 .footer-version {
