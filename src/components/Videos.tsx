@@ -15,8 +15,8 @@ const videos: Video[] = [
   {
     id: 'hbo-buffett',
     title: 'Becoming Warren Buffett - HBO Documentary',
-    description: 'An intimate look at Buffett\'s life, career, and philosophy',
-    youtubeId: 'Lr_fvdHMPaM',
+    description: 'HBO documentary trailer - an intimate look at Buffett\'s life and philosophy',
+    youtubeId: 'jXg0V2tyhXo',
     speaker: 'Buffett',
     year: 2017,
     category: 'documentary'
@@ -34,7 +34,7 @@ const videos: Video[] = [
     id: 'buffett-2024-meeting',
     title: '2024 Berkshire Hathaway Annual Meeting',
     description: 'Full recording of the most recent shareholders meeting',
-    youtubeId: 'Aj89vGUqVLo',
+    youtubeId: 'r1E20HeIvRc',
     speaker: 'Buffett',
     year: 2024,
     category: 'annual-meeting'
@@ -42,8 +42,8 @@ const videos: Video[] = [
   {
     id: 'buffett-cnbc-interview',
     title: 'Warren Buffett Interview with Becky Quick',
-    description: 'Wide-ranging interview on markets, investing, and life',
-    youtubeId: 'fE1O8xgsKlU',
+    description: 'Tokyo interview with Buffett and Greg Abel on Japan investments',
+    youtubeId: 'WWheFMRCyNI',
     speaker: 'Buffett',
     year: 2023,
     category: 'interview'
@@ -52,7 +52,7 @@ const videos: Video[] = [
     id: 'munger-usc',
     title: 'Charlie Munger USC Business School Speech',
     description: 'Munger on the art of stock picking and worldly wisdom',
-    youtubeId: '8OgxDW9Tn7E',
+    youtubeId: 'vP2QPLGnjGo',
     speaker: 'Munger',
     year: 1994,
     category: 'speech'
@@ -60,8 +60,8 @@ const videos: Video[] = [
   {
     id: 'buffett-investing-basics',
     title: 'Warren Buffett on Value Investing',
-    description: 'Buffett explains his investment philosophy and approach',
-    youtubeId: 'VpX6XwwmIVg',
+    description: '2020 Berkshire Annual Meeting - full stream on value investing',
+    youtubeId: 'hZDYnK3WNYQ',
     speaker: 'Buffett',
     year: 2020,
     category: 'interview'
@@ -70,7 +70,7 @@ const videos: Video[] = [
     id: 'munger-djco-2023',
     title: 'Charlie Munger - Daily Journal Annual Meeting 2023',
     description: 'Munger\'s final Daily Journal meeting with Q&A',
-    youtubeId: 'qMwDuzGhRbk',
+    youtubeId: '8RxLj9OVqLo',
     speaker: 'Munger',
     year: 2023,
     category: 'annual-meeting'
@@ -88,7 +88,7 @@ const videos: Video[] = [
     id: 'buffett-2023-meeting',
     title: '2023 Berkshire Hathaway Annual Meeting',
     description: 'Full recording of the 2023 shareholders meeting',
-    youtubeId: 'qvEcWJaE-6g',
+    youtubeId: 'kfzp_IgA6YQ',
     speaker: 'Both',
     year: 2023,
     category: 'annual-meeting'
@@ -97,7 +97,7 @@ const videos: Video[] = [
     id: 'munger-caltech',
     title: 'Charlie Munger - Caltech Distinguished Lecture',
     description: 'Munger on mental models and decision making',
-    youtubeId: '7dO6XuCJdNM',
+    youtubeId: 'If-XrpaM1Yo',
     speaker: 'Munger',
     year: 2008,
     category: 'speech'
@@ -105,8 +105,8 @@ const videos: Video[] = [
   {
     id: 'buffett-advice-young',
     title: 'Warren Buffett\'s Advice to Young People',
-    description: 'Life and career advice for the next generation',
-    youtubeId: 'S8A0w_Ol4oU',
+    description: 'CNBC interview with career and life advice for young people',
+    youtubeId: '2hdDE7XYr30',
     speaker: 'Buffett',
     year: 2019,
     category: 'interview'
@@ -115,7 +115,7 @@ const videos: Video[] = [
     id: 'buffett-gates',
     title: 'Warren Buffett and Bill Gates - Columbia Business School',
     description: 'Two billionaires discuss business, philanthropy, and friendship',
-    youtubeId: 'WaKBqAZbCxw',
+    youtubeId: 'RCU5crgxC_4',
     speaker: 'Buffett',
     year: 2017,
     category: 'interview'
