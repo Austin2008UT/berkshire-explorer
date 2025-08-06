@@ -9,165 +9,74 @@ const mockSubsidiaries = [
     description: 'One of the largest auto insurance companies in the United States, known for direct-to-consumer sales and advertising.',
     mentions: [
       {
-        reportYear: 1976,
-        reportId: '1976',
-        text: 'We invested $45.7 million in GEICO common stock',
-        context: 'Berkshire made its initial investment in GEICO when the company was near bankruptcy, recognizing its fundamental strengths.',
-        pageNumber: 3
-      },
-      {
-        reportYear: 1977,
-        reportId: '1977',
-        text: 'Our holdings in GEICO Corporation represent 33% of the company',
-        context: 'We continue to hold a significant stake in GEICO Corporation, which represents one of our major equity investments.',
-        pageNumber: 4
-      },
-      {
-        reportYear: 1980,
-        reportId: '1980',
-        text: 'GEICO investment now worth $105.3 million',
-        context: 'Our investment in GEICO Corporation common stock has a cost basis of $47.1 million and a market value of $105.3 million.',
-        pageNumber: 8
-      },
-      {
-        reportYear: 1985,
-        reportId: '1985',
-        text: 'GEICO continues to prosper under Jack Byrne',
-        context: 'GEICO Corporation, in which we own approximately 36%, continues to prosper under the leadership of Jack Byrne and Bill Snyder.',
-        pageNumber: 9
-      },
-      {
-        reportYear: 1990,
-        reportId: '1990',
-        text: 'GEICO has become a powerhouse',
-        context: 'GEICO, now 48% owned by Berkshire, has become a powerhouse in auto insurance, with Tony Nicely showing exceptional management skills.',
-        pageNumber: 11
-      },
-      {
-        reportYear: 1995,
-        reportId: '1995',
-        text: 'We will acquire the rest of GEICO for $2.3 billion',
-        context: 'We agreed to acquire the 49% of GEICO we don\'t already own for $2.3 billion, completing a 45-year investment saga.',
-        pageNumber: 3
-      },
-      {
-        reportYear: 1996,
-        reportId: '1996',
-        text: 'GEICO is now a wholly-owned subsidiary',
-        context: 'The GEICO acquisition was completed in January 1996, making it a wholly-owned subsidiary. Tony Nicely continues as CEO.',
-        pageNumber: 5
-      },
-      {
         reportYear: 1998,
         reportId: '1998',
-        text: 'GEICO gained 707,000 policyholders',
-        context: 'GEICO added 707,000 policyholders, increasing its market share significantly through direct marketing and the gecko campaign.',
-        pageNumber: 9
+        text: 'GEICO continues to grow at an extraordinary rate',
+        context: 'GEICO continues to grow at an extraordinary rate, with policies in force increasing 16% in 1998.',
+        pageNumber: 12
+      },
+      {
+        reportYear: 1999,
+        reportId: '1999',
+        text: 'GEICO\'s growth accelerated with internet sales taking off',
+        context: 'GEICO\'s growth accelerated dramatically as internet sales took off, with new business up 43%.',
+        pageNumber: 14
       },
       {
         reportYear: 2000,
         reportId: '2000',
-        text: 'GEICO passed State Farm in new business',
-        context: 'GEICO wrote more voluntary auto business than State Farm, becoming the #1 company in new business production.',
-        pageNumber: 12
+        text: 'GEICO passed State Farm to become #1 in the direct market',
+        context: 'GEICO passed State Farm to become the #1 company in the direct response auto insurance market.',
+        pageNumber: 11
       },
       {
-        reportYear: 2002,
-        reportId: '2002',
-        text: 'GEICO insured 4.7 million vehicles',
-        context: 'GEICO now insures 4.7 million vehicles, nearly double the 2.5 million when we acquired full control in 1996.',
-        pageNumber: 7
-      },
-      {
-        reportYear: 2005,
-        reportId: '2005',
-        text: 'GEICO insured 6.3 million vehicles',
-        context: 'GEICO now insures 6.3 million vehicles, up from 2.5 million when we acquired full control in 1996.',
+        reportYear: 2003,
+        reportId: '2003',
+        text: 'GEICO hit the $10 billion mark in revenues',
+        context: 'GEICO hit the $10 billion mark in revenues, a milestone we never dreamed of when acquiring the company.',
         pageNumber: 8
       },
       {
         reportYear: 2007,
         reportId: '2007',
-        text: 'GEICO spent $800 million on advertising',
-        context: 'GEICO spent about $800 million on advertising, making it one of the country\'s largest advertisers.',
-        pageNumber: 12
-      },
-      {
-        reportYear: 2010,
-        reportId: '2010',
-        text: 'GEICO became the third-largest auto insurer',
-        context: 'GEICO passed Allstate to become the third-largest private passenger auto insurer in the United States.',
-        pageNumber: 14
+        text: 'GEICO became the third-largest auto insurer in the U.S.',
+        context: 'GEICO became the third-largest auto insurer in the U.S., passing Allstate with 7.7 million policyholders.',
+        pageNumber: 6
       },
       {
         reportYear: 2012,
         reportId: '2012',
-        text: 'GEICO reached 11 million policyholders',
-        context: 'GEICO now serves over 11 million policyholders, continuing its remarkable growth trajectory under Tony Nicely.',
-        pageNumber: 10
+        text: 'GEICO passed 10 million policies in force',
+        context: 'GEICO passed 10 million policies in force, doubling from 5 million in just eight years.',
+        pageNumber: 7
       },
       {
-        reportYear: 2015,
-        reportId: '2015',
-        text: 'GEICO hit 14% market share',
-        context: 'GEICO\'s market share reached 14%, insuring over 20 million vehicles. The gecko continues to be America\'s favorite advertising icon.',
-        pageNumber: 9
-      },
-      {
-        reportYear: 2017,
-        reportId: '2017',
-        text: 'GEICO earned $2.4 billion pre-tax',
-        context: 'GEICO earned $2.4 billion pre-tax, demonstrating the power of its low-cost direct distribution model.',
+        reportYear: 2016,
+        reportId: '2016',
+        text: 'GEICO is now the second-largest auto insurer',
+        context: 'GEICO is now the second-largest auto insurer in the United States with over 12% market share.',
         pageNumber: 8
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'GEICO served 28 million motorists',
-        context: 'GEICO now serves 28 million motorists with over 17 million auto policies in force.',
-        pageNumber: 11
       },
       {
         reportYear: 2020,
         reportId: '2020',
-        text: 'GEICO gave back $2.8 billion to customers',
-        context: 'During COVID-19, GEICO returned $2.8 billion to customers through credits and rate reductions as driving decreased.',
-        pageNumber: 17
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'Todd Combs became GEICO CEO',
-        context: 'Todd Combs took over as GEICO CEO, succeeding Bill Roberts, bringing fresh perspective to address competitive challenges.',
-        pageNumber: 13
+        text: 'GEICO benefited from reduced driving during COVID',
+        context: 'GEICO benefited from reduced driving during COVID lockdowns, with lower claims frequencies.',
+        pageNumber: 9
       },
       {
         reportYear: 2022,
         reportId: '2022',
-        text: 'GEICO faced challenges in 2022 due to inflation in auto parts and labor costs...',
-        context: 'Despite headwinds from inflation affecting repair costs, GEICO implemented rate increases and tightened underwriting standards. The company remains focused on improving profitability while maintaining competitive pricing.',
-        pageNumber: 8
-      },
-      {
-        reportYear: 2022,
-        reportId: '2022',
-        text: 'GEICO faced challenges in 2022 due to inflation',
-        context: 'Despite headwinds from inflation affecting repair costs, GEICO implemented rate increases and tightened underwriting standards.',
-        pageNumber: 8
+        text: 'GEICO faced profitability challenges',
+        context: 'GEICO faced profitability challenges as claims inflation exceeded rate increases.',
+        pageNumber: 7
       },
       {
         reportYear: 2023,
         reportId: '2023',
-        text: 'wonderful experience with GEICO that began early in 1951 and will never end',
-        context: 'Warren Buffett references his long relationship with GEICO, calling it an "almost unbelievably wonderful experience" that helped build Berkshire\'s insurance operations.',
-        pageNumber: 15
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'wonderful experience with GEICO that began early in 1951',
-        context: 'Warren Buffett references his long relationship with GEICO, calling it an "almost unbelievably wonderful experience".',
-        pageNumber: 15
+        text: 'GEICO is fixing its problems under new leadership',
+        context: 'GEICO is fixing its profitability problems under Todd Combs\' leadership with technology improvements.',
+        pageNumber: 8
       }
     ]
   },
@@ -281,37 +190,37 @@ const mockSubsidiaries = [
       {
         reportYear: 1998,
         reportId: '1998',
-        text: 'We merged with General Re Corporation',
-        context: 'In December 1998, we completed our largest acquisition ever, merging with General Re, one of the world\'s leading reinsurers.',
+        text: 'We agreed to acquire General Re Corp. for $22 billion',
+        context: 'In 1998, we agreed to acquire General Re Corp., the largest U.S. property-casualty reinsurer, in our biggest acquisition ever.',
         pageNumber: 3
+      },
+      {
+        reportYear: 1999,
+        reportId: '1999',
+        text: 'General Re had an unsatisfactory year',
+        context: 'General Re had an unsatisfactory year in 1999, with its underwriting and reserving problems becoming apparent.',
+        pageNumber: 8
+      },
+      {
+        reportYear: 2000,
+        reportId: '2000',
+        text: 'General Re\'s results improved but remain unsatisfactory',
+        context: 'Though General Re\'s results improved in 2000, they remain unsatisfactory and much work lies ahead.',
+        pageNumber: 7
       },
       {
         reportYear: 2001,
         reportId: '2001',
-        text: 'General Re\'s underwriting results were unsatisfactory',
-        context: 'Following September 11th, General Re faced significant losses, but we remain confident in its long-term prospects and exceptional management.',
-        pageNumber: 7
+        text: 'General Re made excellent progress in 2001',
+        context: 'Under Joe Brandon\'s leadership, General Re made excellent progress in 2001 though our reserving problems from earlier years became more apparent.',
+        pageNumber: 9
       },
       {
-        reportYear: 2008,
-        reportId: '2008',
-        text: 'General Re had an outstanding underwriting year',
-        context: 'Under Joe Brandon\'s leadership, General Re\'s underwriting discipline has been restored. The company earned an underwriting profit of $342 million.',
+        reportYear: 2002,
+        reportId: '2002',
+        text: 'General Re is fixed and prospering',
+        context: 'I\'m delighted to report that General Re is fixed and prospering. Joe Brandon has restored underwriting discipline.',
         pageNumber: 10
-      },
-      {
-        reportYear: 2013,
-        reportId: '2013',
-        text: 'General Re\'s float totaled $20 billion',
-        context: 'General Re continues to be conservatively run under Tad Montross. The company\'s float of $20 billion costs us nothing.',
-        pageNumber: 11
-      },
-      {
-        reportYear: 2016,
-        reportId: '2016',
-        text: 'General Re produced $5.6 billion in premiums',
-        context: 'General Re wrote $5.6 billion of business in 2016 while maintaining excellent underwriting standards. Tad Montross has done a superb job.',
-        pageNumber: 8
       }
     ]
   },
@@ -661,135 +570,37 @@ const mockSubsidiaries = [
       {
         reportYear: 2009,
         reportId: '2009',
-        text: 'We agreed to acquire BNSF for $44 billion',
-        context: 'Berkshire announced the acquisition of Burlington Northern Santa Fe Corporation for $100 per share, our largest deal ever.',
+        text: 'We agreed to buy Burlington Northern Santa Fe',
+        context: 'We agreed to buy Burlington Northern Santa Fe for $34 billion, our largest acquisition ever and a huge bet on America\'s economic future.',
         pageNumber: 3
       },
       {
         reportYear: 2010,
         reportId: '2010',
-        text: 'Berkshire purchased Burlington Northern Santa Fe for $34 billion',
-        context: 'We completed the acquisition of BNSF, the largest purchase in Berkshire\'s history. This all-in bet on the economic future of the United States.',
-        pageNumber: 3
+        text: 'BNSF\'s first year as part of Berkshire was everything we hoped',
+        context: 'BNSF, our new subsidiary, had a record year in 2010. The railroad carried 10% more freight than in 2009.',
+        pageNumber: 5
       },
       {
         reportYear: 2011,
         reportId: '2011',
-        text: 'BNSF earned $2.7 billion',
-        context: 'In its first full year as a Berkshire subsidiary, BNSF earned $2.7 billion, up from $2.5 billion in 2010. Matt Rose and Carl Ice run a terrific operation.',
-        pageNumber: 19
-      },
-      {
-        reportYear: 2012,
-        reportId: '2012',
-        text: 'BNSF invested $3.8 billion in capital expenditures',
-        context: 'BNSF invested a record $3.8 billion in capital expenditures to expand capacity and improve service.',
-        pageNumber: 15
-      },
-      {
-        reportYear: 2013,
-        reportId: '2013',
-        text: 'BNSF is investing heavily in infrastructure',
-        context: 'BNSF will invest $4.3 billion in capital expenditures, preparing for increased freight volumes from energy and agricultural sectors.',
-        pageNumber: 15
+        text: 'BNSF is the most important purchase we\'ve ever made',
+        context: 'BNSF is the most important purchase we\'ve ever made. It ties our future to the future of America.',
+        pageNumber: 7
       },
       {
         reportYear: 2014,
         reportId: '2014',
         text: 'BNSF will spend $6 billion on capital expenditures',
-        context: 'BNSF will spend $6 billion in 2015 on capital expenditures, more than any railroad has spent in a single year.',
-        pageNumber: 23
-      },
-      {
-        reportYear: 2015,
-        reportId: '2015',
-        text: 'BNSF earned $4.2 billion',
-        context: 'BNSF earned $4.2 billion despite volume declines in coal and crude oil shipments.',
-        pageNumber: 21
-      },
-      {
-        reportYear: 2016,
-        reportId: '2016',
-        text: 'BNSF earned $3.6 billion despite volume declines',
-        context: 'Despite a 7% decline in freight volumes due to weak coal and oil shipments, BNSF earned $3.6 billion.',
-        pageNumber: 29
-      },
-      {
-        reportYear: 2017,
-        reportId: '2017',
-        text: 'Carl Ice became BNSF CEO',
-        context: 'Carl Ice succeeded Matt Rose as CEO of BNSF, continuing the railroad\'s focus on safety and service.',
-        pageNumber: 34
-      },
-      {
-        reportYear: 2018,
-        reportId: '2018',
-        text: 'BNSF carried 5.4 million carloads',
-        context: 'BNSF carried 5.4 million carloads and containers in 2018, maintaining its position as America\'s largest freight railroad.',
-        pageNumber: 37
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'BNSF invested $3.3 billion in infrastructure',
-        context: 'BNSF continued heavy infrastructure investments, spending $3.3 billion on capital improvements.',
-        pageNumber: 31
-      },
-      {
-        reportYear: 2020,
-        reportId: '2020',
-        text: 'BNSF proved resilient during the pandemic',
-        context: 'Despite COVID-19 disruptions, BNSF maintained essential freight service and earned $5.3 billion.',
-        pageNumber: 22
+        context: 'BNSF will spend a record $6 billion on capital expenditures in 2015, more than any railroad has ever spent.',
+        pageNumber: 9
       },
       {
         reportYear: 2021,
         reportId: '2021',
-        text: 'BNSF faced supply chain challenges',
-        context: 'BNSF dealt with supply chain congestion but maintained service levels through operational improvements.',
-        pageNumber: 28
-      },
-      {
-        reportYear: 2022,
-        reportId: '2022',
-        text: 'BNSF\'s performance was impacted by supply chain disruptions...',
-        context: 'Despite operational challenges from weather events and labor negotiations, BNSF maintained service levels and continued its multi-billion dollar capital investment program to improve infrastructure and capacity.',
-        pageNumber: 71
-      },
-      {
-        reportYear: 2022,
-        reportId: '2022',
-        text: 'BNSF\'s performance was impacted by supply chain disruptions',
-        context: 'Despite operational challenges from weather events and labor negotiations, BNSF maintained service levels.',
-        pageNumber: 71
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'BNSF is the largest of six major rail systems that blanket North America...',
-        context: 'BNSF carries 23,759 miles of main track, 99 tunnels, 13,495 bridges, 7,521 locomotives. The railroad must spend more than its depreciation charge annually - $22 billion over 14 years since acquisition. Despite challenges, BNSF remains essential to America\'s economic future.',
-        pageNumber: 12
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Last year BNSF\'s earnings declined more than I expected, as revenues fell...',
-        context: 'Though fuel costs fell, wage increases promulgated in Washington were far beyond inflation goals. BNSF\'s profit margins have slipped relative to other major railroads since acquisition, though Buffett believes the vast service territory is second to none.',
-        pageNumber: 13
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'BNSF is the largest of six major rail systems',
-        context: 'BNSF carries 23,759 miles of main track, 99 tunnels, 13,495 bridges, 7,521 locomotives.',
-        pageNumber: 12
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Last year BNSF\'s earnings declined more than I expected',
-        context: 'Though fuel costs fell, wage increases promulgated in Washington were far beyond inflation goals.',
-        pageNumber: 13
+        text: 'BNSF carried 535 million tons of freight',
+        context: 'BNSF carried 535 million tons of freight in 2021, earning $6 billion after-tax.',
+        pageNumber: 8
       }
     ]
   },
@@ -803,144 +614,32 @@ const mockSubsidiaries = [
     description: 'Global leader in producing and delivering energy, serving 12 million customers worldwide.',
     mentions: [
       {
-        reportYear: 2000,
-        reportId: '2000',
-        text: 'We purchased 76% of MidAmerican Energy',
-        context: 'Berkshire acquired a 76% interest in MidAmerican Energy Holdings, a company with major utility operations.',
-        pageNumber: 12
-      },
-      {
-        reportYear: 2002,
-        reportId: '2002',
-        text: 'MidAmerican earned $613 million',
-        context: 'MidAmerican Energy, under Dave Sokol\'s leadership, contributed $613 million to Berkshire\'s earnings.',
-        pageNumber: 15
-      },
-      {
-        reportYear: 2004,
-        reportId: '2004',
-        text: 'MidAmerican acquired Kern River pipelines',
-        context: 'MidAmerican Energy acquired Kern River Gas Transmission, expanding our natural gas pipeline operations.',
-        pageNumber: 31
-      },
-      {
-        reportYear: 2006,
-        reportId: '2006',
-        text: 'MidAmerican acquired PacifiCorp for $5.1 billion',
-        context: 'MidAmerican Energy completed its acquisition of PacifiCorp, significantly expanding our utility operations.',
-        pageNumber: 21
-      },
-      {
-        reportYear: 2008,
-        reportId: '2008',
-        text: 'MidAmerican earned $1.7 billion',
-        context: 'Under Dave Sokol\'s leadership, MidAmerican Energy (now Berkshire Hathaway Energy) contributed $1.7 billion.',
-        pageNumber: 19
-      },
-      {
-        reportYear: 2010,
-        reportId: '2010',
-        text: 'MidAmerican invested in renewable energy',
-        context: 'MidAmerican Energy continued massive investments in wind generation, becoming a renewable energy leader.',
-        pageNumber: 25
-      },
-      {
-        reportYear: 2011,
-        reportId: '2011',
-        text: 'Greg Abel succeeded Dave Sokol',
-        context: 'Greg Abel became CEO of MidAmerican Energy following Dave Sokol\'s departure, continuing the growth trajectory.',
-        pageNumber: 16
-      },
-      {
         reportYear: 2013,
         reportId: '2013',
-        text: 'BHE acquired NV Energy for $5.6 billion',
-        context: 'Berkshire Hathaway Energy completed the acquisition of NV Energy, adding Nevada\'s largest utility.',
+        text: 'MidAmerican Energy is now Berkshire Hathaway Energy',
+        context: 'We renamed MidAmerican Energy Holdings Company to Berkshire Hathaway Energy to better reflect its scope.',
         pageNumber: 11
       },
       {
         reportYear: 2014,
         reportId: '2014',
-        text: 'BHE will have invested $15 billion in renewable generation',
-        context: 'By the end of 2015, Berkshire Hathaway Energy will have invested $15 billion in renewable generation.',
-        pageNumber: 8
-      },
-      {
-        reportYear: 2015,
-        reportId: '2015',
-        text: 'BHE earned $2.7 billion',
-        context: 'Berkshire Hathaway Energy earned $2.7 billion while continuing massive renewable energy investments.',
-        pageNumber: 18
-      },
-      {
-        reportYear: 2017,
-        reportId: '2017',
-        text: 'BHE transmission project progresses',
-        context: 'BHE\'s multi-state transmission project continues, eventually serving 30% of the continental U.S.',
-        pageNumber: 44
-      },
-      {
-        reportYear: 2018,
-        reportId: '2018',
-        text: 'BHE earned $2.9 billion',
-        context: 'Berkshire Hathaway Energy earned $2.9 billion while maintaining its leadership in renewable generation.',
-        pageNumber: 33
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'BHE announced 100% renewable goals',
-        context: 'Berkshire Hathaway Energy announced plans to achieve 100% renewable energy in multiple service territories.',
-        pageNumber: 29
+        text: 'BHE acquired NV Energy and AltaLink',
+        context: 'Berkshire Hathaway Energy completed major acquisitions of NV Energy in Nevada and AltaLink in Canada.',
+        pageNumber: 12
       },
       {
         reportYear: 2020,
         reportId: '2020',
-        text: 'BHE earned $3.4 billion',
-        context: 'Greg Abel\'s Berkshire Hathaway Energy earned $3.4 billion in 2020, with significant renewable investments.',
+        text: 'BHE will have invested $18 billion in renewables',
+        context: 'By the end of 2021, BHE will have invested $18 billion in renewable generation, far more than any other utility.',
         pageNumber: 14
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'BHE faced wildfire liabilities',
-        context: 'Berkshire Hathaway Energy faced increasing wildfire-related liabilities in Western states.',
-        pageNumber: 31
       },
       {
         reportYear: 2022,
         reportId: '2022',
-        text: 'BHE regulatory challenges emerged',
-        context: 'Berkshire Hathaway Energy faced regulatory challenges in some states affecting allowed returns.',
-        pageNumber: 42
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Our second and even more severe earnings disappointment last year occurred at BHE...',
-        context: 'Most of BHE\'s large electric-utility businesses and gas pipelines performed as expected, but regulatory climate in a few states has raised the specter of zero profitability or bankruptcy. Climate change and forest fires have created significant losses.',
-        pageNumber: 13
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'BHE\'s extensive multi-state transmission project in the West was initiated in 2006...',
-        context: 'The project remains years from completion but will eventually serve 10 states comprising 30% of continental U.S. acreage. The regulatory environment has changed, breaking the traditional fixed-return model.',
-        pageNumber: 13
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Our second and even more severe earnings disappointment occurred at BHE',
-        context: 'Most of BHE\'s businesses performed as expected, but regulatory climate in a few states raised concerns.',
-        pageNumber: 13
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'BHE\'s extensive multi-state transmission project was initiated in 2006',
-        context: 'The project remains years from completion but will eventually serve 10 states comprising 30% of continental U.S.',
-        pageNumber: 13
+        text: 'BHE owns 28% of U.S. transmission assets',
+        context: 'BHE now owns approximately 28% of all U.S. electric transmission assets.',
+        pageNumber: 10
       }
     ]
   },
@@ -1031,67 +730,32 @@ const mockSubsidiaries = [
     description: 'Iowa\'s largest energy company, leader in renewable energy generation.',
     mentions: [
       {
-        reportYear: 2000,
-        reportId: '2000',
-        text: 'We purchased 76% of MidAmerican Energy',
-        context: 'Berkshire acquired a 76% interest in MidAmerican Energy Holdings, a company with major utility operations in Iowa and the UK.',
-        pageNumber: 12
+        reportYear: 1999,
+        reportId: '1999',
+        text: 'We purchased MidAmerican Energy Holdings',
+        context: 'We purchased 76% of MidAmerican Energy Holdings Company, marking our entry into the utility business.',
+        pageNumber: 16
       },
       {
-        reportYear: 2002,
-        reportId: '2002',
-        text: 'MidAmerican earned $613 million',
-        context: 'MidAmerican Energy, under Dave Sokol\'s leadership, contributed $613 million to Berkshire\'s earnings.',
-        pageNumber: 15
+        reportYear: 2000,
+        reportId: '2000',
+        text: 'MidAmerican performed well in its first full year',
+        context: 'MidAmerican performed very well in its first full year with Berkshire, validating our entry into utilities.',
+        pageNumber: 21
+      },
+      {
+        reportYear: 2005,
+        reportId: '2005',
+        text: 'MidAmerican acquired PacifiCorp',
+        context: 'MidAmerican acquired PacifiCorp for $5.1 billion, significantly expanding our utility operations.',
+        pageNumber: 13
       },
       {
         reportYear: 2006,
         reportId: '2006',
-        text: 'MidAmerican acquired PacifiCorp for $5.1 billion',
-        context: 'MidAmerican Energy completed its acquisition of PacifiCorp, significantly expanding our utility operations across the Western United States.',
-        pageNumber: 21
-      },
-      {
-        reportYear: 2008,
-        reportId: '2008',
-        text: 'MidAmerican earned $1.7 billion',
-        context: 'Under Dave Sokol\'s leadership, MidAmerican Energy (now Berkshire Hathaway Energy) contributed $1.7 billion to Berkshire\'s earnings.',
-        pageNumber: 19
-      },
-      {
-        reportYear: 2013,
-        reportId: '2013',
-        text: 'BHE acquired NV Energy for $5.6 billion',
-        context: 'Berkshire Hathaway Energy completed the acquisition of NV Energy, adding Nevada\'s largest utility to our energy portfolio.',
-        pageNumber: 11
-      },
-      {
-        reportYear: 2014,
-        reportId: '2014',
-        text: 'BHE will have invested $15 billion in renewable generation',
-        context: 'By the end of 2015, Berkshire Hathaway Energy will have invested $15 billion in renewable generation, more than any other U.S. utility.',
-        pageNumber: 8
-      },
-      {
-        reportYear: 2020,
-        reportId: '2020',
-        text: 'BHE earned $3.4 billion',
-        context: 'Greg Abel\'s Berkshire Hathaway Energy earned $3.4 billion in 2020, with significant investments in renewable energy infrastructure.',
-        pageNumber: 14
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Our second and even more severe earnings disappointment last year occurred at BHE...',
-        context: 'Most of BHE\'s large electric-utility businesses and gas pipelines performed as expected, but regulatory climate in a few states has raised the specter of zero profitability or bankruptcy. Climate change and forest fires have created significant losses.',
-        pageNumber: 13
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'BHE\'s extensive multi-state transmission project in the West was initiated in 2006...',
-        context: 'The project remains years from completion but will eventually serve 10 states comprising 30% of continental U.S. acreage. The regulatory environment has changed, breaking the traditional fixed-return model.',
-        pageNumber: 13
+        text: 'MidAmerican is a leader in wind generation',
+        context: 'MidAmerican has become a leader in wind generation, with more wind capacity than any other U.S. utility.',
+        pageNumber: 18
       }
     ]
   },
@@ -1283,72 +947,23 @@ const mockSubsidiaries = [
       {
         reportYear: 2015,
         reportId: '2015',
-        text: 'We agreed to acquire Precision Castparts for $37.2 billion',
-        context: 'Berkshire announced its largest acquisition ever, agreeing to purchase Precision Castparts Corp for $235 per share.',
+        text: 'We agreed to purchase Precision Castparts',
+        context: 'We agreed to purchase Precision Castparts Corp. for $37.2 billion, our largest acquisition ever.',
         pageNumber: 3
       },
       {
         reportYear: 2016,
         reportId: '2016',
-        text: 'We completed the acquisition of Precision Castparts for $32.3 billion',
-        context: 'Berkshire\'s largest acquisition to date, PCC manufactures critical components for aerospace and energy markets. Mark Donegan continues as CEO.',
-        pageNumber: 3
-      },
-      {
-        reportYear: 2017,
-        reportId: '2017',
-        text: 'PCC faced aerospace production challenges',
-        context: 'Precision Castparts dealt with customer inventory adjustments and production delays on new aircraft programs.',
-        pageNumber: 41
-      },
-      {
-        reportYear: 2018,
-        reportId: '2018',
-        text: 'PCC is recovering from aerospace downturn',
-        context: 'Precision Castparts is recovering as aerospace production ramps up and customers work through inventory.',
-        pageNumber: 66
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'PCC revenues reached $10 billion',
-        context: 'Precision Castparts generated approximately $10 billion in revenues as commercial aerospace demand strengthened.',
-        pageNumber: 48
+        text: 'PCC is adjusting to aerospace downturn',
+        context: 'Precision Castparts is adjusting to the aerospace downturn but remains a superb business.',
+        pageNumber: 11
       },
       {
         reportYear: 2020,
         reportId: '2020',
         text: 'PCC was severely impacted by COVID-19',
-        context: 'The pandemic\'s impact on air travel devastated PCC\'s aerospace business, requiring significant workforce reductions.',
-        pageNumber: 18
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'PCC began recovery from pandemic lows',
-        context: 'Precision Castparts started recovering as commercial aviation began its slow recovery from pandemic lows.',
-        pageNumber: 56
-      },
-      {
-        reportYear: 2022,
-        reportId: '2022',
-        text: 'PCC accelerated aerospace recovery',
-        context: 'Precision Castparts benefited from accelerating commercial aerospace production and strong defense demand.',
-        pageNumber: 73
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'PCC benefited from the aerospace recovery...',
-        context: 'Precision Castparts saw revenues increase 18% in 2023 as commercial aerospace production ramped up. The company\'s order backlog reached record levels, providing visibility for continued growth.',
-        pageNumber: 88
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'PCC benefited from the aerospace recovery',
-        context: 'Precision Castparts saw revenues increase 18% in 2023 as commercial aerospace production ramped up.',
-        pageNumber: 88
+        context: 'Precision Castparts was severely impacted by COVID-19\'s effect on aerospace, but we remain confident in its future.',
+        pageNumber: 15
       }
     ]
   },
@@ -1362,100 +977,23 @@ const mockSubsidiaries = [
       {
         reportYear: 2011,
         reportId: '2011',
-        text: 'We acquired Lubrizol for $9 billion',
-        context: 'Berkshire purchased Lubrizol, a worldwide producer of specialty chemicals, with James Hambrick continuing as CEO.',
-        pageNumber: 5
+        text: 'We purchased Lubrizol for $9 billion',
+        context: 'We purchased Lubrizol, a worldwide producer of specialty chemicals, for approximately $9 billion.',
+        pageNumber: 6
       },
       {
         reportYear: 2012,
         reportId: '2012',
-        text: 'Lubrizol had an outstanding first full year',
-        context: 'In its first full year with Berkshire, Lubrizol performed exceptionally well under James Hambrick\'s leadership.',
-        pageNumber: 27
-      },
-      {
-        reportYear: 2013,
-        reportId: '2013',
-        text: 'Lubrizol earned $1.1 billion',
-        context: 'Under James Hambrick\'s leadership, Lubrizol earned $1.1 billion, demonstrating the strength of its specialty additives business.',
-        pageNumber: 18
-      },
-      {
-        reportYear: 2014,
-        reportId: '2014',
-        text: 'Lubrizol expanded through acquisitions',
-        context: 'Lubrizol completed several strategic acquisitions to expand its specialty chemicals portfolio.',
-        pageNumber: 41
-      },
-      {
-        reportYear: 2015,
-        reportId: '2015',
-        text: 'Lubrizol revenues exceeded $7 billion',
-        context: 'Lubrizol generated revenues of over $7 billion despite headwinds from lower oil prices affecting customers.',
-        pageNumber: 52
-      },
-      {
-        reportYear: 2016,
-        reportId: '2016',
-        text: 'Lubrizol invested in new facilities',
-        context: 'Lubrizol continues to invest in new facilities and R&D to maintain its technological edge in specialty chemicals.',
-        pageNumber: 51
-      },
-      {
-        reportYear: 2017,
-        reportId: '2017',
-        text: 'Eric Schnur became Lubrizol CEO',
-        context: 'Eric Schnur succeeded James Hambrick as CEO of Lubrizol, continuing the company\'s focus on innovation.',
-        pageNumber: 67
-      },
-      {
-        reportYear: 2018,
-        reportId: '2018',
-        text: 'Lubrizol expanded in emerging markets',
-        context: 'Lubrizol opened new facilities in Asia and expanded its product portfolio for electric vehicle applications.',
-        pageNumber: 72
+        text: 'Lubrizol had record earnings',
+        context: 'Lubrizol had record earnings in 2012 under James Hambrick\'s leadership.',
+        pageNumber: 13
       },
       {
         reportYear: 2019,
         reportId: '2019',
-        text: 'Lubrizol invested in sustainable solutions',
-        context: 'Lubrizol increased investments in sustainable chemistry and bio-based products to meet evolving customer needs.',
-        pageNumber: 81
-      },
-      {
-        reportYear: 2020,
-        reportId: '2020',
-        text: 'Lubrizol maintained operations during pandemic',
-        context: 'As an essential business, Lubrizol maintained operations throughout COVID-19, supporting critical industries.',
-        pageNumber: 76
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'Lubrizol expanded EV fluid capabilities',
-        context: 'Lubrizol significantly expanded its electric vehicle fluid capabilities as automakers accelerated EV development.',
-        pageNumber: 88
-      },
-      {
-        reportYear: 2022,
-        reportId: '2022',
-        text: 'Rebecca Liebert became Lubrizol CEO',
-        context: 'Rebecca Liebert was appointed CEO of Lubrizol, bringing extensive chemical industry experience.',
-        pageNumber: 69
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Lubrizol\'s specialty additives business performed well...',
-        context: 'Lubrizol generated $7.2 billion in revenues with strong performance in additives for electric vehicle fluids and sustainable solutions. The company invested $300 million in R&D for next-generation products.',
-        pageNumber: 92
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Lubrizol\'s specialty additives business performed well',
-        context: 'Lubrizol generated $7.2 billion in revenues with strong performance in additives for electric vehicle fluids.',
-        pageNumber: 92
+        text: 'Lubrizol continues to perform well',
+        context: 'Lubrizol continues to perform well, with its specialty chemicals essential to many industries.',
+        pageNumber: 17
       }
     ]
   },
@@ -1469,79 +1007,44 @@ const mockSubsidiaries = [
       {
         reportYear: 2007,
         reportId: '2007',
-        text: 'We agreed to acquire 60% of Marmon',
-        context: 'Berkshire agreed to acquire 60% of Marmon Holdings from the Pritzker family for approximately $4.5 billion.',
-        pageNumber: 4
+        text: 'We agreed to buy 60% of Marmon Holdings',
+        context: 'We agreed to buy 60% of Marmon Holdings from the Pritzker family for approximately $4.5 billion.',
+        pageNumber: 10
       },
       {
         reportYear: 2008,
         reportId: '2008',
-        text: 'We acquired 60% of Marmon Holdings',
-        context: 'Berkshire acquired 60% of Marmon Holdings from the Pritzker family, with an agreement to purchase the remainder.',
-        pageNumber: 4
+        text: 'Marmon had a terrific year',
+        context: 'Marmon, now 63.6% owned by Berkshire, had a terrific year with revenues of $7 billion.',
+        pageNumber: 11
       },
       {
         reportYear: 2009,
         reportId: '2009',
-        text: 'Marmon performed well despite recession',
-        context: 'Despite the severe recession, Frank Ptak led Marmon\'s diverse businesses through the downturn successfully.',
-        pageNumber: 43
+        text: 'Marmon\'s earnings declined but remained satisfactory',
+        context: 'Marmon\'s earnings declined in the recession but remained satisfactory, with Frank Ptak doing an outstanding job.',
+        pageNumber: 19
       },
       {
         reportYear: 2011,
         reportId: '2011',
-        text: 'We increased our Marmon stake to 80%',
-        context: 'As scheduled, we increased our ownership of Marmon to approximately 80%. Frank Ptak runs this superbly.',
-        pageNumber: 23
+        text: 'We increased our Marmon ownership to 80%',
+        context: 'We increased our ownership of Marmon to approximately 80% as planned in our original agreement.',
+        pageNumber: 18
       },
       {
         reportYear: 2013,
         reportId: '2013',
         text: 'We now own 100% of Marmon',
-        context: 'We completed our purchase of Marmon, now owning 100% of this remarkable collection of businesses.',
+        context: 'We completed our purchase of Marmon, now owning 100% of this collection of over 100 businesses.',
         pageNumber: 17
       },
       {
-        reportYear: 2015,
-        reportId: '2015',
-        text: 'Marmon companies are thriving',
-        context: 'Marmon\'s diverse collection of over 100 businesses continues to thrive under autonomous management.',
-        pageNumber: 38
-      },
-      {
-        reportYear: 2017,
-        reportId: '2017',
-        text: 'Marmon revenues exceeded $8 billion',
-        context: 'Marmon\'s 175 business units generated combined revenues exceeding $8 billion.',
-        pageNumber: 76
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'Marmon made strategic acquisitions',
-        context: 'Marmon continued its strategy of bolt-on acquisitions to strengthen existing business units.',
-        pageNumber: 88
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'Pete Kadens became Marmon CEO',
-        context: 'Pete Kadens succeeded Frank Ptak as CEO of Marmon, continuing the decentralized management approach.',
-        pageNumber: 71
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Marmon continues to excel in its diverse industrial markets...',
-        context: 'Marmon\'s 11 business sectors generated combined revenues of $10.9 billion in 2023. The crane and foodservice equipment divisions showed particularly strong growth.',
-        pageNumber: 89
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Marmon continues to excel in its diverse industrial markets',
-        context: 'Marmon\'s 11 business sectors generated combined revenues of $10.9 billion in 2023.',
-        pageNumber: 89
+        reportYear: 2018,
+        reportId: '2018',
+        text: 'Marmon had record results',
+        context: 'Marmon had record results with its diverse industrial businesses performing well.',
+        pageNumber: 20
       }
     ]
   },
@@ -1648,53 +1151,18 @@ const mockSubsidiaries = [
     description: 'World\'s largest carpet manufacturer and leading flooring provider.',
     mentions: [
       {
+        reportYear: 2000,
+        reportId: '2000',
+        text: 'We agreed to acquire Shaw Industries',
+        context: 'We agreed to acquire Shaw Industries, the world\'s largest carpet manufacturer, for about $2 billion.',
+        pageNumber: 15
+      },
+      {
         reportYear: 2001,
         reportId: '2001',
-        text: 'We acquired Shaw Industries for $2.1 billion',
-        context: 'Berkshire purchased Shaw Industries, the world\'s largest carpet manufacturer, with Bob Shaw and Julian Saul continuing to run the business.',
-        pageNumber: 5
-      },
-      {
-        reportYear: 2002,
-        reportId: '2002',
-        text: 'Shaw had a difficult year due to weak demand',
-        context: 'Shaw Industries faced weak demand due to the recession but maintained its market leadership position.',
-        pageNumber: 26
-      },
-      {
-        reportYear: 2006,
-        reportId: '2006',
-        text: 'Shaw had record earnings',
-        context: 'Under Vance Bell\'s leadership, Shaw Industries achieved record earnings despite a slowdown in residential construction.',
-        pageNumber: 56
-      },
-      {
-        reportYear: 2009,
-        reportId: '2009',
-        text: 'Shaw navigated the housing crisis well',
-        context: 'Despite the severe housing downturn, Shaw Industries maintained profitability through cost controls and market share gains.',
-        pageNumber: 67
-      },
-      {
-        reportYear: 2012,
-        reportId: '2012',
-        text: 'Shaw is investing in hard surface flooring',
-        context: 'Shaw Industries is investing heavily in hard surface flooring to meet changing consumer preferences.',
-        pageNumber: 43
-      },
-      {
-        reportYear: 2015,
-        reportId: '2015',
-        text: 'Shaw invested heavily in luxury vinyl tile production',
-        context: 'Shaw Industries invested over $200 million in new manufacturing facilities for luxury vinyl tile, responding to changing consumer preferences.',
-        pageNumber: 48
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'Shaw expanded its commercial flooring business',
-        context: 'Shaw Industries strengthened its position in commercial flooring through strategic acquisitions and new product innovations.',
-        pageNumber: 39
+        text: 'Shaw had a difficult year due to the recession',
+        context: 'Shaw had a difficult year as the recession hit floor covering sales, but we remain confident in the long-term prospects.',
+        pageNumber: 20
       }
     ]
   },
@@ -1706,39 +1174,11 @@ const mockSubsidiaries = [
     description: 'Premium paint manufacturer known for quality products and color expertise.',
     mentions: [
       {
-        reportYear: 2004,
-        reportId: '2004',
-        text: 'Benjamin Moore expanded color offerings',
-        context: 'Benjamin Moore introduced new color collections, strengthening its position as the designer\'s choice.',
-        pageNumber: 89
-      },
-      {
-        reportYear: 2012,
-        reportId: '2012',
-        text: 'Benjamin Moore launched Aura paint line',
-        context: 'Benjamin Moore\'s Aura paint line gained significant market share in the premium paint segment.',
-        pageNumber: 82
-      },
-      {
-        reportYear: 2016,
-        reportId: '2016',
-        text: 'Benjamin Moore opened flagship stores',
-        context: 'Benjamin Moore opened flagship retail stores in major markets to showcase its premium products.',
-        pageNumber: 77
-      },
-      {
-        reportYear: 2020,
-        reportId: '2020',
-        text: 'Benjamin Moore saw DIY surge during COVID',
-        context: 'Benjamin Moore benefited from increased DIY painting projects during pandemic stay-at-home periods.',
-        pageNumber: 89
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Benjamin Moore expanded its retail presence...',
-        context: 'Benjamin Moore opened 45 new company-owned stores in 2023, bringing the total to over 180 locations. The company\'s focus on premium products and professional contractors continues to drive margin expansion.',
-        pageNumber: 103
+        reportYear: 2000,
+        reportId: '2000',
+        text: 'We acquired Benjamin Moore & Co.',
+        context: 'We acquired Benjamin Moore & Co., a leader in architectural and industrial coatings since 1883.',
+        pageNumber: 19
       }
     ]
   },
@@ -1750,39 +1190,11 @@ const mockSubsidiaries = [
     description: 'Manufacturer of insulation, roofing materials, and engineered products.',
     mentions: [
       {
-        reportYear: 2003,
-        reportId: '2003',
-        text: 'Johns Manville expanded insulation production',
-        context: 'Johns Manville increased insulation manufacturing capacity to meet growing energy efficiency demand.',
-        pageNumber: 71
-      },
-      {
-        reportYear: 2008,
-        reportId: '2008',
-        text: 'Johns Manville navigated construction downturn',
-        context: 'Despite the housing crisis, Johns Manville maintained profitability through commercial market focus.',
-        pageNumber: 88
-      },
-      {
-        reportYear: 2018,
-        reportId: '2018',
-        text: 'Johns Manville invested in glass fiber technology',
-        context: 'Johns Manville made major investments in advanced glass fiber technology for aerospace applications.',
-        pageNumber: 92
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'Johns Manville benefited from infrastructure spending',
-        context: 'Johns Manville saw increased demand from infrastructure projects requiring advanced building materials.',
-        pageNumber: 79
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Johns Manville expanded capacity for insulation products...',
-        context: 'Johns Manville invested $200 million in new manufacturing capacity to meet growing demand for energy-efficient building materials. The company\'s revenues reached $3.5 billion.',
-        pageNumber: 99
+        reportYear: 2001,
+        reportId: '2001',
+        text: 'We purchased Johns Manville',
+        context: 'We purchased Johns Manville, a leading manufacturer of insulation and roofing products.',
+        pageNumber: 17
       }
     ]
   },
@@ -1935,37 +1347,51 @@ const mockSubsidiaries = [
       {
         reportYear: 2003,
         reportId: '2003',
-        text: 'We acquired Clayton Homes',
-        context: 'We purchased Clayton Homes, America\'s largest producer of manufactured homes. Kevin Clayton will continue to run the business.',
-        pageNumber: 5
+        text: 'We purchased Clayton Homes for $1.7 billion',
+        context: 'We purchased Clayton Homes, the nation\'s largest producer of manufactured homes, for $1.7 billion.',
+        pageNumber: 12
+      },
+      {
+        reportYear: 2004,
+        reportId: '2004',
+        text: 'Clayton had an outstanding first year with Berkshire',
+        context: 'Clayton had an outstanding first year with Berkshire, earning $295 million pre-tax.',
+        pageNumber: 17
+      },
+      {
+        reportYear: 2008,
+        reportId: '2008',
+        text: 'Clayton prospered while competitors failed',
+        context: 'During the housing crisis, Clayton prospered while virtually all of its competitors failed or struggled.',
+        pageNumber: 14
       },
       {
         reportYear: 2009,
         reportId: '2009',
-        text: 'Clayton was the only major home builder to remain profitable',
-        context: 'While competitors struggled or failed during the housing crisis, Clayton Homes remained profitable every quarter, a testament to Kevin Clayton\'s conservative management.',
-        pageNumber: 17
+        text: 'Clayton was the only profitable homebuilder',
+        context: 'Clayton was probably the only profitable American homebuilder in 2009, a testament to its conservative practices.',
+        pageNumber: 16
       },
       {
-        reportYear: 2015,
-        reportId: '2015',
-        text: 'Clayton built 34,397 homes',
-        context: 'Clayton Homes built 34,397 homes, about 45% of the manufactured homes sold in the U.S. The company also expanded into site-built homes.',
-        pageNumber: 25
+        reportYear: 2013,
+        reportId: '2013',
+        text: 'Clayton is America\'s largest homebuilder',
+        context: 'Clayton became America\'s largest homebuilder, selling 34,000 homes in 2013.',
+        pageNumber: 16
       },
       {
-        reportYear: 2018,
-        reportId: '2018',
-        text: 'Clayton opened new manufacturing facilities',
-        context: 'Clayton Homes opened two new manufacturing facilities and expanded its site-built operations, now building homes in multiple price points.',
-        pageNumber: 53
+        reportYear: 2017,
+        reportId: '2017',
+        text: 'Clayton built 42,000 homes',
+        context: 'Clayton built 42,000 homes in 2017, capturing nearly half of the manufactured housing market.',
+        pageNumber: 15
       },
       {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Clayton Homes built 60,000 homes in 2023...',
-        context: 'Clayton Homes maintained its leadership in affordable housing, building 60,000 homes across its manufactured, modular, and site-built divisions. The company pioneered new energy-efficient designs.',
-        pageNumber: 97
+        reportYear: 2021,
+        reportId: '2021',
+        text: 'Clayton is thriving in a hot housing market',
+        context: 'Clayton is thriving in a hot housing market, with both manufactured and site-built homes in high demand.',
+        pageNumber: 16
       }
     ]
   },
@@ -1979,67 +1405,39 @@ const mockSubsidiaries = [
     description: 'Premium chocolate and candy manufacturer with over 200 retail locations, Berkshire\'s first major acquisition.',
     mentions: [
       {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'See\'s Candies delivered another year of steady profits...',
-        context: 'See\'s Candies generated pre-tax earnings of $170 million on revenues of $520 million. The company continues to benefit from strong brand loyalty and pricing power, with same-store sales growing 5% year-over-year.',
-        pageNumber: 95
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'See\'s produced a record $2.2 billion of revenues since our purchase',
-        context: 'The $25 million we paid for See\'s in 1972 has now delivered aggregate pre-tax earnings of $2.2 billion, and it continues to earn exceptional returns on tangible assets.',
-        pageNumber: 123
-      },
-      {
-        reportYear: 2011,
-        reportId: '2011',
-        text: 'Last year See\'s had same-store sales gains of 16%',
-        context: 'Despite a tough economy, See\'s Candies achieved remarkable same-store sales growth, demonstrating the strength of the brand and customer loyalty.',
-        pageNumber: 7
+        reportYear: 1999,
+        reportId: '1999',
+        text: 'See\'s had another record year',
+        context: 'See\'s Candies had another record year with same-store sales increasing 5% during the Christmas season.',
+        pageNumber: 22
       },
       {
         reportYear: 2007,
         reportId: '2007',
-        text: 'See\'s earned $82 million pre-tax',
-        context: 'See\'s had another outstanding year with pre-tax earnings of $82 million. The company we purchased for $25 million continues to be a jewel.',
-        pageNumber: 76
+        text: 'See\'s pretax earnings hit $82 million',
+        context: 'See\'s pretax earnings hit $82 million, compared to $4.2 million when we bought it in 1972.',
+        pageNumber: 21
       },
       {
-        reportYear: 2005,
-        reportId: '2005',
-        text: 'See\'s sales grew to $383 million',
-        context: 'Chuck Huggins continues to do an outstanding job at See\'s. Sales were $383 million and pre-tax profits were $62 million.',
-        pageNumber: 9
+        reportYear: 2011,
+        reportId: '2011',
+        text: 'See\'s pretax earnings were $83 million',
+        context: 'See\'s Candies earned $83 million pretax, a testament to its pricing power and brand strength.',
+        pageNumber: 19
       },
       {
-        reportYear: 1999,
-        reportId: '1999',
-        text: 'See\'s earned $74 million pre-tax',
-        context: 'See\'s Candies again had record earnings. Pre-tax profits were $74 million on sales of $287 million.',
-        pageNumber: 58
+        reportYear: 2019,
+        reportId: '2019',
+        text: 'See\'s continues to delight customers',
+        context: 'See\'s continues to delight customers with the same quality that has made it successful for over 100 years.',
+        pageNumber: 21
       },
       {
-        reportYear: 1991,
-        reportId: '1991',
-        text: 'See\'s pre-tax earnings were $25.5 million',
-        context: 'See\'s Candies, purchased for $25 million in 1972, earned $25.5 million pre-tax in 1991, demonstrating the power of a great brand.',
-        pageNumber: 6
-      },
-      {
-        reportYear: 1984,
-        reportId: '1984',
-        text: 'See\'s earned $13 million after-tax',
-        context: 'See\'s Candies earned a record $13 million after taxes, representing a return of over 50% on beginning equity.',
-        pageNumber: 52
-      },
-      {
-        reportYear: 1972,
-        reportId: '1972',
-        text: 'Blue Chip Stamps purchased See\'s Candies',
-        context: 'Blue Chip Stamps (controlled by Berkshire) purchased See\'s Candies for $25 million. It had about $8 million in excess cash at the time.',
-        pageNumber: 97
+        reportYear: 2022,
+        reportId: '2022',
+        text: 'See\'s faced cost pressures but maintained quality',
+        context: 'See\'s faced significant cost pressures but maintained its commitment to quality.',
+        pageNumber: 20
       }
     ]
   },
@@ -2054,36 +1452,15 @@ const mockSubsidiaries = [
         reportYear: 1998,
         reportId: '1998',
         text: 'We acquired International Dairy Queen',
-        context: 'Berkshire acquired International Dairy Queen, adding this well-known franchise system with over 5,700 locations to our collection of businesses.',
-        pageNumber: 11
+        context: 'We acquired International Dairy Queen for approximately $585 million.',
+        pageNumber: 17
       },
       {
-        reportYear: 2007,
-        reportId: '2007',
-        text: 'Dairy Queen opened its 500th store in China',
-        context: 'International expansion continues to be a growth driver for Dairy Queen, with China becoming an increasingly important market.',
-        pageNumber: 78
-      },
-      {
-        reportYear: 2011,
-        reportId: '2011',
-        text: 'Dairy Queen expanded Orange Julius integration',
-        context: 'Dairy Queen successfully integrated Orange Julius products into many locations, driving same-store sales.',
-        pageNumber: 84
-      },
-      {
-        reportYear: 2014,
-        reportId: '2014',
-        text: 'Dairy Queen same-store sales grew 5.7% in the U.S.',
-        context: 'John Gainor continues to do an outstanding job at International Dairy Queen. U.S. same-store sales were up 5.7%.',
-        pageNumber: 26
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Dairy Queen\'s global expansion continues...',
-        context: 'Dairy Queen opened 200 new locations globally in 2023, with particularly strong growth in Asia. Same-store sales increased 7% driven by menu innovation and digital ordering capabilities.',
-        pageNumber: 106
+        reportYear: 2008,
+        reportId: '2008',
+        text: 'Dairy Queen performed well internationally',
+        context: 'Dairy Queen performed particularly well internationally, with strong growth in China and other markets.',
+        pageNumber: 22
       }
     ]
   },
@@ -2098,71 +1475,22 @@ const mockSubsidiaries = [
         reportYear: 2014,
         reportId: '2014',
         text: 'We agreed to acquire Duracell from P&G',
-        context: 'Berkshire agreed to acquire Duracell from Procter & Gamble in a tax-efficient exchange using our P&G shares.',
-        pageNumber: 6
+        context: 'We agreed to acquire Duracell from Procter & Gamble in exchange for our P&G shares.',
+        pageNumber: 14
       },
       {
         reportYear: 2016,
         reportId: '2016',
-        text: 'We completed the acquisition of Duracell',
-        context: 'Berkshire completed the acquisition of Duracell from Procter & Gamble in a cash-and-stock transaction valued at approximately $4.7 billion.',
-        pageNumber: 8
-      },
-      {
-        reportYear: 2017,
-        reportId: '2017',
-        text: 'Duracell is improving operations',
-        context: 'Under Berkshire ownership, Duracell is improving operations and maintaining its position as the leading battery brand.',
-        pageNumber: 54
-      },
-      {
-        reportYear: 2018,
-        reportId: '2018',
-        text: 'Duracell maintained its market leadership',
-        context: 'Duracell held approximately 40% market share in alkaline batteries through brand strength and innovation.',
-        pageNumber: 86
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'Duracell expanded internationally',
-        context: 'Duracell continued international expansion, particularly in emerging markets where battery usage is growing rapidly.',
-        pageNumber: 73
-      },
-      {
-        reportYear: 2020,
-        reportId: '2020',
-        text: 'Duracell benefited from stay-at-home trends',
-        context: 'Duracell saw increased demand during COVID-19 as consumers stocked up on batteries for home devices and electronics.',
-        pageNumber: 61
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'Duracell invested in lithium technology',
-        context: 'Duracell increased investments in lithium battery technology to meet growing demand for high-performance batteries.',
-        pageNumber: 82
-      },
-      {
-        reportYear: 2022,
-        reportId: '2022',
-        text: 'Duracell launched optimum line',
-        context: 'Duracell successfully launched its Optimum line of premium alkaline batteries, capturing higher margins.',
-        pageNumber: 94
+        text: 'Duracell is the clear leader in batteries',
+        context: 'Duracell is the clear leader in batteries with a powerful brand and strong market position.',
+        pageNumber: 18
       },
       {
         reportYear: 2023,
         reportId: '2023',
-        text: 'Duracell maintained its market leadership position...',
-        context: 'Duracell captured 45% of the U.S. alkaline battery market in 2023. The company\'s focus on innovation in lithium and rechargeable batteries positions it well for evolving consumer needs.',
-        pageNumber: 108
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Duracell maintained its market leadership position',
-        context: 'Duracell captured 45% of the U.S. alkaline battery market in 2023. The company\'s focus on innovation positions it well.',
-        pageNumber: 108
+        text: 'Duracell maintained market leadership',
+        context: 'Duracell maintained its market leadership position despite competitive pressures.',
+        pageNumber: 19
       }
     ]
   },
@@ -2174,39 +1502,18 @@ const mockSubsidiaries = [
     description: 'Manufacturer and marketer of underwear, casualwear, and sports apparel.',
     mentions: [
       {
-        reportYear: 2004,
-        reportId: '2004',
-        text: 'Fruit of the Loom returned to profitability',
-        context: 'Under Berkshire ownership, Fruit of the Loom returned to solid profitability through operational improvements.',
-        pageNumber: 61
+        reportYear: 2002,
+        reportId: '2002',
+        text: 'We purchased Fruit of the Loom out of bankruptcy',
+        context: 'We purchased Fruit of the Loom out of bankruptcy for approximately $835 million in cash.',
+        pageNumber: 16
       },
       {
-        reportYear: 2008,
-        reportId: '2008',
-        text: 'Fruit of the Loom expanded Walmart partnership',
-        context: 'Fruit of the Loom strengthened its position as a key apparel supplier to Walmart.',
-        pageNumber: 79
-      },
-      {
-        reportYear: 2015,
-        reportId: '2015',
-        text: 'Fruit of the Loom acquired Russell Brands',
-        context: 'Fruit of the Loom\'s acquisition of Russell Brands expanded its athletic apparel offerings.',
-        pageNumber: 86
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'Fruit of the Loom invested in automation',
-        context: 'Fruit of the Loom invested heavily in manufacturing automation to improve efficiency and margins.',
-        pageNumber: 91
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Fruit of the Loom faced margin pressure from cotton prices...',
-        context: 'Despite higher input costs, Fruit of the Loom maintained market share through operational efficiency improvements and strategic pricing. The company\'s direct-to-consumer channel grew 25% year-over-year.',
-        pageNumber: 111
+        reportYear: 2003,
+        reportId: '2003',
+        text: 'Fruit of the Loom had an outstanding year',
+        context: 'Fruit of the Loom had an outstanding year with John Holland restoring profitability to this iconic brand.',
+        pageNumber: 18
       }
     ]
   },
@@ -2218,39 +1525,18 @@ const mockSubsidiaries = [
     description: 'Premium performance running footwear and apparel company.',
     mentions: [
       {
-        reportYear: 2008,
-        reportId: '2008',
-        text: 'Brooks gained running market share',
-        context: 'Brooks Sports continued gaining market share in performance running shoes through innovation.',
-        pageNumber: 96
-      },
-      {
-        reportYear: 2012,
-        reportId: '2012',
-        text: 'Brooks became #1 in specialty running',
-        context: 'Brooks achieved the #1 position in specialty running store sales, surpassing major competitors.',
-        pageNumber: 91
-      },
-      {
-        reportYear: 2017,
-        reportId: '2017',
-        text: 'Brooks expanded internationally',
-        context: 'Brooks Sports accelerated international expansion, particularly in Europe and Asia.',
-        pageNumber: 88
+        reportYear: 2011,
+        reportId: '2011',
+        text: 'Brooks became #1 in running shoes',
+        context: 'Brooks became the #1 brand in running shoes at specialty stores, an amazing achievement.',
+        pageNumber: 23
       },
       {
         reportYear: 2020,
         reportId: '2020',
-        text: 'Brooks benefited from running boom',
-        context: 'Brooks saw record sales as COVID-19 drove increased interest in outdoor running.',
-        pageNumber: 95
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Brooks Running achieved record sales growth...',
-        context: 'Brooks Sports grew revenues by 25% to exceed $1 billion for the first time. The company maintained its #1 market share position in performance running footwear.',
-        pageNumber: 112
+        text: 'Brooks thrived during the running boom',
+        context: 'Brooks thrived during COVID as running became a popular pandemic activity.',
+        pageNumber: 25
       }
     ]
   },
@@ -2575,39 +1861,18 @@ const mockSubsidiaries = [
     description: 'One of the largest supply chain services companies, providing grocery and foodservice distribution.',
     mentions: [
       {
-        reportYear: 2005,
-        reportId: '2005',
-        text: 'McLane continued growth trajectory',
-        context: 'Under Grady Rosier\'s leadership, McLane Company expanded its distribution network and customer base.',
-        pageNumber: 34
+        reportYear: 2003,
+        reportId: '2003',
+        text: 'We purchased McLane Company from Walmart',
+        context: 'We purchased McLane Company, a $23 billion revenue distributor, from Walmart for $1.5 billion.',
+        pageNumber: 14
       },
       {
-        reportYear: 2010,
-        reportId: '2010',
-        text: 'McLane revenues exceeded $33 billion',
-        context: 'McLane achieved record revenues of $33 billion while maintaining operational excellence.',
-        pageNumber: 71
-      },
-      {
-        reportYear: 2016,
-        reportId: '2016',
-        text: 'McLane invested in technology',
-        context: 'McLane made significant technology investments to improve supply chain efficiency.',
-        pageNumber: 81
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'McLane navigated supply chain disruptions',
-        context: 'McLane successfully managed through pandemic supply chain challenges, maintaining service levels.',
-        pageNumber: 73
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'McLane distributed over 50 billion units to convenience stores...',
-        context: 'McLane Company delivered products to over 110,000 locations nationwide, with revenues exceeding $53 billion. The company\'s efficiency improvements reduced delivery times by 15%.',
-        pageNumber: 94
+        reportYear: 2004,
+        reportId: '2004',
+        text: 'McLane increased earnings significantly',
+        context: 'Under Grady Rosier\'s leadership, McLane increased earnings significantly in its first full year with Berkshire.',
+        pageNumber: 20
       }
     ]
   },
@@ -2619,74 +1884,18 @@ const mockSubsidiaries = [
     description: 'Largest operator of travel centers in North America with 750+ locations.',
     mentions: [
       {
-        reportYear: 2013,
-        reportId: '2013',
-        text: 'We agreed to acquire 50% of Pilot Flying J',
-        context: 'Berkshire agreed to gradually acquire up to 80% of Pilot Flying J, the largest travel center operator in North America.',
-        pageNumber: 6
-      },
-      {
         reportYear: 2017,
         reportId: '2017',
-        text: 'We increased our interest in Pilot Flying J to 38.6%',
-        context: 'Berkshire increased its ownership stake in Pilot Flying J, with an agreement to become majority owner in 2023.',
-        pageNumber: 11
-      },
-      {
-        reportYear: 2018,
-        reportId: '2018',
-        text: 'Pilot Flying J opened 7 new travel centers',
-        context: 'Pilot Flying J continued its expansion, opening 7 new travel centers and upgrading 25 existing locations.',
-        pageNumber: 84
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'Pilot Flying J served over 1 billion guests',
-        context: 'Pilot Flying J served over 1 billion guests across its 750+ locations, maintaining its market leadership.',
-        pageNumber: 72
-      },
-      {
-        reportYear: 2020,
-        reportId: '2020',
-        text: 'Pilot Flying J remained essential during the pandemic',
-        context: 'As an essential service provider, Pilot Flying J kept all locations open throughout the pandemic.',
-        pageNumber: 19
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'Pilot Flying J expanded EV charging',
-        context: 'Pilot Flying J began significant expansion of electric vehicle charging infrastructure at its locations.',
-        pageNumber: 61
-      },
-      {
-        reportYear: 2022,
-        reportId: '2022',
-        text: 'Pilot Flying J prepared for ownership transition',
-        context: 'Pilot Flying J prepared for Berkshire\'s scheduled increase to majority ownership in 2023.',
-        pageNumber: 86
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Pilot Flying J served 1.3 billion guests...',
-        context: 'Pilot Flying J welcomed 1.3 billion guests across its 750+ locations in 2023. The company invested heavily in electric vehicle charging infrastructure at its travel centers.',
-        pageNumber: 93
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'We became majority owner of Pilot Flying J',
-        context: 'Berkshire completed its purchase of a majority stake in Pilot Flying J as scheduled.',
+        text: 'We increased our stake in Pilot Flying J',
+        context: 'We increased our ownership stake in Pilot Flying J to 38.6%, with plans to become majority owner in 2023.',
         pageNumber: 14
       },
       {
         reportYear: 2023,
         reportId: '2023',
-        text: 'Pilot Flying J served 1.3 billion guests',
-        context: 'Pilot Flying J welcomed 1.3 billion guests across its 750+ locations in 2023.',
-        pageNumber: 93
+        text: 'We now own 80% of Pilot Travel Centers',
+        context: 'We now own 80% of Pilot Travel Centers, completing our planned ownership increase.',
+        pageNumber: 13
       }
     ]
   },
@@ -2698,39 +1907,25 @@ const mockSubsidiaries = [
     description: 'World leader in private aviation with the largest and most diverse private jet fleet.',
     mentions: [
       {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'NetJets flew over 500,000 flight hours safely...',
-        context: 'NetJets operated over 500,000 flight hours in 2023 with its fleet of 750+ aircraft. The company added 100 new aircraft to meet growing demand for private aviation services.',
-        pageNumber: 84
-      },
-      {
         reportYear: 1998,
         reportId: '1998',
-        text: 'We purchased Executive Jet, operator of the NetJets program',
-        context: 'Berkshire acquired Executive Jet Aviation, which operates the NetJets fractional ownership program, pioneering a new way for corporations and individuals to utilize private aircraft.',
-        pageNumber: 13
+        text: 'We purchased Executive Jet, operator of NetJets',
+        context: 'We purchased Executive Jet, Inc., operator of the NetJets fractional ownership program, for $725 million.',
+        pageNumber: 19
       },
       {
-        reportYear: 2014,
-        reportId: '2014',
-        text: 'NetJets ordered up to 425 new jets from Cessna and Bombardier',
-        context: 'NetJets placed the largest private jet order in history, demonstrating our confidence in the business and commitment to maintaining the youngest, safest fleet in private aviation.',
-        pageNumber: 10
+        reportYear: 2003,
+        reportId: '2003',
+        text: 'NetJets is the runaway leader in fractional ownership',
+        context: 'NetJets is the runaway leader in fractional ownership of jets, with a fleet larger than that of our three largest competitors combined.',
+        pageNumber: 15
       },
       {
         reportYear: 2009,
         reportId: '2009',
-        text: 'NetJets navigated through the worst year in aviation history',
-        context: 'Under Dave Sokol\'s leadership, NetJets cut costs dramatically while maintaining safety standards during the severe aviation downturn.',
-        pageNumber: 15
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'NetJets operates a fleet of 750 aircraft',
-        context: 'NetJets, the world\'s leading private jet company, operates approximately 750 aircraft and flies to more than 170 countries.',
-        pageNumber: 11
+        text: 'NetJets suffered significant losses',
+        context: 'NetJets suffered significant losses in 2009 as the recession hit luxury spending hard. We made major management changes.',
+        pageNumber: 18
       }
     ]
   },
@@ -2800,39 +1995,25 @@ const mockSubsidiaries = [
     description: 'Largest home furnishing store in North America, known for selection and value.',
     mentions: [
       {
+        reportYear: 2004,
+        reportId: '2004',
+        text: 'Nebraska Furniture Mart opened in Kansas City',
+        context: 'Nebraska Furniture Mart opened a massive 450,000 square foot store in Kansas City, the largest home furnishings store in America.',
+        pageNumber: 25
+      },
+      {
         reportYear: 2013,
         reportId: '2013',
-        text: 'NFM opened its Texas store, the largest home furnishings store in America',
-        context: 'The new 1.8 million square foot Texas location represents the largest home furnishings store in America, demonstrating NFM\'s continued growth 30 years after we purchased it from Mrs. B.',
-        pageNumber: 19
+        text: 'NFM opened its third store in Dallas',
+        context: 'Nebraska Furniture Mart opened its third store in Dallas, a massive 560,000 square foot facility.',
+        pageNumber: 22
       },
       {
-        reportYear: 1997,
-        reportId: '1997',
-        text: 'Mrs. B died at age 104',
-        context: 'Rose Blumkin, the remarkable founder of Nebraska Furniture Mart, passed away at 104, having built one of America\'s largest furniture stores from a $500 investment.',
-        pageNumber: 17
-      },
-      {
-        reportYear: 1983,
-        reportId: '1983',
-        text: 'We purchased 80% of Nebraska Furniture Mart',
-        context: 'We acquired 80% of Nebraska Furniture Mart from Rose Blumkin ("Mrs. B"), who started the business with $500 in 1937.',
-        pageNumber: 7
-      },
-      {
-        reportYear: 2003,
-        reportId: '2003',
-        text: 'NFM opened a 450,000 square foot store in Kansas City',
-        context: 'Nebraska Furniture Mart opened its second store outside Omaha, a 450,000 square foot facility in Kansas City.',
-        pageNumber: 18
-      },
-      {
-        reportYear: 1989,
-        reportId: '1989',
-        text: 'Mrs. B, at 96, opened a competing store',
-        context: 'After a disagreement, Mrs. B left NFM and started a competing store across the street. We later bought her new business and merged it back.',
-        pageNumber: 12
+        reportYear: 2023,
+        reportId: '2023',
+        text: 'The Blumkin family continues to excel',
+        context: 'The Blumkin family continues to excel at Nebraska Furniture Mart, now in its fourth generation of family leadership.',
+        pageNumber: 24
       }
     ]
   },
@@ -3011,38 +2192,10 @@ const mockSubsidiaries = [
     description: 'Fine jewelry and gift retailer based in Omaha, Nebraska.',
     mentions: [
       {
-        reportYear: 1989,
-        reportId: '1989',
-        text: 'We purchased 80% of Borsheims',
-        context: 'We acquired 80% of Borsheims, one of the country\'s largest jewelry stores, from the Friedman family.',
-        pageNumber: 17
-      },
-      {
-        reportYear: 1995,
-        reportId: '1995',
+        reportYear: 2006,
+        reportId: '2006',
         text: 'Borsheims had record sales',
-        context: 'Ike Friedman continues to run Borsheims brilliantly. Sales reached another record, and the store\'s reputation for value and service continues to spread.',
-        pageNumber: 13
-      },
-      {
-        reportYear: 2000,
-        reportId: '2000',
-        text: 'Borsheims sales exceeded $100 million',
-        context: 'Borsheims achieved sales of over $100 million for the first time, with particularly strong growth in engagement rings and watches.',
-        pageNumber: 67
-      },
-      {
-        reportYear: 2009,
-        reportId: '2009',
-        text: 'Borsheims navigated the recession well',
-        context: 'Despite the severe recession impacting luxury goods, Susan Jacques led Borsheims through the downturn while maintaining our reputation for exceptional value.',
-        pageNumber: 75
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'Borsheims expanded its online presence',
-        context: 'Karen Goracke has modernized Borsheims\' operations, significantly expanding online sales while maintaining the personal service that distinguishes the store.',
+        context: 'Borsheims had record sales, benefiting from Berkshire shareholder weekend and strong luxury demand.',
         pageNumber: 26
       }
     ]
@@ -3157,39 +2310,11 @@ const mockSubsidiaries = [
     description: 'Direct retailer and wholesaler of party supplies, arts and crafts, toys, and novelties.',
     mentions: [
       {
-        reportYear: 2014,
-        reportId: '2014',
-        text: 'Oriental Trading expanded product categories',
-        context: 'Oriental Trading Company added thousands of new products across party, craft, and educational categories.',
-        pageNumber: 84
-      },
-      {
-        reportYear: 2017,
-        reportId: '2017',
-        text: 'Oriental Trading improved digital platform',
-        context: 'Oriental Trading launched an enhanced e-commerce platform improving customer experience.',
-        pageNumber: 93
-      },
-      {
-        reportYear: 2019,
-        reportId: '2019',
-        text: 'Oriental Trading grew teacher market',
-        context: 'Oriental Trading expanded its education market presence, becoming a go-to supplier for teachers.',
-        pageNumber: 102
-      },
-      {
-        reportYear: 2021,
-        reportId: '2021',
-        text: 'Oriental Trading saw craft surge',
-        context: 'Oriental Trading benefited from increased crafting activity during pandemic stay-at-home periods.',
-        pageNumber: 91
-      },
-      {
-        reportYear: 2023,
-        reportId: '2023',
-        text: 'Oriental Trading expanded its digital presence...',
-        context: 'Oriental Trading Company grew e-commerce sales by 30% through improved mobile experience and expanded product categories. The company now offers over 60,000 unique items.',
-        pageNumber: 109
+        reportYear: 2012,
+        reportId: '2012',
+        text: 'We acquired Oriental Trading',
+        context: 'We acquired Oriental Trading Company, a direct marketer of party supplies and crafts.',
+        pageNumber: 24
       }
     ]
   },
@@ -3291,67 +2416,18 @@ const mockSubsidiaries = [
     description: 'Daily newspaper serving Buffalo, New York and surrounding areas.',
     mentions: [
       {
-        reportYear: 1977,
-        reportId: '1977',
-        text: 'We purchased the Buffalo Evening News',
-        context: 'Berkshire acquired the Buffalo Evening News for $32.5 million, entering the newspaper business for the first time.',
-        pageNumber: 5
-      },
-      {
-        reportYear: 1978,
-        reportId: '1978',
-        text: 'The Buffalo News faces intense competition',
-        context: 'The Buffalo News is engaged in a difficult competitive battle with the morning Courier-Express, resulting in operating losses.',
-        pageNumber: 7
-      },
-      {
-        reportYear: 1982,
-        reportId: '1982',
-        text: 'The Buffalo News earned $19 million pre-tax',
-        context: 'After years of losses fighting for market dominance, the Buffalo News became highly profitable after its competitor closed.',
-        pageNumber: 8
-      },
-      {
-        reportYear: 1985,
-        reportId: '1985',
-        text: 'Buffalo News earnings hit new records',
-        context: 'The Buffalo News, under Stan Lipsey\'s excellent management, achieved record earnings and circulation.',
-        pageNumber: 15
-      },
-      {
-        reportYear: 1990,
-        reportId: '1990',
-        text: 'Stan Lipsey continues to run an outstanding operation',
-        context: 'The Buffalo News, under Stan Lipsey\'s leadership, maintained excellent profit margins and journalistic quality.',
-        pageNumber: 12
-      },
-      {
-        reportYear: 1995,
-        reportId: '1995',
-        text: 'The News earned over $45 million',
-        context: 'The Buffalo News earned over $45 million pre-tax, maintaining its position as one of the most profitable newspapers in America.',
-        pageNumber: 82
-      },
-      {
         reportYear: 2000,
         reportId: '2000',
-        text: 'The News earned $40 million despite circulation pressures',
-        context: 'Despite industry-wide circulation declines, the Buffalo News earned over $40 million through cost management and strong local advertising.',
-        pageNumber: 54
+        text: 'Buffalo News earnings remained strong',
+        context: 'The Buffalo News earnings remained strong despite industry headwinds, thanks to Stan Lipsey\'s excellent management.',
+        pageNumber: 23
       },
       {
         reportYear: 2006,
         reportId: '2006',
-        text: 'Buffalo News faces digital challenges',
-        context: 'The Buffalo News, like all newspapers, faces challenges from digital media but continues to be profitable under Stan Lipsey.',
-        pageNumber: 73
-      },
-      {
-        reportYear: 2012,
-        reportId: '2012',
-        text: 'The Buffalo News adapted to digital challenges',
-        context: 'Under Stan Lipsey, the Buffalo News successfully developed digital revenue streams while maintaining print profitability.',
-        pageNumber: 29
+        text: 'Buffalo News maintained profitability',
+        context: 'The Buffalo News maintained profitability in a very difficult newspaper environment.',
+        pageNumber: 24
       }
     ]
   },
@@ -3409,39 +2485,11 @@ const mockSubsidiaries = [
     description: 'Leading global distributor of corporate news and multimedia content.',
     mentions: [
       {
-        reportYear: 2006,
-        reportId: '2006',
-        text: 'We acquired Business Wire',
-        context: 'Berkshire purchased Business Wire, the leading global distributor of corporate news. Cathy Baron Tamraz will continue as CEO.',
-        pageNumber: 19
-      },
-      {
-        reportYear: 2009,
-        reportId: '2009',
-        text: 'Business Wire maintained leadership despite recession',
-        context: 'Despite the recession impacting corporate communications budgets, Business Wire maintained its leadership position.',
-        pageNumber: 89
-      },
-      {
-        reportYear: 2011,
-        reportId: '2011',
-        text: 'Business Wire expanded internationally',
-        context: 'Business Wire opened new offices in multiple countries, strengthening its position as the premier global news distribution service.',
-        pageNumber: 73
-      },
-      {
-        reportYear: 2015,
-        reportId: '2015',
-        text: 'Business Wire expanded Asia presence',
-        context: 'Business Wire significantly expanded its presence in Asian markets to serve global clients.',
-        pageNumber: 98
-      },
-      {
         reportYear: 2018,
         reportId: '2018',
-        text: 'Business Wire launched new multimedia services',
-        context: 'Under Cathy Baron Tamraz\'s leadership, Business Wire expanded its multimedia capabilities to meet evolving client needs in digital communications.',
-        pageNumber: 91
+        text: 'Business Wire continues steady growth',
+        context: 'Business Wire continues its steady growth as the premier press release distribution service.',
+        pageNumber: 27
       }
     ]
   },
