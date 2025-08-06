@@ -64,16 +64,6 @@ const books: Book[] = [
     category: 'investing'
   },
   {
-    id: 'security-analysis',
-    title: 'Security Analysis',
-    author: 'Benjamin Graham & David Dodd',
-    year: 1934,
-    description: 'The timeless classic that founded the profession of security analysis.',
-    amazonUrl: 'https://www.amazon.com/Security-Analysis-Foreword-Buffett-Editions/dp/0071592539',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/0071592539-L.jpg',
-    category: 'investing'
-  },
-  {
     id: 'buffett-way',
     title: 'The Warren Buffett Way',
     author: 'Robert G. Hagstrom',
@@ -100,7 +90,7 @@ const books: Book[] = [
     year: 2023,
     description: 'The latest edition of the timeless value investing classic with updated commentary by Seth Klarman and others.',
     amazonUrl: 'https://www.amazon.com/Security-Analysis-Seventh-Principles-Techniques/dp/1264932405',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/9781264932405-L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/1264932405-L.jpg',
     category: 'investing'
   },
   {
@@ -110,7 +100,7 @@ const books: Book[] = [
     year: 2021,
     description: 'How to read the expectations embedded in stock prices and make better investment decisions.',
     amazonUrl: 'https://www.amazon.com/Expectations-Investing-Reading-Prices-Returns/dp/0231544685',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/9780231544689-L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/0231544685-L.jpg',
     category: 'investing'
   },
   {
@@ -140,7 +130,7 @@ const books: Book[] = [
     year: 2017,
     description: 'A compilation of quotes from Charlie Munger on life and business.',
     amazonUrl: 'https://www.amazon.com/Tao-Charlie-Munger-Compilation-Statements/dp/1501153331',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/9781501153334-L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/1501153331-L.jpg',
     category: 'biography'
   },
   {
@@ -150,7 +140,7 @@ const books: Book[] = [
     year: 2017,
     description: '30 years of lessons learned from Warren Buffett & Charlie Munger at the annual shareholders meeting.',
     amazonUrl: 'https://www.amazon.com/University-Berkshire-Hathaway-Lessons-Shareholders/dp/0998406279',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/9780998406275-L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/0998406279-L.jpg',
     category: 'history'
   }
 ]
