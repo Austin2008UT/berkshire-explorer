@@ -26,6 +26,15 @@ console.log(`Configured to listen on port: ${PORT}`)
 app.use(cors())
 app.use(express.json())
 
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+  res.json({ 
+    status: 'ok', 
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || 'development'
+  })
+})
+
 // API Routes
 app.use('/api/reports', reportsRouter)
 app.use('/api/subsidiaries', subsidiariesRouter)
@@ -38,20 +47,11 @@ app.use('/pdfs', express.static(path.join(__dirname, '../public/pdfs')))
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../dist')))
   
-  // Handle React routing
+  // Handle React routing - must be last!
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../dist/index.html'))
   })
 }
-
-// Health check endpoint
-app.get('/api/health', (req, res) => {
-  res.json({ 
-    status: 'ok', 
-    timestamp: new Date().toISOString(),
-    environment: process.env.NODE_ENV || 'development'
-  })
-})
 
 // Error handling middleware
 app.use((err, req, res, next) => {

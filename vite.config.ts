@@ -9,7 +9,14 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:5000',
         changeOrigin: true,
+      },
+      '/pdfs': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
       }
     }
+  },
+  define: {
+    'process.env.REACT_APP_GIT_SHA': JSON.stringify(process.env.GIT_SHA || 'main')
   }
 })
