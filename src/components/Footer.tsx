@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
     <footer className="site-footer">
       <div className="footer-content">
         <p>
-          The Berkshire Explorer is a not-for-profit project created and maintained by William Wolfram. 
+          The Berkshire Explorer is a non-profit project created and maintained by William Wolfram. 
           It's not connected to Berkshire Hathaway in any way. All trademarks and content belong to their 
           rightful owners — especially Berkshire Hathaway.
         </p>
