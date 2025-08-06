@@ -9,6 +9,7 @@
   border-bottom: 1px solid var(--border-color);
   padding: 0 2rem;
   display: flex;
+  justify-content: center;
   gap: 2rem;
   box-shadow: var(--shadow);
   position: sticky;
