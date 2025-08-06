@@ -44,26 +44,40 @@ const ReportsList: React.FC<ReportsListProps> = ({ reports }) => {
               )}
             </div>
             <div className="report-actions">
-              <button 
-                className="btn-primary"
-                onClick={() => setSelectedReport(report)}
-              >
-                Read Report
-              </button>
-              <a 
-                href={report.fileUrl} 
-                download 
-                className="btn-secondary"
-                onClick={(e) => e.stopPropagation()}
-              >
-                Download PDF
-              </a>
+              {report.fileUrl.endsWith('.html') ? (
+                <a 
+                  href={report.fileUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                  style={{ textDecoration: 'none' }}
+                >
+                  Read Report (HTML)
+                </a>
+              ) : (
+                <button 
+                  className="btn-primary"
+                  onClick={() => setSelectedReport(report)}
+                >
+                  Read Report
+                </button>
+              )}
+              {!report.fileUrl.endsWith('.html') && (
+                <a 
+                  href={report.fileUrl} 
+                  download 
+                  className="btn-secondary"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Download PDF
+                </a>
+              )}
             </div>
           </div>
         ))}
       </div>
 
-      {selectedReport && (
+      {selectedReport && !selectedReport.fileUrl.endsWith('.html') && (
         <div className="report-modal" onClick={() => setSelectedReport(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={() => setSelectedReport(null)}>×</button>

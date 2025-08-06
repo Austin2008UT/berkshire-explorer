@@ -105,6 +105,11 @@
   color: white;
 }
 
+a.btn-primary {
+  display: inline-block;
+  text-align: center;
+}
+
 .btn-primary:hover {
   background: var(--primary-color);
 }

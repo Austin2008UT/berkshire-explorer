@@ -229,7 +229,7 @@ const mockReports = [
     id: '1999',
     year: 1999,
     title: 'Berkshire Hathaway Inc. 1999 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1999.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1999pdf.html',
     bookValuePerShare: 37987,
     marketValuePerShare: 56100,
     datePublished: '2000-03-01'
@@ -247,7 +247,7 @@ const mockReports = [
     id: '1997',
     year: 1997,
     title: 'Berkshire Hathaway Inc. 1997 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1997.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1997.html',
     bookValuePerShare: 25488,
     marketValuePerShare: 46000,
     datePublished: '1998-03-01'
@@ -256,7 +256,7 @@ const mockReports = [
     id: '1996',
     year: 1996,
     title: 'Berkshire Hathaway Inc. 1996 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1996.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1996.html',
     bookValuePerShare: 19011,
     marketValuePerShare: 34100,
     datePublished: '1997-03-01'
@@ -265,7 +265,7 @@ const mockReports = [
     id: '1995',
     year: 1995,
     title: 'Berkshire Hathaway Inc. 1995 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1995.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1995.html',
     bookValuePerShare: 14426,
     marketValuePerShare: 32100,
     datePublished: '1996-03-01'
@@ -274,7 +274,7 @@ const mockReports = [
     id: '1994',
     year: 1994,
     title: 'Berkshire Hathaway Inc. 1994 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1994.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1994.html',
     bookValuePerShare: 10083,
     marketValuePerShare: 20400,
     datePublished: '1995-03-01'
@@ -283,7 +283,7 @@ const mockReports = [
     id: '1993',
     year: 1993,
     title: 'Berkshire Hathaway Inc. 1993 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1993.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1993.html',
     bookValuePerShare: 8854,
     marketValuePerShare: 16325,
     datePublished: '1994-03-01'
@@ -292,7 +292,7 @@ const mockReports = [
     id: '1992',
     year: 1992,
     title: 'Berkshire Hathaway Inc. 1992 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1992.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1992.html',
     bookValuePerShare: 7745,
     marketValuePerShare: 11750,
     datePublished: '1993-03-01'
@@ -301,7 +301,7 @@ const mockReports = [
     id: '1991',
     year: 1991,
     title: 'Berkshire Hathaway Inc. 1991 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1991.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1991.html',
     bookValuePerShare: 6437,
     marketValuePerShare: 9050,
     datePublished: '1992-03-01'
@@ -310,7 +310,7 @@ const mockReports = [
     id: '1990',
     year: 1990,
     title: 'Berkshire Hathaway Inc. 1990 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1990.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1990.html',
     bookValuePerShare: 4612,
     marketValuePerShare: 6675,
     datePublished: '1991-03-01'
@@ -319,7 +319,7 @@ const mockReports = [
     id: '1989',
     year: 1989,
     title: 'Berkshire Hathaway Inc. 1989 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1989.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1989.html',
     bookValuePerShare: 4296,
     marketValuePerShare: 8675,
     datePublished: '1990-03-01'
@@ -328,7 +328,7 @@ const mockReports = [
     id: '1988',
     year: 1988,
     title: 'Berkshire Hathaway Inc. 1988 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1988.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1988.html',
     bookValuePerShare: 2975,
     marketValuePerShare: 4700,
     datePublished: '1989-03-01'
@@ -337,7 +337,7 @@ const mockReports = [
     id: '1987',
     year: 1987,
     title: 'Berkshire Hathaway Inc. 1987 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1987.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1987.html',
     bookValuePerShare: 2477,
     marketValuePerShare: 2950,
     datePublished: '1988-03-01'
@@ -346,7 +346,7 @@ const mockReports = [
     id: '1986',
     year: 1986,
     title: 'Berkshire Hathaway Inc. 1986 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1986.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1986.html',
     bookValuePerShare: 2073,
     marketValuePerShare: 3000,
     datePublished: '1987-03-01'
@@ -355,7 +355,7 @@ const mockReports = [
     id: '1985',
     year: 1985,
     title: 'Berkshire Hathaway Inc. 1985 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1985.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1985.html',
     bookValuePerShare: 1643,
     marketValuePerShare: 2443,
     datePublished: '1986-03-01'
@@ -364,7 +364,7 @@ const mockReports = [
     id: '1984',
     year: 1984,
     title: 'Berkshire Hathaway Inc. 1984 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1984.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1984.html',
     bookValuePerShare: 1108,
     marketValuePerShare: 1275,
     datePublished: '1985-03-01'
@@ -373,7 +373,7 @@ const mockReports = [
     id: '1983',
     year: 1983,
     title: 'Berkshire Hathaway Inc. 1983 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1983.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1983.html',
     bookValuePerShare: 975,
     marketValuePerShare: 1310,
     datePublished: '1984-03-01'
@@ -382,7 +382,7 @@ const mockReports = [
     id: '1982',
     year: 1982,
     title: 'Berkshire Hathaway Inc. 1982 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1982.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1982.html',
     bookValuePerShare: 737,
     marketValuePerShare: 999,
     datePublished: '1983-03-01'
@@ -391,7 +391,7 @@ const mockReports = [
     id: '1981',
     year: 1981,
     title: 'Berkshire Hathaway Inc. 1981 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1981.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1981.html',
     bookValuePerShare: 526,
     marketValuePerShare: 470,
     datePublished: '1982-03-01'
@@ -400,7 +400,7 @@ const mockReports = [
     id: '1980',
     year: 1980,
     title: 'Berkshire Hathaway Inc. 1980 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1980.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1980.html',
     bookValuePerShare: 400,
     marketValuePerShare: 430,
     datePublished: '1981-03-01'
@@ -409,7 +409,7 @@ const mockReports = [
     id: '1979',
     year: 1979,
     title: 'Berkshire Hathaway Inc. 1979 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1979.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1979.html',
     bookValuePerShare: 335,
     marketValuePerShare: 310,
     datePublished: '1980-03-01'
@@ -418,7 +418,7 @@ const mockReports = [
     id: '1978',
     year: 1978,
     title: 'Berkshire Hathaway Inc. 1978 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1978.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1978.html',
     bookValuePerShare: 218,
     marketValuePerShare: 220,
     datePublished: '1979-03-01'
@@ -427,7 +427,7 @@ const mockReports = [
     id: '1977',
     year: 1977,
     title: 'Berkshire Hathaway Inc. 1977 Annual Report',
-    fileUrl: '/pdfs/annual-reports/berkshire-1977.pdf',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1977.html',
     bookValuePerShare: 147,
     marketValuePerShare: 155,
     datePublished: '1978-03-01'
