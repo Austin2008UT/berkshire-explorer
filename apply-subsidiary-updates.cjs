@@ -4,6 +4,8 @@ const path = require('path');
 // Import all the mentions
 const allMentions = require('./update-all-subsidiary-mentions.cjs');
 const comprehensiveMentions = require('./comprehensive-subsidiary-mentions.cjs').default;
+const expandedMentions = require('./expand-major-subsidiary-mentions.cjs');
+const completeMentions = require('./complete-subsidiary-mentions.cjs');
 
 // Read the controller file
 const controllerPath = path.join(__dirname, 'server/controllers/subsidiariesController.js');
@@ -63,34 +65,74 @@ function updateSubsidiary(content, subsidiaryId, mentions) {
   return beforeMentions + newMentionsString + afterMentions;
 }
 
+// Function to add mentions to existing ones
+function addMentions(content, subsidiaryId, newMentions) {
+  // Find the subsidiary
+  const idRegex = new RegExp(`id: '${subsidiaryId}'`);
+  const idMatch = idRegex.exec(content);
+  
+  if (!idMatch) {
+    console.log(`⚠️  Subsidiary ${subsidiaryId} not found`);
+    return content;
+  }
+  
+  // Find the mentions array for this subsidiary
+  let searchFrom = idMatch.index;
+  const mentionsRegex = /mentions: \[([\s\S]*?)\]/;
+  const mentionsMatch = content.substring(searchFrom).match(mentionsRegex);
+  
+  if (!mentionsMatch) {
+    console.log(`⚠️  No mentions array found for ${subsidiaryId}`);
+    return content;
+  }
+  
+  const mentionsStart = searchFrom + mentionsMatch.index;
+  const mentionsEnd = mentionsStart + mentionsMatch[0].length;
+  
+  // Extract existing mentions
+  const existingMentionsStr = mentionsMatch[1].trim();
+  const hasExistingMentions = existingMentionsStr.length > 0;
+  
+  // Format new mentions
+  const formattedNewMentions = formatMentions(newMentions);
+  
+  // Combine mentions
+  let combinedMentions;
+  if (hasExistingMentions) {
+    combinedMentions = existingMentionsStr + ',' + formattedNewMentions;
+  } else {
+    combinedMentions = formattedNewMentions;
+  }
+  
+  // Replace mentions array
+  const newMentionsArray = `mentions: [${combinedMentions}
+    ]`;
+  
+  return content.substring(0, mentionsStart) + newMentionsArray + content.substring(mentionsEnd);
+}
+
 // Apply all updates
 let updatedContent = controllerContent;
 let updateCount = 0;
 
-// First apply comprehensive mentions (from the first file)
-Object.keys(comprehensiveMentions).forEach(subsidiaryId => {
-  const mentions = comprehensiveMentions[subsidiaryId];
-  if (mentions && mentions.length > 0) {
-    const originalLength = updatedContent.length;
-    updatedContent = updateSubsidiary(updatedContent, subsidiaryId, mentions);
-    if (updatedContent.length !== originalLength) {
-      console.log(`✅ Updated ${subsidiaryId} with ${mentions.length} mentions from comprehensive scan`);
-      updateCount++;
-    }
-  }
-});
+// Apply all mention sources
+const mentionSources = [
+  { name: 'expanded', data: expandedMentions },
+  { name: 'complete', data: completeMentions }
+];
 
-// Then apply all subsidiary mentions (from the second file)
-Object.keys(allMentions).forEach(subsidiaryId => {
-  const mentions = allMentions[subsidiaryId];
-  if (mentions && mentions.length > 0) {
-    const originalLength = updatedContent.length;
-    updatedContent = updateSubsidiary(updatedContent, subsidiaryId, mentions);
-    if (updatedContent.length !== originalLength) {
-      console.log(`✅ Updated ${subsidiaryId} with ${mentions.length} mentions`);
-      updateCount++;
+mentionSources.forEach(source => {
+  Object.keys(source.data).forEach(subsidiaryId => {
+    const mentions = source.data[subsidiaryId];
+    if (mentions && mentions.length > 0) {
+      const originalLength = updatedContent.length;
+      updatedContent = addMentions(updatedContent, subsidiaryId, mentions);
+      if (updatedContent.length !== originalLength) {
+        console.log(`✅ Added ${mentions.length} ${source.name} mentions to ${subsidiaryId}`);
+        updateCount++;
+      }
     }
-  }
+  });
 });
 
 // Write the updated content
