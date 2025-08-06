@@ -229,7 +229,7 @@ const mockReports = [
     id: '1999',
     year: 1999,
     title: 'Berkshire Hathaway Inc. 1999 Annual Report',
-    fileUrl: 'https://www.berkshirehathaway.com/letters/1999pdf.html',
+    fileUrl: 'https://www.berkshirehathaway.com/letters/1999.html',
     bookValuePerShare: 37987,
     marketValuePerShare: 56100,
     datePublished: '2000-03-01'
