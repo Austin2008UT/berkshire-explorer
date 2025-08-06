@@ -20,7 +20,7 @@ const books: Book[] = [
     year: 2008,
     description: 'The most comprehensive biography of Warren Buffett, written with his cooperation.',
     amazonUrl: 'https://www.amazon.com/Snowball-Warren-Buffett-Business-Life/dp/0553384611',
-    coverImage: 'https://m.media-amazon.com/images/I/81eI3jNr8LL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/0553384611-L.jpg',
     category: 'biography'
   },
   {
@@ -30,7 +30,7 @@ const books: Book[] = [
     year: 2012,
     description: 'A collection of Fortune articles about Warren Buffett spanning over 40 years.',
     amazonUrl: 'https://www.amazon.com/Tap-Dancing-Work-Warren-Practically/dp/1591845734',
-    coverImage: 'https://m.media-amazon.com/images/I/71OXbNm4Z9L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/1591845734-L.jpg',
     category: 'biography'
   },
   {
@@ -40,7 +40,7 @@ const books: Book[] = [
     year: 2005,
     description: 'A collection of Charlie Munger\'s speeches and writings on life, business, and investing.',
     amazonUrl: 'https://www.amazon.com/Poor-Charlies-Almanack-Charles-Expanded/dp/1578645018',
-    coverImage: 'https://m.media-amazon.com/images/I/91uwI2QlPjL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/1578645018-L.jpg',
     category: 'investing'
   },
   {
@@ -50,7 +50,7 @@ const books: Book[] = [
     year: 1997,
     description: 'Selected letters to shareholders organized by topic, providing insight into Buffett\'s investment philosophy.',
     amazonUrl: 'https://www.amazon.com/Essays-Warren-Buffett-Lessons-Corporate/dp/1611637589',
-    coverImage: 'https://m.media-amazon.com/images/I/71dKQ3p3KjL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/1611637589-L.jpg',
     category: 'letters'
   },
   {
@@ -60,7 +60,7 @@ const books: Book[] = [
     year: 1949,
     description: 'The definitive book on value investing by Warren Buffett\'s mentor.',
     amazonUrl: 'https://www.amazon.com/Intelligent-Investor-Definitive-Investing-Essentials/dp/0060555661',
-    coverImage: 'https://m.media-amazon.com/images/I/91yj3mbz4JL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/0060555661-L.jpg',
     category: 'investing'
   },
   {
@@ -70,7 +70,7 @@ const books: Book[] = [
     year: 1934,
     description: 'The timeless classic that founded the profession of security analysis.',
     amazonUrl: 'https://www.amazon.com/Security-Analysis-Foreword-Buffett-Editions/dp/0071592539',
-    coverImage: 'https://m.media-amazon.com/images/I/81PRFEtJNkL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/0071592539-L.jpg',
     category: 'investing'
   },
   {
@@ -80,7 +80,7 @@ const books: Book[] = [
     year: 1994,
     description: 'An in-depth look at Warren Buffett\'s investment strategies and philosophy.',
     amazonUrl: 'https://www.amazon.com/Warren-Buffett-Way-Robert-Hagstrom/dp/1118503252',
-    coverImage: 'https://m.media-amazon.com/images/I/71qH4JscINL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/1118503252-L.jpg',
     category: 'investing'
   },
   {
@@ -90,7 +90,7 @@ const books: Book[] = [
     year: 2014,
     description: 'Explores how Berkshire Hathaway\'s culture will endure beyond Warren Buffett.',
     amazonUrl: 'https://www.amazon.com/Berkshire-Beyond-Buffett-Enduring-Values/dp/0231170041',
-    coverImage: 'https://m.media-amazon.com/images/I/71z6H5LHQHL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/0231170041-L.jpg',
     category: 'history'
   },
   {
@@ -100,7 +100,7 @@ const books: Book[] = [
     year: 2008,
     description: 'Learn how to read financial statements the Warren Buffett way.',
     amazonUrl: 'https://www.amazon.com/Warren-Buffett-Interpretation-Financial-Statements/dp/1849833192',
-    coverImage: 'https://m.media-amazon.com/images/I/71YShkr9SQL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/1849833192-L.jpg',
     category: 'investing'
   },
   {
@@ -110,7 +110,7 @@ const books: Book[] = [
     year: 2000,
     description: 'The definitive biography of Charlie Munger, Warren Buffett\'s partner.',
     amazonUrl: 'https://www.amazon.com/Damn-Right-Berkshire-Hathaway-Billionaire/dp/0471446912',
-    coverImage: 'https://m.media-amazon.com/images/I/71kxgD37O2L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/0471446912-L.jpg',
     category: 'biography'
   },
   {
@@ -120,7 +120,7 @@ const books: Book[] = [
     year: 2017,
     description: 'A compilation of quotes from Charlie Munger on life and business.',
     amazonUrl: 'https://www.amazon.com/Tao-Charlie-Munger-Compilation-Statements/dp/1501153331',
-    coverImage: 'https://m.media-amazon.com/images/I/61mUYg0SKHL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/1501153331-L.jpg',
     category: 'biography'
   },
   {
@@ -130,7 +130,7 @@ const books: Book[] = [
     year: 2017,
     description: '30 years of lessons learned from Warren Buffett & Charlie Munger at the annual shareholders meeting.',
     amazonUrl: 'https://www.amazon.com/University-Berkshire-Hathaway-Lessons-Shareholders/dp/0998406279',
-    coverImage: 'https://m.media-amazon.com/images/I/71K5gqZ6XbL.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/0998406279-L.jpg',
     category: 'history'
   }
 ]
