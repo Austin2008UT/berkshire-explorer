@@ -14,9 +14,9 @@ interface Video {
 const videos: Video[] = [
   {
     id: 'hbo-buffett',
-    title: 'Warren Buffett - HBO Documentary',
-    description: 'Becoming Warren Buffett - An intimate look at Buffett\'s life, career, and philosophy',
-    youtubeId: '2a9Lx9J8uSs',
+    title: 'Warren Buffett - HBO Documentary Trailer',
+    description: 'Becoming Warren Buffett - An intimate look at Buffett\'s life and philosophy',
+    youtubeId: 'Fvpl-OzJpYg',
     speaker: 'Buffett',
     year: 2017,
     category: 'documentary'
@@ -24,100 +24,100 @@ const videos: Video[] = [
   {
     id: 'munger-psychology',
     title: 'Charlie Munger - The Psychology of Human Misjudgment',
-    description: 'Munger\'s famous Harvard speech on 25 cognitive biases',
+    description: 'Munger\'s famous speech on 25 cognitive biases',
     youtubeId: 'pqzcCfUglws',
     speaker: 'Munger',
     year: 1995,
     category: 'speech'
   },
   {
-    id: 'buffett-2024-meeting',
-    title: '2024 Berkshire Hathaway Annual Meeting',
-    description: 'Full annual shareholders meeting with Q&A session',
-    youtubeId: 'xDcGLWPnDJQ',
+    id: 'buffett-2023-meeting',
+    title: '2023 Berkshire Hathaway Annual Meeting Highlights',
+    description: 'Key moments from the annual shareholders meeting',
+    youtubeId: 'Ygfuu_gOHZE',
     speaker: 'Both',
-    year: 2024,
+    year: 2023,
     category: 'annual-meeting'
   },
   {
-    id: 'buffett-cnbc-2023',
-    title: 'Warren Buffett Interview - CNBC 2023',
-    description: 'Discussing markets, investing philosophy, and the economy',
-    youtubeId: 'ZJzu_xItNkY',
+    id: 'buffett-advice',
+    title: 'Warren Buffett\'s Best Investment Advice',
+    description: 'Essential investment principles from the Oracle of Omaha',
+    youtubeId: 'Ep35V7ejLGI',
     speaker: 'Buffett',
-    year: 2023,
+    year: 2022,
     category: 'interview'
   },
   {
-    id: 'munger-2021-daily-journal',
-    title: 'Charlie Munger - 2021 Daily Journal Meeting',
-    description: 'Munger\'s insights on investing, life, and rational thinking',
-    youtubeId: 'LMfr6SdlIQs',
+    id: 'munger-wisdom',
+    title: 'Charlie Munger - Timeless Wisdom Compilation',
+    description: 'Best of Charlie Munger\'s investment and life advice',
+    youtubeId: 'i0buHRSCiuA',
     speaker: 'Munger',
     year: 2021,
-    category: 'annual-meeting'
+    category: 'interview'
   },
   {
-    id: 'buffett-gates-columbia',
-    title: 'Warren Buffett & Bill Gates at Columbia Business School',
-    description: 'Discussion on business, philanthropy, and life lessons',
-    youtubeId: 'K9m6IQXB5tU',
+    id: 'buffett-value',
+    title: 'Warren Buffett on Value Investing',
+    description: 'Buffett explains his approach to finding undervalued companies',
+    youtubeId: 'GFj2SMa27fI',
     speaker: 'Buffett',
-    year: 2009,
-    category: 'speech'
+    year: 2019,
+    category: 'interview'
   },
   {
-    id: 'munger-usc-speech',
-    title: 'Charlie Munger USC Law School Commencement Speech',
-    description: 'Munger\'s prescription for guaranteed misery and how to avoid it',
-    youtubeId: '5U0TE4oqj24',
+    id: 'munger-interview',
+    title: 'Charlie Munger on Investing and Decision Making',
+    description: 'Munger discusses mental models and rational thinking',
+    youtubeId: 'DpLCvlB0ebw',
     speaker: 'Munger',
-    year: 2007,
-    category: 'speech'
+    year: 2019,
+    category: 'interview'
   },
   {
-    id: 'buffett-florida-1998',
+    id: 'buffett-florida',
     title: 'Warren Buffett MBA Talk - University of Florida',
-    description: 'Classic Buffett talk on investing and business principles',
+    description: 'Classic Buffett speech on investing and business principles',
     youtubeId: '2MHIcabnjrA',
     speaker: 'Buffett',
     year: 1998,
     category: 'speech'
   },
   {
-    id: 'buffett-2009-crisis',
-    title: 'Warren Buffett on the 2008 Financial Crisis',
-    description: 'Reflections on the crisis and lessons learned',
-    youtubeId: 'ymm4h-Pl3cI',
-    speaker: 'Buffett',
-    year: 2009,
-    category: 'interview'
-  },
-  {
-    id: 'munger-lattice',
-    title: 'Charlie Munger - Latticework of Mental Models',
-    description: 'Explaining the importance of multidisciplinary thinking',
-    youtubeId: 'nBh3unOGjRg',
-    speaker: 'Munger',
-    year: 2019,
-    category: 'interview'
-  },
-  {
-    id: 'buffett-2019-meeting',
-    title: '2019 Berkshire Hathaway Annual Meeting - Full Q&A',
-    description: 'Six hours of wisdom from Buffett and Munger',
-    youtubeId: 'Ky-nacho5h0',
+    id: 'buffett-2022-meeting',
+    title: '2022 Berkshire Hathaway Annual Meeting Highlights',
+    description: 'Important moments from the 2022 shareholders meeting',
+    youtubeId: '9H0F4BS2dYE',
     speaker: 'Both',
-    year: 2019,
+    year: 2022,
     category: 'annual-meeting'
   },
   {
-    id: 'buffett-quick-wit',
-    title: 'Warren Buffett - Best Moments of Wit & Wisdom',
-    description: 'Compilation of Buffett\'s most memorable quotes and jokes',
-    youtubeId: '7W0PfaLFMZE',
-    speaker: 'Buffett',
+    id: 'munger-daily-journal',
+    title: 'Charlie Munger at Daily Journal Annual Meeting',
+    description: 'Munger\'s insights on investing and current events',
+    youtubeId: 'XkN8NlMQUEQ',
+    speaker: 'Munger',
     year: 2020,
+    category: 'annual-meeting'
+  },
+  {
+    id: 'buffett-principles',
+    title: 'Warren Buffett\'s 10 Rules for Success',
+    description: 'Key principles that guided Buffett\'s investment career',
+    youtubeId: 'iZTGvOmBJ0E',
+    speaker: 'Buffett',
+    year: 2018,
+    category: 'interview'
+  },
+  {
+    id: 'buffett-economy',
+    title: 'Warren Buffett on the American Economy',
+    description: 'Buffett\'s optimistic view on America\'s economic future',
+    youtubeId: 'OcmMsGGQ_eg',
+    speaker: 'Buffett',
+    year: 2021,
     category: 'interview'
   }
 ]

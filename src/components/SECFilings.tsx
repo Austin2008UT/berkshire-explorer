@@ -152,16 +152,14 @@ const SECFilings: React.FC = () => {
                   >
                     View Details
                   </button>
-                  {filing.documents[0] && (
-                    <a 
-                      href={filing.documents[0].documentUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="download-btn"
-                    >
-                      Open
-                    </a>
-                  )}
+                  <a 
+                    href={`https://www.sec.gov/edgar/browse/?CIK=1067983&owner=exclude`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="download-btn"
+                  >
+                    View on SEC
+                  </a>
                 </td>
               </tr>
             ))}
@@ -210,12 +208,12 @@ const SECFilings: React.FC = () => {
                       </div>
                     </div>
                     <a 
-                      href={doc.documentUrl}
+                      href={`https://www.sec.gov/edgar/browse/?CIK=1067983&owner=exclude`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="document-link"
                     >
-                      View Document →
+                      View on SEC →
                     </a>
                   </div>
                 ))}
