@@ -35,6 +35,16 @@ app.get('/api/health', (req, res) => {
   })
 })
 
+// Debug endpoint
+app.get('/api/debug', (req, res) => {
+  res.json({
+    message: 'Debug endpoint working',
+    routes: app._router.stack
+      .filter(r => r.route)
+      .map(r => `${Object.keys(r.route.methods)[0].toUpperCase()} ${r.route.path}`)
+  })
+})
+
 // API Routes
 app.use('/api/reports', reportsRouter)
 app.use('/api/subsidiaries', subsidiariesRouter)

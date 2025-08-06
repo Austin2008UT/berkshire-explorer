@@ -16,6 +16,7 @@ function App() {
   const [reports, setReports] = useState<Report[]>([])
   const [subsidiaries, setSubsidiaries] = useState<Subsidiary[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     fetchData()
@@ -28,17 +29,25 @@ function App() {
         fetch('/api/subsidiaries')
       ])
       
-      if (reportsRes.ok) {
+      if (!reportsRes.ok) {
+        console.error('Failed to fetch reports:', reportsRes.status, reportsRes.statusText)
+        const text = await reportsRes.text()
+        console.error('Response:', text.substring(0, 200))
+        setError(`Failed to fetch reports: ${reportsRes.status}`)
+      } else {
         const reportsData = await reportsRes.json()
         setReports(reportsData)
       }
       
-      if (subsidiariesRes.ok) {
+      if (!subsidiariesRes.ok) {
+        console.error('Failed to fetch subsidiaries:', subsidiariesRes.status, subsidiariesRes.statusText)
+      } else {
         const subsidiariesData = await subsidiariesRes.json()
         setSubsidiaries(subsidiariesData)
       }
     } catch (error) {
       console.error('Error fetching data:', error)
+      setError('Error fetching data: ' + String(error))
     } finally {
       setLoading(false)
     }
@@ -96,6 +105,12 @@ function App() {
       <main className="main-content">
         {loading ? (
           <div className="loading">Loading Berkshire data...</div>
+        ) : error ? (
+          <div className="error" style={{ color: 'red', padding: '2rem', textAlign: 'center' }}>
+            {error}
+            <br />
+            <button onClick={() => window.location.reload()}>Reload Page</button>
+          </div>
         ) : (
           <>
             {activeView === 'reports' && <ReportsList reports={reports} />}
