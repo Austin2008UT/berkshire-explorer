@@ -100,7 +100,7 @@ const books: Book[] = [
     year: 2023,
     description: 'The definitive collection of Charlie Munger\'s wisdom, newly revised and expanded by Stripe Press.',
     amazonUrl: 'https://www.amazon.com/Poor-Charlies-Almanack-Essential-Charles/dp/1953953239',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/9781953953247-L.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/9781953953230-L.jpg',
     category: 'investing'
   },
   {
