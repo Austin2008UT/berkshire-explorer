@@ -84,14 +84,34 @@ const books: Book[] = [
     category: 'investing'
   },
   {
-    id: 'berkshire-beyond',
-    title: 'Berkshire Beyond Buffett: The Enduring Value of Values',
-    author: 'Lawrence A. Cunningham',
-    year: 2014,
-    description: 'Explores how Berkshire Hathaway\'s culture will endure beyond Warren Buffett.',
-    amazonUrl: 'https://www.amazon.com/Berkshire-Beyond-Buffett-Enduring-Values/dp/0231170041',
-    coverImage: 'https://covers.openlibrary.org/b/isbn/0231170041-L.jpg',
-    category: 'history'
+    id: 'poor-charlie-stripe',
+    title: "Poor Charlie's Almanack: The Essential Wit and Wisdom of Charles T. Munger",
+    author: 'Charles T. Munger (Edited by Peter D. Kaufman)',
+    year: 2023,
+    description: 'The definitive collection of Charlie Munger\'s wisdom, newly revised and expanded by Stripe Press.',
+    amazonUrl: 'https://www.amazon.com/Poor-Charlies-Almanack-Essential-Charles/dp/1953953239',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/9781953953230-L.jpg',
+    category: 'investing'
+  },
+  {
+    id: 'security-analysis-7th',
+    title: 'Security Analysis: Seventh Edition',
+    author: 'Benjamin Graham & David Dodd',
+    year: 2023,
+    description: 'The latest edition of the timeless value investing classic with updated commentary by Seth Klarman and others.',
+    amazonUrl: 'https://www.amazon.com/Security-Analysis-Seventh-Principles-Techniques/dp/1264932405',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/9781264932405-L.jpg',
+    category: 'investing'
+  },
+  {
+    id: 'expectations-investing',
+    title: 'Expectations Investing: Reading Stock Prices for Better Returns',
+    author: 'Michael J. Mauboussin & Alfred Rappaport',
+    year: 2021,
+    description: 'How to read the expectations embedded in stock prices and make better investment decisions.',
+    amazonUrl: 'https://www.amazon.com/Expectations-Investing-Reading-Prices-Returns/dp/0231544685',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/9780231544689-L.jpg',
+    category: 'investing'
   },
   {
     id: 'warren-buffett-ceo',
